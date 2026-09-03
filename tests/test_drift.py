@@ -14,20 +14,44 @@ import pytest
 
 import gpdk
 
-gf_gpdk = pytest.importorskip("gdsfactory.gpdk", reason="tier B: core dropped its gpdk")
 
-GF_ROOT = pathlib.Path(gf_gpdk.__file__).parent
-GF_KLAYOUT = GF_ROOT.parent / "generic_tech" / "klayout"
+@pytest.fixture
+def gf_gpdk():
+    """Tier B only: core's own generic-PDK module.
+
+    ``pytest.importorskip`` is called here, inside a fixture, rather than at module
+    level. At module level, a failed import raises ``Skipped`` with
+    ``allow_module_level=True``, which skips collection of the *entire file* -- that
+    would silently take the tier-A tests down with it the day core drops
+    ``gdsfactory.gpdk``, at exactly the moment tier A is supposed to fail loudly if
+    gpdk's coverage guard breaks. Requesting this fixture (only the four tier-B tests
+    below do) confines the skip to those tests.
+    """
+    return pytest.importorskip(
+        "gdsfactory.gpdk", reason="tier B: core dropped its gpdk"
+    )
 
 
-def test_layer_map_matches_core():
+@pytest.fixture
+def gf_root(gf_gpdk):
+    """Tier B only: directory containing core's generic-PDK module."""
+    return pathlib.Path(gf_gpdk.__file__).parent
+
+
+@pytest.fixture
+def gf_klayout(gf_root):
+    """Tier B only: directory containing core's generic-tech KLayout assets."""
+    return gf_root.parent / "generic_tech" / "klayout"
+
+
+def test_layer_map_matches_core(gf_gpdk):
     """Tier B: every layer name and (layer, datatype) pair matches core."""
     ours = {layer.name: (layer.layer, layer.datatype) for layer in gpdk.tech.LAYER}
     theirs = {layer.name: (layer.layer, layer.datatype) for layer in gf_gpdk.LAYER}
     assert ours == theirs
 
 
-def test_layer_stack_matches_core():
+def test_layer_stack_matches_core(gf_gpdk):
     """Tier B: layer stack level names and thicknesses match core."""
     ours = {
         name: (level.thickness, level.zmin)
@@ -40,14 +64,14 @@ def test_layer_stack_matches_core():
     assert ours == theirs
 
 
-def test_layer_views_yaml_is_byte_identical_to_core():
+def test_layer_views_yaml_is_byte_identical_to_core(gf_root):
     """Tier B: layers.yaml is an unmodified copy of core's layer_views.yaml."""
-    assert filecmp.cmp(gpdk.PATH.lyp_yaml, GF_ROOT / "layer_views.yaml", shallow=False)
+    assert filecmp.cmp(gpdk.PATH.lyp_yaml, gf_root / "layer_views.yaml", shallow=False)
 
 
-def test_layers_lyp_is_byte_identical_to_core():
+def test_layers_lyp_is_byte_identical_to_core(gf_klayout):
     """Tier B: layers.lyp is an unmodified copy of core's."""
-    assert filecmp.cmp(gpdk.PATH.lyp, GF_KLAYOUT / "layers.lyp", shallow=False)
+    assert filecmp.cmp(gpdk.PATH.lyp, gf_klayout / "layers.lyp", shallow=False)
 
 
 def test_tier_a_cell_coverage_matches_gdsfactory():
