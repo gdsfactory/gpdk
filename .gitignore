@@ -1,0 +1,14 @@
+.pre-commit-config.yaml
+__pycache__/
+*.py[cod]
+.venv/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+test_diffs/
+tests/gds_run/
+docs/_build/
+.DS_Store
