@@ -281,7 +281,7 @@ def fiducial_squares(
 @gf.cell(tags=["shapes"])
 def fractal(
     fractal_type: Literal[
-        sierpinski_triangle, sierpinski_carpet, vicsek_cross, vicsek_saltire
+        "sierpinski_triangle", "sierpinski_carpet", "vicsek_cross", "vicsek_saltire"
     ] = "sierpinski_triangle",
     depth: int = 4,
     size: float = 100.0,

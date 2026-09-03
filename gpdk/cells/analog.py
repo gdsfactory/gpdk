@@ -369,7 +369,7 @@ def symmetric_transformer(
 
 @gf.cell
 def via3(
-    size: tuple = (0.7, 0.7),
+    size: tuple[float, float] = (0.7, 0.7),
     enclosure: float = 1.0,
     pitch: float = 2.0,
 ) -> gf.Component:

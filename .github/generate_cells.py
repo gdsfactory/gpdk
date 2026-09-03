@@ -57,6 +57,9 @@ class CellSpec:
     tags: tuple[str, ...] = ()
     schematic_function: str | None = None
     source_defaults: dict[str, str] = field(default_factory=dict)
+    # param name -> (rendered source text, module to import a free name from, or None
+    # if the rendering is self-contained). See _resolve_overrides.
+    default_overrides: dict[str, tuple[str, str | None]] = field(default_factory=dict)
 
 
 def _unwrap(obj):
@@ -161,8 +164,64 @@ def collect_cells() -> dict[str, CellSpec]:
             tags=_tags_for(name, base),
             schematic_function=schematic,
             source_defaults=_source_defaults(base),
+            default_overrides=_resolve_overrides(base, signature),
         )
     return specs
+
+
+def _resolve_overrides(
+    base, signature: inspect.Signature
+) -> dict[str, tuple[str, str | None]]:
+    """Detect parameters whose resolved default differs from base's own default.
+
+    Compares the *actual, resolved* default (on the registry object itself) against
+    ``base``'s own default for the same name. ``_source_defaults(base)`` reads its source text from ``base``'s own AST — correct
+    for a plain cell, but wrong when ``obj`` is a ``functools.partial`` (at any layer)
+    that rebinds a parameter ``base`` itself defaults differently. E.g. all five
+    ``taper_w*`` cells share one ``base`` (``taper_from_csv``), whose own default for
+    ``filepath`` is a single generic CSV; each partial binds its own, different
+    ``filepath=``, but ``base``'s AST text is the same for all five, collapsing them to
+    one (wrong) shared value. ``inspect.signature(obj)`` already resolves the correct,
+    per-partial value — ``signature`` here is exactly that, already computed by the
+    caller — this function's job is only to notice when it disagrees with ``base`` and
+    is worth rendering directly instead of trusting ``base``'s text.
+
+    Only two shapes of overriding value are handled, both real and both general (not
+    keyed to any specific cell name):
+
+    - A ``pathlib.PurePath``: reconstructible via its own string form, so rendered as
+      ``pathlib.Path(<repr of str(value)>)`` (portable — not the OS-specific
+      ``PosixPath``/``WindowsPath`` repr).
+    - A plain, top-level function or class with its own ``__module__``/``__qualname__``
+      (no dots in the qualname, i.e. not nested in a class or closure): imported by
+      name from *its own* module, which may differ from ``base``'s module (e.g.
+      ``add_padding_to_size_container``'s bound ``function=add_padding_to_size`` lives
+      in ``gdsfactory.add_padding``, not ``gdsfactory.component`` where ``container``,
+      its ``base``, lives).
+
+    Anything else falls through unresolved here (``_render_default`` still raises its
+    existing ``SystemExit`` if ``base``'s own text is also unusable for it) rather than
+    guessing at a rendering that might not round-trip.
+    """
+    try:
+        base_params = inspect.signature(base).parameters
+    except (TypeError, ValueError):
+        base_params = {}
+    overrides: dict[str, tuple[str, str | None]] = {}
+    for name, param in signature.parameters.items():
+        if param.default is inspect.Parameter.empty or _is_literal(param.default):
+            continue
+        base_param = base_params.get(name)
+        if base_param is not None and base_param.default is param.default:
+            continue
+        value = param.default
+        if isinstance(value, pathlib.PurePath):
+            overrides[name] = (f"pathlib.Path({str(value)!r})", None)
+        elif (inspect.isfunction(value) or inspect.isclass(value)) and "." not in (
+            getattr(value, "__qualname__", None) or "."
+        ):
+            overrides[name] = (value.__name__, value.__module__)
+    return overrides
 
 
 _ARGS_HEADER_RE = re.compile(r"^\s*Args:\s*$")
@@ -295,12 +354,23 @@ def _source_defaults(base) -> dict[str, str]:
 def _render_annotation(annotation) -> str:
     """Render an annotation as source text.
 
-    gdsfactory modules use ``from __future__ import annotations``, so annotations
+    gdsfactory modules use ``from __future__ import annotations``, so most annotations
     arrive as strings and must be emitted verbatim rather than repr'd.
+
+    A live (non-string) annotation is rendered via ``inspect.formatannotation`` rather
+    than ``getattr(annotation, "__name__", None) or str(annotation)``: for a
+    subscripted generic (``types.GenericAlias``, e.g. ``Sequence[float]`` or
+    ``tuple[float, float]``, from a source module that does *not* use postponed
+    annotations), ``__name__`` returns only the origin type's bare name — dropping the
+    subscript entirely (``Sequence[float].__name__ == "Sequence"``) — while
+    ``str()``/``inspect.formatannotation`` correctly include it. This is exactly the
+    normalization ``tests/test_drift.py``'s ``_annotation_str`` helper already applies
+    to a core (non-future-annotations) module's annotation for comparison, so using the
+    same function here guarantees the two representations agree by construction.
     """
     if isinstance(annotation, str):
         return annotation
-    return getattr(annotation, "__name__", None) or str(annotation)
+    return inspect.formatannotation(annotation)
 
 
 def _is_literal(value) -> bool:
@@ -381,9 +451,10 @@ def _has_mutable_default(spec: CellSpec) -> bool:
 
 def _render_signature(
     spec: CellSpec, source_defaults: dict[str, str]
-) -> tuple[str, set[str]]:
+) -> tuple[str, dict[str, str]]:
     """Render the parameter list, and the extra names its non-literal defaults need.
 
+    The extra names are mapped to the module each should be imported from.
     ``VAR_KEYWORD`` (``**kwargs``) is re-emitted verbatim rather than rejected: gdsfactory
     uses it as a legitimate forwarding pattern (e.g. ``container()``-style wrappers), and
     kfactory's cell naming/caching hashes forwarded kwarg values correctly, so there is no
@@ -398,9 +469,15 @@ def _render_signature(
     than an inline comment here — `ruff format` can rewrap a long literal across
     multiple lines, and would then relocate a trailing inline comment to the wrapped
     literal's closing line, away from the line the diagnostic actually anchors to.
+
+    ``spec.default_overrides`` takes priority over ``source_defaults`` for any
+    parameter it covers: it means ``base``'s own AST-sourced default text for that
+    parameter is wrong for *this* spec specifically (see ``_resolve_overrides``), so
+    its free names — if any — are attributed to the override's own module, not
+    ``spec.source_module``, since the two can differ.
     """
     parts: list[str] = []
-    needed: set[str] = set()
+    needed: dict[str, str] = {}
     for param in spec.signature.parameters.values():
         if param.kind is param.VAR_POSITIONAL:
             raise SystemExit(
@@ -416,10 +493,19 @@ def _render_signature(
             continue
         default = ""
         if param.default is not inspect.Parameter.empty:
-            rendered = _render_default(spec, param, source_defaults)
-            if not _is_literal(param.default):
+            override = spec.default_overrides.get(param.name)
+            if override is not None:
+                rendered, module = override
+                if module is not None:
+                    free = _free_names(rendered)
+                    needed |= dict.fromkeys(free, module)
+                    rendered = _alias_free_names(rendered, free)
+            elif _is_literal(param.default):
+                rendered = repr(param.default)
+            else:
+                rendered = _render_default(spec, param, source_defaults)
                 free = _free_names(rendered)
-                needed |= free
+                needed |= dict.fromkeys(free, spec.source_module)
                 rendered = _alias_free_names(rendered, free)
             default = f" = {rendered}"
         parts.append(f"{param.name}{annotation}{default}")
@@ -495,10 +581,13 @@ def render_module(category: str, specs: list[CellSpec]) -> str:
     # multiple sibling gdsfactory modules, and avoids a bare import ever colliding
     # with a same-named cell generated later in this module.
     needed_by_name: dict[str, str] = {}
+    needs_pathlib = False
     for spec in specs:
         params, needed = _render_signature(spec, spec.source_defaults)
-        for name in needed:
-            needed_by_name.setdefault(name, spec.source_module)
+        for name, module in needed.items():
+            needed_by_name.setdefault(name, module)
+        if any(module is None for _, module in spec.default_overrides.values()):
+            needs_pathlib = True
         doc = _render_docstring_body(spec.docstring)
         bodies.append(
             f"{_render_decorator(spec)}\n"
@@ -519,6 +608,11 @@ def render_module(category: str, specs: list[CellSpec]) -> str:
         # would need to land on whatever line `ruff format` leaves the diagnostic
         # anchored to, which shifts when it rewraps a long literal.
         lines.append("# ruff: noqa: B006")
+    if needs_pathlib:
+        # A partial-bound default overriding base's own (see _resolve_overrides) is a
+        # pathlib.PurePath, rendered as `pathlib.Path(...)` for portability rather than
+        # the OS-specific PosixPath/WindowsPath repr.
+        lines.append("import pathlib")
     for registry_module in sorted({s.registry_module for s in specs}):
         alias = REGISTRY_ALIAS[registry_module]
         package, _, leaf = registry_module.rpartition(".")
@@ -598,7 +692,27 @@ def write_all(root: pathlib.Path) -> dict[pathlib.Path, str]:
         capture_output=True,
     )
     subprocess.run(
-        [sys.executable, "-m", "ruff", "check", "--fix", str(root)],
+        # --extend-ignore=UP037, explicitly, regardless of path-based config discovery:
+        # pyproject.toml's per-file-ignore for "gpdk/cells/*.py" only matches when
+        # `root` is literally the repo's own gpdk/cells/ (the --write path) — it does
+        # NOT match `root` when it's a tempfile.TemporaryDirectory() (the --check
+        # path), since that glob is matched against the file's own path, not just
+        # whichever pyproject.toml config got discovered. UP037 ("quoted-annotation")
+        # is a real, auto-applied ruff bug for this generator's output: it strips the
+        # quotes around a `Literal["a", "b"]` string member, mistaking them for a
+        # redundant forward-reference wrapper, which turns valid string literals into
+        # undefined bare names. Passing it directly as a CLI flag makes the exemption
+        # depend only on which directory this subprocess call was given, not on ruff's
+        # config discovery agreeing that the path "looks like" gpdk/cells/*.py.
+        [
+            sys.executable,
+            "-m",
+            "ruff",
+            "check",
+            "--fix",
+            "--extend-ignore=UP037",
+            str(root),
+        ],
         check=False,
         capture_output=True,
     )

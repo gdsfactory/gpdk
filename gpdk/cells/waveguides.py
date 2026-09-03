@@ -789,11 +789,11 @@ def straight_heater_metal_undercut_90_90(
 @gf.cell(tags=["waveguides"])
 def straight_piecewise(
     x: collections.abc.Sequence[float] | gdsfactory.path.Path,
-    widths: Sequence,
+    widths: collections.abc.Sequence[float],
     layer: LayerSpec,
     sections: collections.abc.Sequence[gdsfactory.cross_section.base.Section]
     | None = None,
-    port_names: tuple = ("o1", "o2"),
+    port_names: tuple[str | None, str | None] = ("o1", "o2"),
     name: str = "core",
     **kwargs: Any,
 ) -> gf.Component:

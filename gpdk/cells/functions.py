@@ -8,6 +8,9 @@ from __future__ import annotations
 
 import gdsfactory as gf
 from gdsfactory import containers as _containers
+from gdsfactory.add_padding import (
+    add_padding_to_size as _default_add_padding_to_size,
+)
 from gdsfactory.routing.add_electrical_pads_shortest import (
     select_ports_electrical as _default_select_ports_electrical,
 )
@@ -63,7 +66,7 @@ def add_electrical_pads_shortest(
 @gf.cell
 def add_electrical_pads_top(
     component: ComponentSpec,
-    direction: Literal[top, right] = "top",
+    direction: Literal["top", "right"] = "top",
     spacing: Float2 = (0.0, 100.0),
     pad_array: ComponentSpec = "pad_array",
     select_ports: SelectPorts = _default_select_ports_electrical,
@@ -313,7 +316,7 @@ def add_padding_to_size(
 @gf.cell
 def add_padding_to_size_container(
     component: ComponentSpec,
-    function: Callable[..., Any] | None = None,
+    function: Callable[..., Any] | None = _default_add_padding_to_size,
     copy_ports: bool = True,
     **kwargs: Any,
 ) -> gf.Component:

@@ -90,7 +90,11 @@ select = ["B", "C", "D", "E", "F", "I", "T10", "UP", "W"]
 
 [tool.ruff.lint.per-file-ignores]
 "**/__init__.py" = ["F401", "F403", "F405"]
-"gpdk/cells/*.py" = ["F403", "F405"]
+# UP037 misfires inside a Literal[...] string member under postponed annotations,
+# stripping its quotes; see .github/generate_cells.py's write_all() for the full
+# explanation (also passed there as --extend-ignore=UP037, since this per-file-ignore
+# doesn't apply when regenerating into a tempdir outside gpdk/cells/).
+"gpdk/cells/*.py" = ["F403", "F405", "UP037"]
 # Generated wrappers re-emit gdsfactory's annotations verbatim and rely on a star
 # import of gdsfactory.typings to resolve them.
 "gpdk/cells/__init__.py" = ["F403"]
