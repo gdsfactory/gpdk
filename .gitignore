@@ -11,4 +11,5 @@ dist/
 test_diffs/
 tests/gds_run/
 docs/_build/
+docs/.cache/
 .DS_Store

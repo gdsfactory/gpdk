@@ -94,23 +94,12 @@ routing_strategies: dict[str, RoutingStrategy] = {
     ),
 }
 
-PDK = gf.Pdk(
-    name="gpdk",
-    layers=LAYER,
-    layer_stack=LAYER_STACK,
-    layer_views=LAYER_VIEWS,
-    cross_sections=cross_sections,
-    routing_strategies=routing_strategies,
-    cells={},
-)
-
 __all__ = [
     "LAYER",
     "LAYER_CONNECTIVITY",
     "LAYER_STACK",
     "LAYER_VIEWS",
     "GenericConstants",
-    "PDK",
     "cross_sections",
     "layer_transitions",
     "routing_strategies",
