@@ -6,8 +6,6 @@ Run ``make cells-regen`` to regenerate, ``make cells-check`` to verify.
 
 from __future__ import annotations
 
-import pathlib
-
 import gdsfactory as gf
 from gdsfactory import components as _components
 from gdsfactory.components.tapers.taper_adiabatic import (
@@ -93,9 +91,7 @@ def taper(
 
 @gf.cell(tags=["tapers"], schematic_function=taper_schematic)
 def taper_0p5_to_3_l36(
-    filepath: Path = pathlib.Path(
-        "/Users/nath/Workspaces/pdks/gpdk/.venv/lib/python3.12/site-packages/gdsfactory/components/tapers/csv_data/taper_strip_0p5_3_36.csv"
-    ),
+    filepath: Path = _default_data / "taper_strip_0p5_3_36.csv",
     cross_section: CrossSectionSpec = "strip",
 ) -> gf.Component:
     r"""Returns taper from CSV file.
@@ -710,9 +706,7 @@ def taper_strip_to_slab150(
 
 @gf.cell(tags=["tapers"], schematic_function=taper_schematic)
 def taper_w10_l100(
-    filepath: Path = pathlib.Path(
-        "/Users/nath/Workspaces/pdks/gpdk/.venv/lib/python3.12/site-packages/gdsfactory/components/tapers/csv_data/taper_strip_0p5_10_100.csv"
-    ),
+    filepath: Path = _default_data / "taper_strip_0p5_10_100.csv",
     cross_section: CrossSectionSpec = "strip",
 ) -> gf.Component:
     r"""Returns taper from CSV file.
@@ -729,9 +723,7 @@ def taper_w10_l100(
 
 @gf.cell(tags=["tapers"], schematic_function=taper_schematic)
 def taper_w10_l150(
-    filepath: Path = pathlib.Path(
-        "/Users/nath/Workspaces/pdks/gpdk/.venv/lib/python3.12/site-packages/gdsfactory/components/tapers/csv_data/taper_strip_0p5_10_150.csv"
-    ),
+    filepath: Path = _default_data / "taper_strip_0p5_10_150.csv",
     cross_section: CrossSectionSpec = "strip",
 ) -> gf.Component:
     r"""Returns taper from CSV file.
@@ -748,9 +740,7 @@ def taper_w10_l150(
 
 @gf.cell(tags=["tapers"], schematic_function=taper_schematic)
 def taper_w10_l200(
-    filepath: Path = pathlib.Path(
-        "/Users/nath/Workspaces/pdks/gpdk/.venv/lib/python3.12/site-packages/gdsfactory/components/tapers/csv_data/taper_strip_0p5_10_200.csv"
-    ),
+    filepath: Path = _default_data / "taper_strip_0p5_10_200.csv",
     cross_section: CrossSectionSpec = "strip",
 ) -> gf.Component:
     r"""Returns taper from CSV file.
@@ -767,9 +757,7 @@ def taper_w10_l200(
 
 @gf.cell(tags=["tapers"], schematic_function=taper_schematic)
 def taper_w11_l200(
-    filepath: Path = pathlib.Path(
-        "/Users/nath/Workspaces/pdks/gpdk/.venv/lib/python3.12/site-packages/gdsfactory/components/tapers/csv_data/taper_strip_0p5_11_200.csv"
-    ),
+    filepath: Path = _default_data / "taper_strip_0p5_11_200.csv",
     cross_section: CrossSectionSpec = "strip",
 ) -> gf.Component:
     r"""Returns taper from CSV file.
@@ -786,9 +774,7 @@ def taper_w11_l200(
 
 @gf.cell(tags=["tapers"], schematic_function=taper_schematic)
 def taper_w12_l200(
-    filepath: Path = pathlib.Path(
-        "/Users/nath/Workspaces/pdks/gpdk/.venv/lib/python3.12/site-packages/gdsfactory/components/tapers/csv_data/taper_strip_0p5_12_200.csv"
-    ),
+    filepath: Path = _default_data / "taper_strip_0p5_12_200.csv",
     cross_section: CrossSectionSpec = "strip",
 ) -> gf.Component:
     r"""Returns taper from CSV file.

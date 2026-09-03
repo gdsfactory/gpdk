@@ -153,6 +153,7 @@ def collect_cells() -> dict[str, CellSpec]:
         signature = inspect.signature(obj)
         if _docstring_missing_params(docstring, signature):
             docstring = _synthesize_docstring(name, base, docstring, signature)
+        source_defaults = _source_defaults(base)
         specs[name] = CellSpec(
             name=name,
             category=_category(base),
@@ -163,19 +164,48 @@ def collect_cells() -> dict[str, CellSpec]:
             docstring=docstring,
             tags=_tags_for(name, base),
             schematic_function=schematic,
-            source_defaults=_source_defaults(base),
-            default_overrides=_resolve_overrides(base, signature),
+            source_defaults=source_defaults,
+            default_overrides=_resolve_overrides(base, signature, source_defaults),
         )
     return specs
 
 
+def _swap_path_literal(expression: str, new_literal: str) -> str | None:
+    """Rewrite ``<expr> / "<old string>"`` to ``<expr> / "<new_literal>"``.
+
+    Returns ``None`` if ``expression`` isn't shaped like a single division ending in a
+    string constant, so the caller can tell a real substitution from a no-op.
+    """
+    try:
+        tree = ast.parse(expression, mode="eval")
+    except SyntaxError:
+        return None
+    node = tree.body
+    if (
+        isinstance(node, ast.BinOp)
+        and isinstance(node.op, ast.Div)
+        and isinstance(node.right, ast.Constant)
+        and isinstance(node.right.value, str)
+    ):
+        node.right = ast.Constant(value=new_literal)
+        return ast.unparse(tree)
+    return None
+
+
 def _resolve_overrides(
-    base, signature: inspect.Signature
+    base, signature: inspect.Signature, source_defaults: dict[str, str]
 ) -> dict[str, tuple[str, str | None]]:
     """Detect parameters whose resolved default differs from base's own default.
 
     Compares the *actual, resolved* default (on the registry object itself) against
-    ``base``'s own default for the same name. ``_source_defaults(base)`` reads its source text from ``base``'s own AST — correct
+    ``base``'s own default for the same name, **by value** (``==``), not identity: a
+    ``pathlib.Path`` default built as ``data / "<name>.csv"`` is a freshly constructed
+    object every time a ``functools.partial`` binds it, so two logically-identical
+    paths are ``==`` but never ``is`` — comparing by identity would misclassify every
+    cell sharing ``base``'s own default value as "overridden", not just the ones that
+    actually rebind it to something different.
+
+    ``_source_defaults(base)`` reads its source text from ``base``'s own AST — correct
     for a plain cell, but wrong when ``obj`` is a ``functools.partial`` (at any layer)
     that rebinds a parameter ``base`` itself defaults differently. E.g. all five
     ``taper_w*`` cells share one ``base`` (``taper_from_csv``), whose own default for
@@ -186,12 +216,23 @@ def _resolve_overrides(
     caller — this function's job is only to notice when it disagrees with ``base`` and
     is worth rendering directly instead of trusting ``base``'s text.
 
-    Only two shapes of overriding value are handled, both real and both general (not
-    keyed to any specific cell name):
+    Two shapes of overriding value are handled, both real and both general (not keyed
+    to any specific cell name):
 
-    - A ``pathlib.PurePath``: reconstructible via its own string form, so rendered as
-      ``pathlib.Path(<repr of str(value)>)`` (portable — not the OS-specific
-      ``PosixPath``/``WindowsPath`` repr).
+    - A ``pathlib.PurePath`` whose ``base`` default is *also* a path in the same parent
+      directory (the common "one directory, many data files" shape, e.g.
+      ``taper_w10_l200``'s ``filepath=data / "taper_strip_0p5_10_200.csv"`` next to
+      ``taper_from_csv``'s own ``filepath: Path = data / "taper_strip_0p5_3_36.csv"``):
+      rendered by reusing ``base``'s own AST expression for the directory part
+      (``data``, or whatever the true source expression is) and swapping in just the
+      differing filename literal — portable, and consistent with the ordinary
+      (non-overridden) rendering path, which imports that same ``data`` name aliased as
+      ``_default_data``. A ``pathlib.PurePath`` override that doesn't fit this shape
+      (different parent directory, or ``base``'s own default isn't AST-recoverable as a
+      single ``dir / "name"`` expression) has no safe, portable rendering available —
+      falling back to the fully-resolved absolute path would hardcode this machine's
+      own checkout/venv location into committed source, breaking reproducibility on any
+      other machine — so this raises ``SystemExit`` instead of guessing.
     - A plain, top-level function or class with its own ``__module__``/``__qualname__``
       (no dots in the qualname, i.e. not nested in a class or closure): imported by
       name from *its own* module, which may differ from ``base``'s module (e.g.
@@ -212,11 +253,29 @@ def _resolve_overrides(
         if param.default is inspect.Parameter.empty or _is_literal(param.default):
             continue
         base_param = base_params.get(name)
-        if base_param is not None and base_param.default is param.default:
+        if base_param is not None and base_param.default == param.default:
             continue
         value = param.default
         if isinstance(value, pathlib.PurePath):
-            overrides[name] = (f"pathlib.Path({str(value)!r})", None)
+            base_default = base_param.default if base_param is not None else None
+            rendered = None
+            if (
+                isinstance(base_default, pathlib.PurePath)
+                and base_default.parent == value.parent
+                and name in source_defaults
+            ):
+                rendered = _swap_path_literal(source_defaults[name], value.name)
+            if rendered is None:
+                raise SystemExit(
+                    f"{base.__module__}.{base.__name__}: parameter {name!r} is bound "
+                    f"to {value!r} by a functools.partial, which does not match "
+                    f"{base.__name__}'s own default and has no portable rendering "
+                    '(not a same-directory filename swap of a `dir / "name"` '
+                    "expression). Fix this upstream in gdsfactory, or extend "
+                    "_resolve_overrides with a portable rendering for this shape — "
+                    "do not hardcode a machine-specific absolute path."
+                )
+            overrides[name] = (rendered, base.__module__)
         elif (inspect.isfunction(value) or inspect.isclass(value)) and "." not in (
             getattr(value, "__qualname__", None) or "."
         ):
@@ -581,13 +640,10 @@ def render_module(category: str, specs: list[CellSpec]) -> str:
     # multiple sibling gdsfactory modules, and avoids a bare import ever colliding
     # with a same-named cell generated later in this module.
     needed_by_name: dict[str, str] = {}
-    needs_pathlib = False
     for spec in specs:
         params, needed = _render_signature(spec, spec.source_defaults)
         for name, module in needed.items():
             needed_by_name.setdefault(name, module)
-        if any(module is None for _, module in spec.default_overrides.values()):
-            needs_pathlib = True
         doc = _render_docstring_body(spec.docstring)
         bodies.append(
             f"{_render_decorator(spec)}\n"
@@ -608,11 +664,6 @@ def render_module(category: str, specs: list[CellSpec]) -> str:
         # would need to land on whatever line `ruff format` leaves the diagnostic
         # anchored to, which shifts when it rewraps a long literal.
         lines.append("# ruff: noqa: B006")
-    if needs_pathlib:
-        # A partial-bound default overriding base's own (see _resolve_overrides) is a
-        # pathlib.PurePath, rendered as `pathlib.Path(...)` for portability rather than
-        # the OS-specific PosixPath/WindowsPath repr.
-        lines.append("import pathlib")
     for registry_module in sorted({s.registry_module for s in specs}):
         alias = REGISTRY_ALIAS[registry_module]
         package, _, leaf = registry_module.rpartition(".")
