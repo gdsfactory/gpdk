@@ -1,0 +1,19 @@
+name: cells-check
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  cells-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.0
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - name: Install dependencies
+        run: uv sync --extra dev
+      - name: Check generated cells match the pinned gdsfactory
+        run: uv run python .github/generate_cells.py --check
