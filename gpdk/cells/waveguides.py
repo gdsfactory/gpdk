@@ -21,6 +21,7 @@ from gdsfactory.components.waveguides.straight_pin import (
     pin as _default_pin,
 )
 from gdsfactory.typings import *  # noqa: F403
+from kfactory.conf import CheckInstances
 
 from gpdk.cells._schematic import (
     crossing_schematic,
@@ -44,7 +45,11 @@ def crossing(
     )
 
 
-@gf.cell(tags=["waveguides"], schematic_function=crossing_schematic)
+@gf.cell(
+    tags=["waveguides"],
+    check_instances=CheckInstances.IGNORE,
+    schematic_function=crossing_schematic,
+)
 def crossing45(
     crossing: ComponentSpec = _default_crossing,
     port_spacing: float = 40.0,
@@ -176,13 +181,13 @@ def straight(
     )
 
 
-@gf.cell
+@gf.vcell
 def straight_all_angle(
     length: float = 10.0,
     npoints: int = 2,
     cross_section: CrossSectionSpec = "strip",
     width: float | None = None,
-) -> gf.Component:
+) -> gf.ComponentAllAngle:
     r"""Returns a Straight waveguide with offgrid ports.
 
     Args:

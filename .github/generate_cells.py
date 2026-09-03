@@ -56,6 +56,8 @@ class CellSpec:
     docstring: str
     tags: tuple[str, ...] = ()
     schematic_function: str | None = None
+    check_instances: str | None = None
+    is_all_angle: bool = False
     source_defaults: dict[str, str] = field(default_factory=dict)
     # param name -> (rendered source text, module to import a free name from, or None
     # if the rendering is self-contained). See _resolve_overrides.
@@ -105,6 +107,57 @@ def _decorator_kwargs(base) -> dict[str, str]:
     return {}
 
 
+def _decorator_callee_names(base) -> list[str]:
+    """Dotted callee name of every decorator on base's own function definition.
+
+    E.g. ``@gf.vcell`` -> ``"gf.vcell"``, ``@gf.cell(tags=[...])`` -> ``"gf.cell"``.
+    Resolves the decorator's own callable (unwrapping the ``ast.Call`` node when
+    present) rather than substring-matching the whole decorator source text, so a
+    hypothetical future decorator kwarg whose *value* happens to contain the text
+    "vcell" can never be mistaken for the decorator itself.
+    """
+    try:
+        path = inspect.getsourcefile(base)
+    except TypeError:
+        return []
+    if path is None:
+        return []
+    tree = _module_ast(path)
+    for node in ast.walk(tree):
+        if not isinstance(node, ast.FunctionDef) or node.name != base.__name__:
+            continue
+        return [
+            ast.unparse(dec.func if isinstance(dec, ast.Call) else dec)
+            for dec in node.decorator_list
+        ]
+    return []
+
+
+def _is_all_angle(base, signature: inspect.Signature) -> bool:
+    """Whether this cell returns ``ComponentAllAngle``, not the ordinary ``Component``.
+
+    gdsfactory core decorates such cells with ``@gf.vcell`` instead of ``@gf.cell`` --
+    ``@gf.cell`` only supports ``Component``/``KCell`` return types and raises at
+    runtime for ``ComponentAllAngle`` (verified: calling a ``@gf.cell``-wrapped
+    function that returns a ``ComponentAllAngle`` raises ``TypeError: ... only
+    supports KCell/DKCell ...``). Detected two ways, either sufficient on its own:
+
+    - The resolved return annotation, which (thanks to ``from __future__ import
+      annotations`` in every gdsfactory source module) arrives as the literal string
+      ``"ComponentAllAngle"``, not the live class -- so this checks the string, not
+      identity/subclass against the live ``ComponentAllAngle`` type.
+    - The decorator's own callee name (see ``_decorator_callee_names``) ending in
+      ``vcell`` -- covers bare ``@gf.vcell`` and a future ``@gf.vcell(...)`` with
+      kwargs.
+    """
+    ret = signature.return_annotation
+    if isinstance(ret, str) and ret.strip() == "ComponentAllAngle":
+        return True
+    return any(
+        name.rsplit(".", 1)[-1] == "vcell" for name in _decorator_callee_names(base)
+    )
+
+
 def _tags_for(name: str, base) -> tuple[str, ...]:
     """Read tags from the kfactory registry, falling back to the decorator source."""
     for key, factory in gf.kcl.factories.items():
@@ -143,6 +196,7 @@ def collect_cells() -> dict[str, CellSpec]:
         base = _unwrap(obj)
         kwargs = _decorator_kwargs(base)
         schematic = kwargs.get("schematic_function")
+        check_instances = kwargs.get("check_instances")
         # inspect.getdoc(obj) on a functools.partial returns functools.partial's own
         # boilerplate class docstring (truthy), which would mask the real docstring
         # inherited from `base` — go straight to `base` for partials instead.
@@ -164,6 +218,8 @@ def collect_cells() -> dict[str, CellSpec]:
             docstring=docstring,
             tags=_tags_for(name, base),
             schematic_function=schematic,
+            check_instances=check_instances,
+            is_all_angle=_is_all_angle(base, signature),
             source_defaults=source_defaults,
             default_overrides=_resolve_overrides(base, signature, source_defaults),
         )
@@ -596,14 +652,28 @@ def _render_call(spec: CellSpec) -> str:
 
 
 def _render_decorator(spec: CellSpec) -> str:
+    """Render the wrapper's own decorator.
+
+    A cell returning ``ComponentAllAngle`` (``spec.is_all_angle``) is decorated with
+    ``@gf.vcell`` instead of ``@gf.cell``, mirroring core (see ``_is_all_angle``):
+    ``@gf.cell`` raises at runtime for a ``ComponentAllAngle`` return value.
+    ``check_instances=`` is propagated the same way ``tags=``/``schematic_function=``
+    already are -- read verbatim from the source decorator's own kwargs (see
+    ``_decorator_kwargs``) when core needs it (e.g. ``array_polar``, which places
+    off-grid instances by rotation and would otherwise trip gpdk's default instance
+    grid check).
+    """
+    decorator_name = "gf.vcell" if spec.is_all_angle else "gf.cell"
     parts = []
     if spec.tags:
         parts.append(f"tags={list(spec.tags)!r}")
+    if spec.check_instances:
+        parts.append(f"check_instances={spec.check_instances}")
     if spec.schematic_function:
         parts.append(f"schematic_function={spec.schematic_function}")
     if not parts:
-        return "@gf.cell"
-    return "@gf.cell(" + ", ".join(parts) + ")"
+        return f"@{decorator_name}"
+    return f"@{decorator_name}(" + ", ".join(parts) + ")"
 
 
 def _render_docstring_body(docstring: str) -> str:
@@ -645,9 +715,12 @@ def render_module(category: str, specs: list[CellSpec]) -> str:
         for name, module in needed.items():
             needed_by_name.setdefault(name, module)
         doc = _render_docstring_body(spec.docstring)
+        return_annotation = (
+            "gf.ComponentAllAngle" if spec.is_all_angle else "gf.Component"
+        )
         bodies.append(
             f"{_render_decorator(spec)}\n"
-            f"def {spec.name}(\n    {params},\n) -> gf.Component:\n"
+            f"def {spec.name}(\n    {params},\n) -> {return_annotation}:\n"
             f'    r"""{doc}\n    """\n'
             f"    {_render_call(spec)}\n"
         )
@@ -668,6 +741,8 @@ def render_module(category: str, specs: list[CellSpec]) -> str:
         alias = REGISTRY_ALIAS[registry_module]
         package, _, leaf = registry_module.rpartition(".")
         lines.append(f"from {package} import {leaf} as {alias}")
+    if any(spec.check_instances for spec in specs):
+        lines.append("from kfactory.conf import CheckInstances")
     for module in sorted(upstream_names):
         names = ",\n    ".join(
             f"{n} as {_alias_for(n)}" for n in sorted(upstream_names[module])

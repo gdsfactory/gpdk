@@ -12,6 +12,7 @@ from gdsfactory.components.containers.add_termination import (
     _terminator_function as _default__terminator_function,
 )
 from gdsfactory.typings import *  # noqa: F403
+from kfactory.conf import CheckInstances
 
 
 @gf.cell(tags=["containers"])
@@ -291,7 +292,7 @@ def array_hexagonal(
     )
 
 
-@gf.cell(tags=["containers"])
+@gf.cell(tags=["containers"], check_instances=CheckInstances.IGNORE)
 def array_polar(
     component: ComponentSpec = "C",
     n_items: int = 6,

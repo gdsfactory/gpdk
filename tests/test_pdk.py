@@ -39,22 +39,6 @@ skip_test: set[str] = {
     # "straight_heater_metal" component.
     "add_pads_bot",
     "add_pads_top",
-    # Generator gap (pre-existing in gpdk, out of scope for this task): these
-    # cells return `gdsfactory.component.ComponentAllAngle`, which the
-    # `@cell` decorator gpdk's generator applies uniformly does not support.
-    # Core gdsfactory leaves these as plain undecorated functions for exactly
-    # this reason (verified: `gdsfactory.components.bend_euler_all_angle` etc.
-    # are plain `function` objects, not `@cell`-wrapped).
-    "bend_circular_all_angle",
-    "bend_euler_all_angle",
-    "bend_topic_all_angle",
-    "straight_all_angle",
-    # Generator gap (pre-existing in gpdk, out of scope for this task): core
-    # decorates this cell with `check_instances=CheckInstances.IGNORE`
-    # (gdsfactory.components.array_polar deliberately places off-grid
-    # instances via rotation); gpdk's generator emits a bare `@gf.cell`
-    # without preserving that kwarg, so the off-grid check now fires.
-    "array_polar",
 }
 
 cell_names = sorted(name for name in PDK.cells if not name.startswith("_"))

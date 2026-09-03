@@ -86,7 +86,7 @@ def bend_circular180(
     )
 
 
-@gf.cell
+@gf.vcell
 def bend_circular_all_angle(
     radius: float | None = None,
     angle: float = 90.0,
@@ -96,7 +96,7 @@ def bend_circular_all_angle(
     width: float | None = None,
     cross_section: CrossSectionSpec = "strip",
     allow_min_radius_violation: bool = False,
-) -> gf.Component:
+) -> gf.ComponentAllAngle:
     r"""Returns a radial arc.
 
     Args:
@@ -238,7 +238,7 @@ def bend_euler180(
     )
 
 
-@gf.cell
+@gf.vcell
 def bend_euler_all_angle(
     radius: float | None = None,
     angle: float = 90.0,
@@ -250,7 +250,7 @@ def bend_euler_all_angle(
     width: float | None = None,
     cross_section: CrossSectionSpec = "strip",
     allow_min_radius_violation: bool = False,
-) -> gf.Component:
+) -> gf.ComponentAllAngle:
     r"""Regular degree euler bend.
 
     Args:
@@ -485,7 +485,7 @@ def bend_topic180(
     )
 
 
-@gf.cell
+@gf.vcell
 def bend_topic_all_angle(
     radius: float | None = None,
     angle: float = 90.0,
@@ -495,7 +495,7 @@ def bend_topic_all_angle(
     allow_min_radius_violation: bool = False,
     layer: LayerSpec | None = None,
     width: float | None = None,
-) -> gf.Component:
+) -> gf.ComponentAllAngle:
     r"""Returns a Third Order Polynomial Interconnected Circular (TOPIC) bend component of arbitrary angle.
 
     The implementation follows the description in this publication https://arxiv.org/html/2411.15025v1.

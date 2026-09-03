@@ -1,0 +1,98 @@
+instances:
+  C:
+    component: C
+    info: {}
+    settings:
+      layer: WG
+      port_type: electrical
+      size:
+      - 10
+      - 20
+      width: 1
+  C2:
+    component: C
+    info: {}
+    settings:
+      layer: WG
+      port_type: electrical
+      size:
+      - 10
+      - 20
+      width: 1
+  C3:
+    component: C
+    info: {}
+    settings:
+      layer: WG
+      port_type: electrical
+      size:
+      - 10
+      - 20
+      width: 1
+  C4:
+    component: C
+    info: {}
+    settings:
+      layer: WG
+      port_type: electrical
+      size:
+      - 10
+      - 20
+      width: 1
+  C5:
+    component: C
+    info: {}
+    settings:
+      layer: WG
+      port_type: electrical
+      size:
+      - 10
+      - 20
+      width: 1
+  C6:
+    component: C
+    info: {}
+    settings:
+      layer: WG
+      port_type: electrical
+      size:
+      - 10
+      - 20
+      width: 1
+nets: []
+placements:
+  C:
+    mirror: false
+    rotation: 240
+    x: -25
+    y: -43.301
+  C2:
+    mirror: false
+    rotation: 120.0
+    x: -25
+    y: 43.301
+  C3:
+    mirror: false
+    rotation: 180
+    x: -50
+    y: 0
+  C4:
+    mirror: false
+    rotation: 300
+    x: 25
+    y: -43.301
+  C5:
+    mirror: false
+    rotation: 60.0
+    x: 25
+    y: 43.301
+  C6:
+    mirror: false
+    rotation: 0
+    x: 50
+    y: 0
+ports:
+  o1_1: C6,o1
+  o1_4: C3,o1
+  o2_1: C6,o2
+  o2_4: C3,o2
