@@ -5,8 +5,9 @@ from functools import lru_cache
 from gdsfactory.get_factories import get_cells
 from gdsfactory.pdk import Pdk
 
-from gpdk import cells, config, tech
+from gpdk import cells, config, models, tech
 from gpdk.config import PATH
+from gpdk.models import get_models
 from gpdk.tech import (
     LAYER,
     LAYER_CONNECTIVITY,
@@ -38,6 +39,7 @@ def get_pdk() -> Pdk:
         constants=GenericConstants(),
         connectivity=LAYER_CONNECTIVITY,
         routing_strategies=routing_strategies,
+        models=get_models(),
     )
 
 
@@ -58,5 +60,6 @@ __all__ = [
     "cells",
     "config",
     "get_pdk",
+    "models",
     "tech",
 ]
