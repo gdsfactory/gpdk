@@ -1,0 +1,196 @@
+instances:
+  circle:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 5
+  circle10:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WGCLAD
+      radius: 62.5
+  circle11:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WGCLAD
+      radius: 62.5
+  circle12:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WGCLAD
+      radius: 62.5
+  circle13:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WGCLAD
+      radius: 62.5
+  circle14:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WGCLAD
+      radius: 62.5
+  circle15:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WGCLAD
+      radius: 62.5
+  circle16:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WGCLAD
+      radius: 62.5
+  circle2:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 5
+  circle3:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 5
+  circle4:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 5
+  circle5:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 5
+  circle6:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 5
+  circle7:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 5
+  circle8:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 5
+  circle9:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WGCLAD
+      radius: 62.5
+nets: []
+placements:
+  circle:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+  circle10:
+    mirror: false
+    rotation: 0
+    x: 127
+    y: 0
+  circle11:
+    mirror: false
+    rotation: 0
+    x: 254
+    y: 0
+  circle12:
+    mirror: false
+    rotation: 0
+    x: 381
+    y: 0
+  circle13:
+    mirror: false
+    rotation: 0
+    x: 508
+    y: 0
+  circle14:
+    mirror: false
+    rotation: 0
+    x: 635
+    y: 0
+  circle15:
+    mirror: false
+    rotation: 0
+    x: 762
+    y: 0
+  circle16:
+    mirror: false
+    rotation: 0
+    x: 889
+    y: 0
+  circle2:
+    mirror: false
+    rotation: 0
+    x: 127
+    y: 0
+  circle3:
+    mirror: false
+    rotation: 0
+    x: 254
+    y: 0
+  circle4:
+    mirror: false
+    rotation: 0
+    x: 381
+    y: 0
+  circle5:
+    mirror: false
+    rotation: 0
+    x: 508
+    y: 0
+  circle6:
+    mirror: false
+    rotation: 0
+    x: 635
+    y: 0
+  circle7:
+    mirror: false
+    rotation: 0
+    x: 762
+    y: 0
+  circle8:
+    mirror: false
+    rotation: 0
+    x: 889
+    y: 0
+  circle9:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+ports: {}

@@ -1,0 +1,12 @@
+info: {}
+name: pad_array180_Ppad_C1_R3_CP150_RP150_PO180_SNone_LMTOP_C_a26f431f
+settings:
+  auto_rename_ports: false
+  centered_ports: false
+  column_pitch: 150
+  columns: 1
+  layer: MTOP
+  pad: pad
+  port_orientation: 180
+  row_pitch: 150
+  rows: 3

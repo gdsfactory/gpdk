@@ -1,0 +1,67 @@
+instances:
+  ring_single:
+    component: ring_single
+    info:
+      radius: 10
+    settings:
+      bend: bend_euler
+      coupler_ring: coupler_ring
+      cross_section: strip
+      gap: 0.2
+      length_extension: null
+      length_x: 20
+      length_y: 0.6
+      radius: 10
+      straight: straight
+  ring_single2:
+    component: ring_single
+    info:
+      radius: 5
+    settings:
+      bend: bend_euler
+      coupler_ring: coupler_ring
+      cross_section: strip
+      gap: 0.2
+      length_extension: null
+      length_x: 10
+      length_y: 0.6
+      radius: 5
+      straight: straight
+  straight:
+    component: straight
+    info:
+      length: 15
+      route_info_length: 15
+      route_info_strip_length: 15
+      route_info_type: strip
+      route_info_weight: 15
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 15
+      npoints: 2
+      width: null
+nets:
+- p1: ring_single2,o2
+  p2: straight,o1
+- p1: ring_single,o1
+  p2: straight,o2
+placements:
+  ring_single:
+    mirror: false
+    rotation: 0
+    x: 56
+    y: 0
+  ring_single2:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+  straight:
+    mirror: false
+    rotation: 0
+    x: 8
+    y: 0
+ports:
+  o1: ring_single2,o1
+  o2: ring_single,o2

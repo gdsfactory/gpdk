@@ -1,0 +1,9 @@
+info: {}
+name: ring_asymmetric_R10_LX2_LY4_Sstraight_Bbend_circular_CSstrip
+settings:
+  bend: bend_circular
+  cross_section: strip
+  length_x: 2
+  length_y: 4
+  radius: 10
+  straight: straight

@@ -1,0 +1,150 @@
+instances:
+  regular_polygon:
+    component: regular_polygon
+    info: {}
+    settings:
+      layer: M3
+      port_type: pad
+      port_width: 10
+      side_length: 36.244
+      sides: 8
+  via_stack:
+    component: via_stack
+    info:
+      xsize: 11
+      ysize: 11
+    settings:
+      correct_size: false
+      layer_offsets: null
+      layer_to_port_orientations: null
+      layers:
+      - M1
+      - M2
+      - MTOP
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      size:
+      - 11
+      - 11
+      slot_horizontal: false
+      slot_vertical: false
+      vias:
+      - via1
+      - via2
+      - null
+  via_stack2:
+    component: via_stack
+    info:
+      xsize: 11
+      ysize: 11
+    settings:
+      correct_size: false
+      layer_offsets: null
+      layer_to_port_orientations: null
+      layers:
+      - M1
+      - M2
+      - MTOP
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      size:
+      - 11
+      - 11
+      slot_horizontal: false
+      slot_vertical: false
+      vias:
+      - via1
+      - via2
+      - null
+  via_stack3:
+    component: via_stack
+    info:
+      xsize: 11
+      ysize: 11
+    settings:
+      correct_size: false
+      layer_offsets: null
+      layer_to_port_orientations: null
+      layers:
+      - M1
+      - M2
+      - MTOP
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      size:
+      - 11
+      - 11
+      slot_horizontal: false
+      slot_vertical: false
+      vias:
+      - via1
+      - via2
+      - null
+  via_stack4:
+    component: via_stack
+    info:
+      xsize: 11
+      ysize: 11
+    settings:
+      correct_size: false
+      layer_offsets: null
+      layer_to_port_orientations: null
+      layers:
+      - M1
+      - M2
+      - MTOP
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      size:
+      - 11
+      - 11
+      slot_horizontal: false
+      slot_vertical: false
+      vias:
+      - via1
+      - via2
+      - null
+nets: []
+placements:
+  regular_polygon:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+  via_stack:
+    mirror: false
+    rotation: 0
+    x: -38.25
+    y: 0
+  via_stack2:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: -38.25
+  via_stack3:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 38.25
+  via_stack4:
+    mirror: false
+    rotation: 0
+    x: 38.25
+    y: 0
+ports:
+  e1: via_stack,e1
+  e2: via_stack3,e2
+  e3: via_stack4,e3
+  e4: via_stack2,e4

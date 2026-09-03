@@ -1,0 +1,8 @@
+info: {}
+name: circle_wave_R10_A1_NO8_AR1_LWG
+settings:
+  amplitude: 1
+  angle_resolution: 1
+  layer: WG
+  n_oscillations: 8
+  radius: 10

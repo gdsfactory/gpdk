@@ -1,0 +1,116 @@
+instances:
+  via_stack:
+    component: via_stack
+    info:
+      xsize: 10
+      ysize: 520
+    settings:
+      correct_size: false
+      layer_offsets: null
+      layer_to_port_orientations: null
+      layers:
+      - M1
+      - M2
+      - MTOP
+      port_orientations: null
+      size:
+      - 10
+      - 520
+      slot_horizontal: false
+      slot_vertical: false
+      vias:
+      - via1
+      - via2
+      - null
+  via_stack2:
+    component: via_stack
+    info:
+      xsize: 10
+      ysize: 520
+    settings:
+      correct_size: false
+      layer_offsets: null
+      layer_to_port_orientations: null
+      layers:
+      - M1
+      - M2
+      - MTOP
+      port_orientations: null
+      size:
+      - 10
+      - 520
+      slot_horizontal: false
+      slot_vertical: false
+      vias:
+      - via1
+      - via2
+      - null
+  via_stack3:
+    component: via_stack
+    info:
+      xsize: 540
+      ysize: 10
+    settings:
+      correct_size: false
+      layer_offsets: null
+      layer_to_port_orientations: null
+      layers:
+      - M1
+      - M2
+      - MTOP
+      port_orientations: null
+      size:
+      - 540
+      - 10
+      slot_horizontal: false
+      slot_vertical: false
+      vias:
+      - via1
+      - via2
+      - null
+  via_stack4:
+    component: via_stack
+    info:
+      xsize: 540
+      ysize: 10
+    settings:
+      correct_size: false
+      layer_offsets: null
+      layer_to_port_orientations: null
+      layers:
+      - M1
+      - M2
+      - MTOP
+      port_orientations: null
+      size:
+      - 540
+      - 10
+      slot_horizontal: false
+      slot_vertical: false
+      vias:
+      - via1
+      - via2
+      - null
+nets: []
+placements:
+  via_stack:
+    mirror: false
+    rotation: 0
+    x: -15
+    y: 250
+  via_stack2:
+    mirror: false
+    rotation: 0
+    x: 515
+    y: 250
+  via_stack3:
+    mirror: false
+    rotation: 0
+    x: 250
+    y: -15
+  via_stack4:
+    mirror: false
+    rotation: 0
+    x: 250
+    y: 515
+ports: {}

@@ -1,0 +1,10 @@
+info: {}
+name: switch_tree_Cmmi1x2_N4_S500_100_BSbend_s_BSXNone_CSstrip
+settings:
+  bend_s: bend_s
+  coupler: mmi1x2
+  cross_section: strip
+  noutputs: 4
+  spacing:
+  - 500
+  - 100

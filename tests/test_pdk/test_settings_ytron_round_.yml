@@ -1,0 +1,18 @@
+info:
+  left_width: 200
+  rho: 1
+  right_width: 200
+  source_width: 401.998
+name: ytron_round_R1_AL500_300_SL500_AW200_200_T2p5_TR10_LWG
+settings:
+  arm_lengths:
+  - 500
+  - 300
+  arm_widths:
+  - 200
+  - 200
+  layer: WG
+  rho: 1
+  source_length: 500
+  theta: 2.5
+  theta_resolution: 10

@@ -1,0 +1,236 @@
+instances:
+  cdsem_bend180:
+    component: cdsem_bend180
+    info: {}
+    settings:
+      bend90: bend_circular
+      cross_section: strip
+      radius: 10
+      straight: straight
+      text: text_rectangular
+      text_size: 1
+      wg_length: 420
+      width: 0.45
+  cdsem_bend180_2:
+    component: cdsem_bend180
+    info: {}
+    settings:
+      bend90: bend_circular
+      cross_section: strip
+      radius: 10
+      straight: straight
+      text: text_rectangular
+      text_size: 1
+      wg_length: 420
+      width: 0.4
+  cdsem_bend180_3:
+    component: cdsem_bend180
+    info: {}
+    settings:
+      bend90: bend_circular
+      cross_section: strip
+      radius: 10
+      straight: straight
+      text: text_rectangular
+      text_size: 1
+      wg_length: 420
+      width: 0.5
+  cdsem_bend180_4:
+    component: cdsem_bend180
+    info: {}
+    settings:
+      bend90: bend_circular
+      cross_section: strip
+      radius: 10
+      straight: straight
+      text: text_rectangular
+      text_size: 1
+      wg_length: 420
+      width: 0.6
+  cdsem_bend180_5:
+    component: cdsem_bend180
+    info: {}
+    settings:
+      bend90: bend_circular
+      cross_section: strip
+      radius: 10
+      straight: straight
+      text: text_rectangular
+      text_size: 1
+      wg_length: 420
+      width: 0.8
+  cdsem_bend180_6:
+    component: cdsem_bend180
+    info: {}
+    settings:
+      bend90: bend_circular
+      cross_section: strip
+      radius: 10
+      straight: straight
+      text: text_rectangular
+      text_size: 1
+      wg_length: 420
+      width: 1
+  cdsem_straight:
+    component: cdsem_straight
+    info: {}
+    settings:
+      cross_section: strip
+      length: 420
+      positions: null
+      spacing: 7
+      text: text_rectangular
+      text_size: 1
+      widths:
+      - 0.4
+      - 0.45
+      - 0.5
+      - 0.6
+      - 0.8
+      - 1
+  cdsem_straight_density:
+    component: cdsem_straight_density
+    info: {}
+    settings:
+      cross_section: strip
+      gaps:
+      - 0.28
+      - 0.28
+      - 0.28
+      - 0.28
+      - 0.28
+      - 0.28
+      - 0.28
+      - 0.28
+      - 0.28
+      - 0.28
+      label: DL
+      length: 420
+      text: text_rectangular
+      text_size: 1
+      widths:
+      - 0.28
+      - 0.28
+      - 0.28
+      - 0.28
+      - 0.28
+      - 0.28
+      - 0.28
+      - 0.28
+      - 0.28
+      - 0.28
+  cdsem_straight_density2:
+    component: cdsem_straight_density
+    info: {}
+    settings:
+      cross_section: strip
+      gaps:
+      - 0.32
+      - 0.32
+      - 0.32
+      - 0.32
+      - 0.32
+      - 0.32
+      - 0.32
+      - 0.32
+      - 0.32
+      - 0.32
+      label: DH
+      length: 420
+      text: text_rectangular
+      text_size: 1
+      widths:
+      - 0.32
+      - 0.32
+      - 0.32
+      - 0.32
+      - 0.32
+      - 0.32
+      - 0.32
+      - 0.32
+      - 0.32
+      - 0.32
+  cdsem_straight_density3:
+    component: cdsem_straight_density
+    info: {}
+    settings:
+      cross_section: strip
+      gaps:
+      - 0.3
+      - 0.3
+      - 0.3
+      - 0.3
+      - 0.3
+      - 0.3
+      - 0.3
+      - 0.3
+      - 0.3
+      - 0.3
+      label: DM
+      length: 420
+      text: text_rectangular
+      text_size: 1
+      widths:
+      - 0.3
+      - 0.3
+      - 0.3
+      - 0.3
+      - 0.3
+      - 0.3
+      - 0.3
+      - 0.3
+      - 0.3
+      - 0.3
+nets: []
+placements:
+  cdsem_bend180:
+    mirror: false
+    rotation: 0
+    x: 430
+    y: 80.625
+  cdsem_bend180_2:
+    mirror: false
+    rotation: 0
+    x: 430
+    y: 55.2
+  cdsem_bend180_3:
+    mirror: false
+    rotation: 0
+    x: 430
+    y: 106.1
+  cdsem_bend180_4:
+    mirror: false
+    rotation: 0
+    x: 430
+    y: 131.65
+  cdsem_bend180_5:
+    mirror: false
+    rotation: 0
+    x: 430
+    y: 157.35
+  cdsem_bend180_6:
+    mirror: false
+    rotation: 0
+    x: 430
+    y: 183.75
+  cdsem_straight:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+  cdsem_straight_density:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 199.75
+  cdsem_straight_density2:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 220.77
+  cdsem_straight_density3:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 210.07
+ports: {}

@@ -1,0 +1,7 @@
+info: {}
+name: coupler_asymmetric_G0p234_D2p5_D10_CSstrip
+settings:
+  cross_section: strip
+  dx: 10
+  dy: 2.5
+  gap: 0.234

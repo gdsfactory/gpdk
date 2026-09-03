@@ -1,0 +1,10 @@
+info: {}
+name: text_rectangular_multi_layer_Tabcd_LWG_M1_M2_MTOP_TFtex_068a5741
+settings:
+  layers:
+  - WG
+  - M1
+  - M2
+  - MTOP
+  text: abcd
+  text_factory: text_rectangular

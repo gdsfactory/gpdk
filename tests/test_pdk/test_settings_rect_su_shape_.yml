@@ -1,0 +1,9 @@
+info: {}
+name: rect_su_shape_L10_L10_L20_W1_LWG_PTelectrical
+settings:
+  L1: 10
+  L2: 10
+  L3: 20
+  layer: WG
+  port_type: electrical
+  width: 1

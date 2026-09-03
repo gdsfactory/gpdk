@@ -1,0 +1,220 @@
+instances:
+  via1:
+    array:
+      column_pitch: 2
+      columns: 2
+      row_pitch: 2
+      rows: 4
+    component: via1
+    info:
+      column_pitch: 2
+      enclosure: 1
+      row_pitch: 2
+      xsize: 0.7
+      ysize: 0.7
+    settings:
+      bbox_layers: null
+      bbox_offset: 0
+      bbox_offsets: null
+      column_pitch: null
+      enclosure: 1
+      layer: VIA1
+      pitch: 2
+      row_pitch: null
+      size:
+      - 0.7
+      - 0.7
+  via1_2:
+    array:
+      column_pitch: 2
+      columns: 2
+      row_pitch: 2
+      rows: 4
+    component: via1
+    info:
+      column_pitch: 2
+      enclosure: 1
+      row_pitch: 2
+      xsize: 0.7
+      ysize: 0.7
+    settings:
+      bbox_layers: null
+      bbox_offset: 0
+      bbox_offsets: null
+      column_pitch: null
+      enclosure: 1
+      layer: VIA1
+      pitch: 2
+      row_pitch: null
+      size:
+      - 0.7
+      - 0.7
+  via1_3:
+    array:
+      column_pitch: 2
+      columns: 2
+      row_pitch: 2
+      rows: 4
+    component: via1
+    info:
+      column_pitch: 2
+      enclosure: 1
+      row_pitch: 2
+      xsize: 0.7
+      ysize: 0.7
+    settings:
+      bbox_layers: null
+      bbox_offset: 0
+      bbox_offsets: null
+      column_pitch: null
+      enclosure: 1
+      layer: VIA1
+      pitch: 2
+      row_pitch: null
+      size:
+      - 0.7
+      - 0.7
+  via1_4:
+    array:
+      column_pitch: 2
+      columns: 2
+      row_pitch: 2
+      rows: 4
+    component: via1
+    info:
+      column_pitch: 2
+      enclosure: 1
+      row_pitch: 2
+      xsize: 0.7
+      ysize: 0.7
+    settings:
+      bbox_layers: null
+      bbox_offset: 0
+      bbox_offsets: null
+      column_pitch: null
+      enclosure: 1
+      layer: VIA1
+      pitch: 2
+      row_pitch: null
+      size:
+      - 0.7
+      - 0.7
+  via3:
+    array:
+      column_pitch: 2
+      columns: 2
+      row_pitch: 2
+      rows: 4
+    component: via3
+    info:
+      column_pitch: 2
+      enclosure: 1
+      row_pitch: 2
+      xsize: 0.7
+      ysize: 0.7
+    settings:
+      enclosure: 1
+      pitch: 2
+      size:
+      - 0.7
+      - 0.7
+  via3_2:
+    array:
+      column_pitch: 2
+      columns: 2
+      row_pitch: 2
+      rows: 4
+    component: via3
+    info:
+      column_pitch: 2
+      enclosure: 1
+      row_pitch: 2
+      xsize: 0.7
+      ysize: 0.7
+    settings:
+      enclosure: 1
+      pitch: 2
+      size:
+      - 0.7
+      - 0.7
+  via3_3:
+    array:
+      column_pitch: 2
+      columns: 2
+      row_pitch: 2
+      rows: 4
+    component: via3
+    info:
+      column_pitch: 2
+      enclosure: 1
+      row_pitch: 2
+      xsize: 0.7
+      ysize: 0.7
+    settings:
+      enclosure: 1
+      pitch: 2
+      size:
+      - 0.7
+      - 0.7
+  via3_4:
+    array:
+      column_pitch: 2
+      columns: 2
+      row_pitch: 2
+      rows: 4
+    component: via3
+    info:
+      column_pitch: 2
+      enclosure: 1
+      row_pitch: 2
+      xsize: 0.7
+      ysize: 0.7
+    settings:
+      enclosure: 1
+      pitch: 2
+      size:
+      - 0.7
+      - 0.7
+nets: []
+placements:
+  via1:
+    mirror: false
+    rotation: 0
+    x: -12.249
+    y: -61
+  via1_2:
+    mirror: false
+    rotation: 0
+    x: -12.249
+    y: 55
+  via1_3:
+    mirror: false
+    rotation: 0
+    x: 10.249
+    y: -73
+  via1_4:
+    mirror: false
+    rotation: 0
+    x: 10.249
+    y: 43
+  via3:
+    mirror: false
+    rotation: 0
+    x: -12.249
+    y: -61
+  via3_2:
+    mirror: false
+    rotation: 0
+    x: -12.249
+    y: 55
+  via3_3:
+    mirror: false
+    rotation: 0
+    x: 10.249
+    y: -49
+  via3_4:
+    mirror: false
+    rotation: 0
+    x: 10.249
+    y: 67
+ports: {}

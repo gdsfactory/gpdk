@@ -1,0 +1,8 @@
+info: {}
+name: interdigital_capacitor_F4_FL20_FG2_T5_LWG
+settings:
+  finger_gap: 2
+  finger_length: 20
+  fingers: 4
+  layer: WG
+  thickness: 5

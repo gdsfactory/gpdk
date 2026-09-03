@@ -1,0 +1,13 @@
+info: {}
+name: add_fiber_array_optical_south_electrical_north_Cstraigh_863e48a5
+settings:
+  auto_taper_pads: true
+  component: straight_heater_metal
+  cross_section_metal: metal_routing
+  electrical_port_orientation: 90
+  grating_coupler: grating_coupler_te
+  pad: pad
+  pad_gc_spacing: 250
+  pad_pitch: 100
+  pitch: 127
+  with_loopback: true

@@ -1,0 +1,7 @@
+info: {}
+name: coupler90circular_G0p2_RNone_Bbend_circular_Sstraight_C_0209c5e6
+settings:
+  bend: bend_circular
+  cross_section: strip
+  gap: 0.2
+  straight: straight

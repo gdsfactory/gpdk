@@ -1,0 +1,9 @@
+info: {}
+name: doubly_clamped_beam_BW1_BL30_AW5_AL5_LWG_PTelectrical
+settings:
+  anchor_length: 5
+  anchor_width: 5
+  beam_length: 30
+  beam_width: 1
+  layer: WG
+  port_type: electrical

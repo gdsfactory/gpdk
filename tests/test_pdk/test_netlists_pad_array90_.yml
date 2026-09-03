@@ -1,0 +1,40 @@
+instances:
+  pad:
+    array:
+      column_pitch: 150
+      columns: 6
+      row_pitch: 150
+      rows: 1
+    component: pad
+    info:
+      size:
+      - 100
+      - 100
+      xsize: 100
+      ysize: 100
+    settings:
+      bbox_layers: null
+      bbox_offsets: null
+      layer: MTOP
+      port_inclusion: 0
+      port_orientation: 90
+      port_orientations:
+      - 90
+      port_type: pad
+      size:
+      - 100
+      - 100
+nets: []
+placements:
+  pad:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+ports:
+  e11: pad<0.0>,e1
+  e12: pad<1.0>,e1
+  e13: pad<2.0>,e1
+  e14: pad<3.0>,e1
+  e15: pad<4.0>,e1
+  e16: pad<5.0>,e1

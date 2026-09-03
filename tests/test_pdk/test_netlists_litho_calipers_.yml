@@ -1,0 +1,964 @@
+instances:
+  rectangle:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle10:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle11:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle12:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle13:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle14:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle15:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle16:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle17:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle18:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle19:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle2:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle20:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle21:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle22:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle23:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle24:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle25:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle26:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle27:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle28:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle29:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle3:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle30:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle31:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle32:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle33:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle34:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle35:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle36:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle37:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle38:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle39:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle4:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle40:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle41:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle42:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle43:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle44:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle45:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle46:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle47:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle48:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle5:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle6:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle7:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle8:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle9:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+nets: []
+placements:
+  rectangle:
+    mirror: false
+    rotation: 0
+    x: 1.1
+    y: -5
+  rectangle10:
+    mirror: false
+    rotation: 0
+    x: 44
+    y: -10
+  rectangle11:
+    mirror: false
+    rotation: 0
+    x: 44
+    y: -5
+  rectangle12:
+    mirror: false
+    rotation: 0
+    x: 47.9
+    y: -5
+  rectangle13:
+    mirror: false
+    rotation: 0
+    x: 5
+    y: -5
+  rectangle14:
+    mirror: false
+    rotation: 0
+    x: 51.8
+    y: -5
+  rectangle15:
+    mirror: false
+    rotation: 0
+    x: 55.7
+    y: -5
+  rectangle16:
+    mirror: false
+    rotation: 0
+    x: 59.6
+    y: -5
+  rectangle17:
+    mirror: false
+    rotation: 0
+    x: 63.5
+    y: -5
+  rectangle18:
+    mirror: false
+    rotation: 0
+    x: 67.4
+    y: -5
+  rectangle19:
+    mirror: false
+    rotation: 0
+    x: 71.3
+    y: -5
+  rectangle2:
+    mirror: false
+    rotation: 0
+    x: 12.8
+    y: -5
+  rectangle20:
+    mirror: false
+    rotation: 0
+    x: 75.2
+    y: -5
+  rectangle21:
+    mirror: false
+    rotation: 0
+    x: 79.1
+    y: -5
+  rectangle22:
+    mirror: false
+    rotation: 0
+    x: 83
+    y: -5
+  rectangle23:
+    mirror: false
+    rotation: 0
+    x: 86.9
+    y: -5
+  rectangle24:
+    mirror: false
+    rotation: 0
+    x: 8.9
+    y: -5
+  rectangle25:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+  rectangle26:
+    mirror: false
+    rotation: 0
+    x: 12
+    y: 0
+  rectangle27:
+    mirror: false
+    rotation: 0
+    x: 16
+    y: 0
+  rectangle28:
+    mirror: false
+    rotation: 0
+    x: 20
+    y: 0
+  rectangle29:
+    mirror: false
+    rotation: 0
+    x: 24
+    y: 0
+  rectangle3:
+    mirror: false
+    rotation: 0
+    x: 16.7
+    y: -5
+  rectangle30:
+    mirror: false
+    rotation: 0
+    x: 28
+    y: 0
+  rectangle31:
+    mirror: false
+    rotation: 0
+    x: 32
+    y: 0
+  rectangle32:
+    mirror: false
+    rotation: 0
+    x: 36
+    y: 0
+  rectangle33:
+    mirror: false
+    rotation: 0
+    x: 40
+    y: 0
+  rectangle34:
+    mirror: false
+    rotation: 0
+    x: 4
+    y: 0
+  rectangle35:
+    mirror: false
+    rotation: 0
+    x: 44
+    y: 0
+  rectangle36:
+    mirror: false
+    rotation: 0
+    x: 44
+    y: 5
+  rectangle37:
+    mirror: false
+    rotation: 0
+    x: 48
+    y: 0
+  rectangle38:
+    mirror: false
+    rotation: 0
+    x: 52
+    y: 0
+  rectangle39:
+    mirror: false
+    rotation: 0
+    x: 56
+    y: 0
+  rectangle4:
+    mirror: false
+    rotation: 0
+    x: 20.6
+    y: -5
+  rectangle40:
+    mirror: false
+    rotation: 0
+    x: 60
+    y: 0
+  rectangle41:
+    mirror: false
+    rotation: 0
+    x: 64
+    y: 0
+  rectangle42:
+    mirror: false
+    rotation: 0
+    x: 68
+    y: 0
+  rectangle43:
+    mirror: false
+    rotation: 0
+    x: 72
+    y: 0
+  rectangle44:
+    mirror: false
+    rotation: 0
+    x: 76
+    y: 0
+  rectangle45:
+    mirror: false
+    rotation: 0
+    x: 80
+    y: 0
+  rectangle46:
+    mirror: false
+    rotation: 0
+    x: 8
+    y: 0
+  rectangle47:
+    mirror: false
+    rotation: 0
+    x: 84
+    y: 0
+  rectangle48:
+    mirror: false
+    rotation: 0
+    x: 88
+    y: 0
+  rectangle5:
+    mirror: false
+    rotation: 0
+    x: 24.5
+    y: -5
+  rectangle6:
+    mirror: false
+    rotation: 0
+    x: 28.4
+    y: -5
+  rectangle7:
+    mirror: false
+    rotation: 0
+    x: 32.3
+    y: -5
+  rectangle8:
+    mirror: false
+    rotation: 0
+    x: 36.2
+    y: -5
+  rectangle9:
+    mirror: false
+    rotation: 0
+    x: 40.1
+    y: -5
+ports: {}

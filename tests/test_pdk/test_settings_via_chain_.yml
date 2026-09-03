@@ -1,0 +1,18 @@
+info: {}
+name: via_chain_NV100_C10_Vvia1_Cvia_stack_m2_m3_LBM1_LTM2_OT_2518d565
+settings:
+  cols: 10
+  contact: via_stack_m2_m3
+  contact_offset: 0
+  layers_bot:
+  - M1
+  layers_top:
+  - M2
+  min_metal_spacing: 1
+  num_vias: 100
+  offsets_bot:
+  - 0
+  offsets_top:
+  - 0
+  via: via1
+  via_min_enclosure: 1

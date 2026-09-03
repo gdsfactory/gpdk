@@ -1,0 +1,5 @@
+info: {}
+name: taper_0p5_to_3_l36_Ftaper_strip_0p5_3_36pcsv_CSstrip
+settings:
+  cross_section: strip
+  filepath: taper_strip_0p5_3_36pcsv

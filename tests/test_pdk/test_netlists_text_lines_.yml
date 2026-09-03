@@ -1,0 +1,40 @@
+instances:
+  text_rectangular:
+    component: text_rectangular
+    info: {}
+    settings:
+      font: rectangular_font
+      justify: left
+      layer: WG
+      layers: null
+      position:
+      - 0
+      - 0
+      size: 0.4
+      text: '01'
+  text_rectangular2:
+    component: text_rectangular
+    info: {}
+    settings:
+      font: rectangular_font
+      justify: left
+      layer: WG
+      layers: null
+      position:
+      - 0
+      - 0
+      size: 0.4
+      text: Chip
+nets: []
+placements:
+  text_rectangular:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: -4.8
+  text_rectangular2:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: -2.4
+ports: {}

@@ -1,0 +1,226 @@
+instances:
+  rectangle:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 1
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 2
+      - 22
+  rectangle10:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 1
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 30
+      - 2
+  rectangle2:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 1
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 2
+      - 22
+  rectangle3:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 1
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 30
+      - 10
+  rectangle4:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 1
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 30
+      - 10
+  rectangle5:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 1
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 30
+      - 2
+  rectangle6:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 1
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 30
+      - 2
+  rectangle7:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 1
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 30
+      - 2
+  rectangle8:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 1
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 30
+      - 2
+  rectangle9:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 1
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 30
+      - 2
+nets: []
+placements:
+  rectangle:
+    mirror: false
+    rotation: 0
+    x: -18.5
+    y: -11
+  rectangle10:
+    mirror: false
+    rotation: 0
+    x: -16.5
+    y: 9
+  rectangle2:
+    mirror: false
+    rotation: 0
+    x: 16.5
+    y: -11
+  rectangle3:
+    mirror: false
+    rotation: 0
+    x: -48.5
+    y: -5
+  rectangle4:
+    mirror: false
+    rotation: 0
+    x: 18.5
+    y: -5
+  rectangle5:
+    mirror: false
+    rotation: 0
+    x: -13.5
+    y: -11
+  rectangle6:
+    mirror: false
+    rotation: 0
+    x: -13.5
+    y: -3
+  rectangle7:
+    mirror: false
+    rotation: 0
+    x: -13.5
+    y: 5
+  rectangle8:
+    mirror: false
+    rotation: 0
+    x: -16.5
+    y: -7
+  rectangle9:
+    mirror: false
+    rotation: 0
+    x: -16.5
+    y: 1
+ports:
+  left: rectangle3,e1
+  right: rectangle4,e3

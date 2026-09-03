@@ -1,0 +1,12 @@
+info: {}
+name: bolometer_AW20_AL20_LW0p5_LL15_NL4_PW5_PL5_LWG_PTelectrical
+settings:
+  absorber_length: 20
+  absorber_width: 20
+  layer: WG
+  leg_length: 15
+  leg_width: 0.5
+  n_legs: 4
+  pad_length: 5
+  pad_width: 5
+  port_type: electrical

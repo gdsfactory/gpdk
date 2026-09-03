@@ -1,0 +1,10 @@
+info: {}
+name: rectangles_S4_2_ONone_LWG_SLAB150_CTrue
+settings:
+  centered: true
+  layers:
+  - WG
+  - SLAB150
+  size:
+  - 4
+  - 2

@@ -1,0 +1,7 @@
+info: {}
+name: octagon_S8_SL10_LWG_PWNone_PTplacement
+settings:
+  layer: WG
+  port_type: placement
+  side_length: 10
+  sides: 8

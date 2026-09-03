@@ -1,0 +1,10 @@
+info:
+  length: 32.514
+name: bend_topic_s_RNone_P0p1_N100_LNone_WNone_CSstrip_AMRVFa_468cfac8
+settings:
+  allow_min_radius_violation: false
+  cross_section: strip
+  npoints: 100
+  p: 0.1
+  port1: o1
+  port2: o2

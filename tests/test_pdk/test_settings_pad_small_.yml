@@ -1,0 +1,20 @@
+info:
+  size:
+  - 80
+  - 80
+  xsize: 80
+  ysize: 80
+name: pad_small_S80_80_LMTOP_BLNone_BONone_PI0_PO0_PO180_90_0_1ce7eb0f
+settings:
+  layer: MTOP
+  port_inclusion: 0
+  port_orientation: 0
+  port_orientations:
+  - 180
+  - 90
+  - 0
+  - -90
+  port_type: pad
+  size:
+  - 80
+  - 80

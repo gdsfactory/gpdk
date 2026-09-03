@@ -1,0 +1,11 @@
+info: {}
+name: coupler_adiabatic_L20_L50_L30_WS1_IWS3_OWS3_D0p1_CSstrip
+settings:
+  cross_section: strip
+  dw: 0.1
+  input_wg_sep: 3
+  length1: 20
+  length2: 50
+  length3: 30
+  output_wg_sep: 3
+  wg_sep: 1

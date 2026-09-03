@@ -1,0 +1,83 @@
+instances:
+  pad:
+    component: pad
+    info:
+      size:
+      - 100
+      - 100
+      xsize: 100
+      ysize: 100
+    settings:
+      bbox_layers: null
+      bbox_offsets: null
+      layer: MTOP
+      port_inclusion: 0
+      port_orientation: 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: pad
+      size:
+      - 100
+      - 100
+  pad2:
+    component: pad
+    info:
+      size:
+      - 100
+      - 100
+      xsize: 100
+      ysize: 100
+    settings:
+      bbox_layers: null
+      bbox_offsets: null
+      layer: MTOP
+      port_inclusion: 0
+      port_orientation: 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: pad
+      size:
+      - 100
+      - 100
+  wire_straight:
+    component: wire_straight
+    info:
+      length: 10
+      route_info_length: 10
+      route_info_metal3_length: 10
+      route_info_type: metal3
+      route_info_weight: 10
+      width: 10
+    settings:
+      cross_section: metal_routing
+      length: 10
+      npoints: 2
+      width: null
+nets: []
+placements:
+  pad:
+    mirror: false
+    rotation: 0
+    x: -50
+    y: 0
+  pad2:
+    mirror: false
+    rotation: 0
+    x: 60
+    y: 0
+  wire_straight:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+ports:
+  e1: wire_straight,e1
+  e2: wire_straight,e2
+  elec-wire_straight_L10_N2_CSmetal_routing_WNone-1: pad,pad
+  elec-wire_straight_L10_N2_CSmetal_routing_WNone-2: pad2,pad

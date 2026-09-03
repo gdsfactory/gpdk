@@ -1,0 +1,92 @@
+instances:
+  rectangle:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 2
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 0.15
+      - 0.3
+  rectangle2:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 1
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 10
+      - 4
+  rectangle3:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 1
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 200
+      - 100
+  rectangle4:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 1
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 200
+      - 100
+nets: []
+placements:
+  rectangle:
+    mirror: false
+    rotation: 0
+    x: -0.075
+    y: -0.15
+  rectangle2:
+    mirror: false
+    rotation: 0
+    x: -5
+    y: -2
+  rectangle3:
+    mirror: false
+    rotation: 0
+    x: -203
+    y: -50
+  rectangle4:
+    mirror: false
+    rotation: 0
+    x: 3
+    y: -50
+ports: {}

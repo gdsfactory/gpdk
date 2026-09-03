@@ -1,0 +1,14 @@
+info: {}
+name: bump_pad_grid_C6_R6_CP121p89_RP132p66_O66p33_PW10_PLM2__a3a58c74
+settings:
+  add_via: true
+  auto_rename_ports: false
+  column_pitch: 121.89
+  columns: 6
+  layer: MTOP
+  offset: 66.33
+  port_layer: M2
+  port_width: 10
+  row_pitch: 132.66
+  rows: 6
+  size: 36.244

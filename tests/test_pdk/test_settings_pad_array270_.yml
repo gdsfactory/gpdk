@@ -1,0 +1,12 @@
+info: {}
+name: pad_array270_Ppad_C6_R1_CP150_RP150_PO270_SNone_LMTOP_C_d22822fe
+settings:
+  auto_rename_ports: false
+  centered_ports: false
+  column_pitch: 150
+  columns: 6
+  layer: MTOP
+  pad: pad
+  port_orientation: 270
+  row_pitch: 150
+  rows: 1

@@ -1,0 +1,11 @@
+info:
+  min_bend_radius: 11.857
+  path_length: 40.372
+name: add_trenches_Ccoupler_LCWG_LTDEEP_ETCH_WT2_CSNone_TNone_7422293c
+settings:
+  component: coupler
+  layer_component: WG
+  layer_trench: DEEP_ETCH
+  left: 0
+  right: 0
+  width_trench: 2

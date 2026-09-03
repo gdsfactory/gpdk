@@ -1,0 +1,20 @@
+info: {}
+name: ring_crow_couplers_R10_10_10_Bbend_circular_bend_circul_afe24872
+settings:
+  bends:
+  - bend_circular
+  - bend_circular
+  - bend_circular
+  couplers:
+  - coupler
+  - coupler
+  - coupler
+  - coupler
+  radius:
+  - 10
+  - 10
+  - 10
+  ring_cross_sections:
+  - strip
+  - strip
+  - strip

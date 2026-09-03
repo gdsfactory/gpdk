@@ -1,0 +1,972 @@
+instances:
+  die:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '10'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die10:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '19'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die11:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '1'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die12:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '20'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die13:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '21'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die14:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '22'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die15:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '23'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die16:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '24'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die17:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '25'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die18:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '26'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die19:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '27'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die2:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '11'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die20:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '28'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die21:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '29'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die22:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '2'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die23:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '30'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die24:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '31'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die25:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '32'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die26:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '33'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die27:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '34'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die28:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '35'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die29:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '36'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die3:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '12'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die30:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '37'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die31:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '38'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die32:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '39'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die33:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '3'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die34:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '40'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die35:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '41'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die36:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '42'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die37:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '43'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die38:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '44'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die39:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '4'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die4:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '13'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die40:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '5'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die41:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '6'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die42:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '7'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die43:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '8'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die44:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '9'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die5:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '14'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die6:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '15'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die7:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '16'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die8:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '17'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+  die9:
+    component: die
+    info: {}
+    settings:
+      bbox_layer: FLOORPLAN
+      die_name: '18'
+      draw_corners: false
+      layer: FLOORPLAN
+      size:
+      - 10000
+      - 10000
+      street_length: 1000
+      street_width: 100
+      text: text
+      text_layer: WG
+      text_location: SW
+      text_size: 100
+nets: []
+placements:
+  die:
+    mirror: false
+    rotation: 0
+    x: -20000
+    y: 20000
+  die10:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 30000
+  die11:
+    mirror: false
+    rotation: 0
+    x: -10000
+    y: 0
+  die12:
+    mirror: false
+    rotation: 0
+    x: 10000
+    y: 30000
+  die13:
+    mirror: false
+    rotation: 0
+    x: 20000
+    y: 30000
+  die14:
+    mirror: false
+    rotation: 0
+    x: 30000
+    y: 30000
+  die15:
+    mirror: false
+    rotation: 0
+    x: -40000
+    y: 40000
+  die16:
+    mirror: false
+    rotation: 0
+    x: -30000
+    y: 40000
+  die17:
+    mirror: false
+    rotation: 0
+    x: -20000
+    y: 40000
+  die18:
+    mirror: false
+    rotation: 0
+    x: -10000
+    y: 40000
+  die19:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 40000
+  die2:
+    mirror: false
+    rotation: 0
+    x: -10000
+    y: 20000
+  die20:
+    mirror: false
+    rotation: 0
+    x: 10000
+    y: 40000
+  die21:
+    mirror: false
+    rotation: 0
+    x: 20000
+    y: 40000
+  die22:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+  die23:
+    mirror: false
+    rotation: 0
+    x: 30000
+    y: 40000
+  die24:
+    mirror: false
+    rotation: 0
+    x: -30000
+    y: 50000
+  die25:
+    mirror: false
+    rotation: 0
+    x: -20000
+    y: 50000
+  die26:
+    mirror: false
+    rotation: 0
+    x: -10000
+    y: 50000
+  die27:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 50000
+  die28:
+    mirror: false
+    rotation: 0
+    x: 10000
+    y: 50000
+  die29:
+    mirror: false
+    rotation: 0
+    x: 20000
+    y: 50000
+  die3:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 20000
+  die30:
+    mirror: false
+    rotation: 0
+    x: -30000
+    y: 60000
+  die31:
+    mirror: false
+    rotation: 0
+    x: -20000
+    y: 60000
+  die32:
+    mirror: false
+    rotation: 0
+    x: -10000
+    y: 60000
+  die33:
+    mirror: false
+    rotation: 0
+    x: -30000
+    y: 10000
+  die34:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 60000
+  die35:
+    mirror: false
+    rotation: 0
+    x: 10000
+    y: 60000
+  die36:
+    mirror: false
+    rotation: 0
+    x: 20000
+    y: 60000
+  die37:
+    mirror: false
+    rotation: 0
+    x: -10000
+    y: 70000
+  die38:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 70000
+  die39:
+    mirror: false
+    rotation: 0
+    x: -20000
+    y: 10000
+  die4:
+    mirror: false
+    rotation: 0
+    x: 10000
+    y: 20000
+  die40:
+    mirror: false
+    rotation: 0
+    x: -10000
+    y: 10000
+  die41:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 10000
+  die42:
+    mirror: false
+    rotation: 0
+    x: 10000
+    y: 10000
+  die43:
+    mirror: false
+    rotation: 0
+    x: 20000
+    y: 10000
+  die44:
+    mirror: false
+    rotation: 0
+    x: -30000
+    y: 20000
+  die5:
+    mirror: false
+    rotation: 0
+    x: 20000
+    y: 20000
+  die6:
+    mirror: false
+    rotation: 0
+    x: -40000
+    y: 30000
+  die7:
+    mirror: false
+    rotation: 0
+    x: -30000
+    y: 30000
+  die8:
+    mirror: false
+    rotation: 0
+    x: -20000
+    y: 30000
+  die9:
+    mirror: false
+    rotation: 0
+    x: -10000
+    y: 30000
+ports: {}

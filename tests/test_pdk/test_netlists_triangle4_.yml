@@ -1,0 +1,24 @@
+instances:
+  triangle2:
+    component: triangle2
+    info: {}
+    settings:
+      spacing: 3
+  triangle2_2:
+    component: triangle2
+    info: {}
+    settings:
+      spacing: 3
+nets: []
+placements:
+  triangle2:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+  triangle2_2:
+    mirror: true
+    rotation: 180
+    x: 0
+    y: 0
+ports: {}

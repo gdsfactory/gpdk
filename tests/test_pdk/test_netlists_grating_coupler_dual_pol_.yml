@@ -1,0 +1,103 @@
+instances:
+  rectangle:
+    array:
+      column_pitch: 0.58
+      columns: 18
+      row_pitch: 0.58
+      rows: 18
+    component: rectangle
+    info: {}
+    settings:
+      centered: true
+      layer: SLAB150
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 0.3
+      - 0.3
+  rectangle2:
+    component: rectangle
+    info: {}
+    settings:
+      centered: true
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 11
+      - 11
+  taper:
+    component: taper
+    info:
+      length: 150
+      width1: 0.5
+      width2: 10
+    settings:
+      cross_section: strip
+      layer: null
+      length: 150
+      port: null
+      port_names:
+      - o1
+      - o2
+      port_types:
+      - optical
+      - optical
+      width1: 0.5
+      width2: 10
+      with_bbox: true
+      with_two_ports: true
+  taper2:
+    component: taper
+    info:
+      length: 150
+      width1: 0.5
+      width2: 10
+    settings:
+      cross_section: strip
+      layer: null
+      length: 150
+      port: null
+      port_names:
+      - o1
+      - o2
+      port_types:
+      - optical
+      - optical
+      width1: 0.5
+      width2: 10
+      with_bbox: true
+      with_two_ports: true
+nets: []
+placements:
+  rectangle:
+    mirror: false
+    rotation: 0
+    x: -5.07
+    y: -5.07
+  rectangle2:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+  taper:
+    mirror: false
+    rotation: 0
+    x: -155.5
+    y: 0
+  taper2:
+    mirror: false
+    rotation: 90
+    x: 0
+    y: -155.5
+ports:
+  o1: taper,o1
+  o2: taper2,o1

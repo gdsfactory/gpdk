@@ -1,0 +1,7 @@
+info: {}
+name: fractal_FTsierpinski_triangle_D4_S100_LWG
+settings:
+  depth: 4
+  fractal_type: sierpinski_triangle
+  layer: WG
+  size: 100

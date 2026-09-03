@@ -1,0 +1,11 @@
+info:
+  radius: 10
+name: ring_double_G0p2_GTNone_GBNone_RNone_LX0p01_LY0p01_Bben_8cbc83eb
+settings:
+  bend: bend_euler
+  coupler_ring: coupler_ring
+  cross_section: strip
+  gap: 0.2
+  length_x: 0.01
+  length_y: 0.01
+  straight: straight

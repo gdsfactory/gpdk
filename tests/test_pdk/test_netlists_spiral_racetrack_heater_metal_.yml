@@ -1,0 +1,178 @@
+instances:
+  bend_euler:
+    component: bend_euler
+    info:
+      dy: 0
+      length: 85.635
+      min_bend_radius: 18.172
+      radius: 20
+      route_info_heater_metal_length: 85.635
+      route_info_length: 85.635
+      route_info_min_bend_radius: 18.172
+      route_info_n_bend_90: 2
+      route_info_type: heater_metal
+      route_info_weight: 85.635
+      width: 2.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 180
+      angular_step: null
+      cross_section: heater_metal
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 20
+      width: null
+      with_arc_floorplan: true
+  spiral_racetrack:
+    component: spiral_racetrack
+    info:
+      length: 1681.058
+    settings:
+      allow_min_radius_violation: false
+      bend: bend_euler
+      bend_s: bend_s
+      cross_section: strip
+      cross_section_s: null
+      extra_90_deg_bend: false
+      min_radius: 10
+      spacings:
+      - 2
+      - 2
+      - 2
+      - 2
+      - 2
+      - 2
+      - 2
+      - 2
+      straight: straight
+      straight_length: 30
+  straight:
+    component: straight
+    info:
+      length: 30
+      route_info_heater_metal_length: 30
+      route_info_length: 30
+      route_info_type: heater_metal
+      route_info_weight: 30
+      width: 2.5
+    settings:
+      cross_section: heater_metal
+      length: 30
+      npoints: 2
+      width: null
+  straight2:
+    component: straight
+    info:
+      length: 30
+      route_info_heater_metal_length: 30
+      route_info_length: 30
+      route_info_type: heater_metal
+      route_info_weight: 30
+      width: 2.5
+    settings:
+      cross_section: heater_metal
+      length: 30
+      npoints: 2
+      width: null
+  via_stack_heater_mtop:
+    component: via_stack_heater_mtop
+    info:
+      xsize: 11
+      ysize: 11
+    settings:
+      correct_size: false
+      layer_offsets: null
+      layer_to_port_orientations: null
+      layers:
+      - HEATER
+      - M2
+      - MTOP
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      size:
+      - 11
+      - 11
+      slot_horizontal: false
+      slot_vertical: false
+      vias:
+      - null
+      - via1
+      - via2
+  via_stack_heater_mtop2:
+    component: via_stack_heater_mtop
+    info:
+      xsize: 11
+      ysize: 11
+    settings:
+      correct_size: false
+      layer_offsets: null
+      layer_to_port_orientations: null
+      layers:
+      - HEATER
+      - M2
+      - MTOP
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      size:
+      - 11
+      - 11
+      slot_horizontal: false
+      slot_vertical: false
+      vias:
+      - null
+      - via1
+      - via2
+nets:
+- p1: bend_euler,e1
+  p2: straight,e1
+- p1: bend_euler,e2
+  p2: straight2,e1
+placements:
+  bend_euler:
+    mirror: false
+    rotation: 0
+    x: 18.297
+    y: -29
+  spiral_racetrack:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+  straight:
+    mirror: false
+    rotation: 180
+    x: 18.297
+    y: -29
+  straight2:
+    mirror: false
+    rotation: 180
+    x: 18.297
+    y: 11
+  via_stack_heater_mtop:
+    mirror: false
+    rotation: 0
+    x: -17.203
+    y: -29
+  via_stack_heater_mtop2:
+    mirror: false
+    rotation: 0
+    x: -17.203
+    y: 11
+ports:
+  bot_e1: via_stack_heater_mtop,e1
+  bot_e2: via_stack_heater_mtop,e2
+  bot_e3: via_stack_heater_mtop,e3
+  bot_e4: via_stack_heater_mtop,e4
+  o1: spiral_racetrack,o1
+  o2: spiral_racetrack,o2
+  top_e1: via_stack_heater_mtop2,e1
+  top_e2: via_stack_heater_mtop2,e2
+  top_e3: via_stack_heater_mtop2,e3
+  top_e4: via_stack_heater_mtop2,e4

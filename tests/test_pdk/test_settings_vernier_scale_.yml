@@ -1,0 +1,13 @@
+info: {}
+name: vernier_scale_ND10_PM10_PV9p8_MW1_MHM20_MHV15_LMWG_LV2_0
+settings:
+  layer_main: WG
+  layer_vernier:
+  - 2
+  - 0
+  mark_height_main: 20
+  mark_height_vernier: 15
+  mark_width: 1
+  n_divisions: 10
+  pitch_main: 10
+  pitch_vernier: 9.8

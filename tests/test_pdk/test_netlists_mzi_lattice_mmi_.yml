@@ -1,0 +1,43 @@
+instances:
+  mzi2x2_2x2:
+    component: mzi2x2_2x2
+    info: {}
+    settings:
+      add_optical_ports_arms: false
+      auto_detect_port_names: false
+      auto_rename_ports: true
+      bend: bend_euler
+      combiner: mmi2x2_WNone_WT1_LT10_LM5p5_WM2p5_GM0p25_Ttaper_Sstraig_4ab7dfce
+      cross_section: strip
+      cross_section_x_bot: null
+      cross_section_x_top: null
+      delta_length: 10
+      length_x: null
+      length_y: 2
+      min_length: 0.01
+      mirror_bot: false
+      nbends: 2
+      port1: o1
+      port2: o2
+      port_e0_combiner: o4
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e1_splitter: o3
+      splitter: mmi2x2_WNone_WT1_LT10_LM5p5_WM2p5_GM0p25_Ttaper_Sstraig_4ab7dfce
+      straight: straight
+      straight_x_bot: null
+      straight_x_top: null
+      straight_y: null
+      with_splitter: true
+nets: []
+placements:
+  mzi2x2_2x2:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+ports:
+  o1: mzi2x2_2x2,o1
+  o2: mzi2x2_2x2,o2
+  o3: mzi2x2_2x2,o3
+  o4: mzi2x2_2x2,o4

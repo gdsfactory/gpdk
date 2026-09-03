@@ -1,0 +1,724 @@
+instances:
+  bump_pad:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad10:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad11:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad12:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad13:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad14:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad15:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad16:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad17:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad18:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad19:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad2:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad20:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad21:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad22:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad23:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad24:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad25:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad26:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad27:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad28:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad29:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad3:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad30:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad31:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad32:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad33:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad34:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad35:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad36:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad4:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad5:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad6:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad7:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad8:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+  bump_pad9:
+    component: bump_pad
+    info:
+      size: 36.244
+    settings:
+      add_via: true
+      layer: MTOP
+      port_layer: M2
+      port_type: pad
+      port_width: 10
+      size: 36.244
+nets: []
+placements:
+  bump_pad:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+  bump_pad10:
+    mirror: false
+    rotation: 0
+    x: 121.89
+    y: 596.97
+  bump_pad11:
+    mirror: false
+    rotation: 0
+    x: 121.89
+    y: 66.33
+  bump_pad12:
+    mirror: false
+    rotation: 0
+    x: 121.89
+    y: 729.63
+  bump_pad13:
+    mirror: false
+    rotation: 0
+    x: 243.78
+    y: 0
+  bump_pad14:
+    mirror: false
+    rotation: 0
+    x: 243.78
+    y: 132.66
+  bump_pad15:
+    mirror: false
+    rotation: 0
+    x: 243.78
+    y: 265.32
+  bump_pad16:
+    mirror: false
+    rotation: 0
+    x: 243.78
+    y: 397.98
+  bump_pad17:
+    mirror: false
+    rotation: 0
+    x: 243.78
+    y: 530.64
+  bump_pad18:
+    mirror: false
+    rotation: 0
+    x: 243.78
+    y: 663.3
+  bump_pad19:
+    mirror: false
+    rotation: 0
+    x: 365.67
+    y: 198.99
+  bump_pad2:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 132.66
+  bump_pad20:
+    mirror: false
+    rotation: 0
+    x: 365.67
+    y: 331.65
+  bump_pad21:
+    mirror: false
+    rotation: 0
+    x: 365.67
+    y: 464.31
+  bump_pad22:
+    mirror: false
+    rotation: 0
+    x: 365.67
+    y: 596.97
+  bump_pad23:
+    mirror: false
+    rotation: 0
+    x: 365.67
+    y: 66.33
+  bump_pad24:
+    mirror: false
+    rotation: 0
+    x: 365.67
+    y: 729.63
+  bump_pad25:
+    mirror: false
+    rotation: 0
+    x: 487.56
+    y: 0
+  bump_pad26:
+    mirror: false
+    rotation: 0
+    x: 487.56
+    y: 132.66
+  bump_pad27:
+    mirror: false
+    rotation: 0
+    x: 487.56
+    y: 265.32
+  bump_pad28:
+    mirror: false
+    rotation: 0
+    x: 487.56
+    y: 397.98
+  bump_pad29:
+    mirror: false
+    rotation: 0
+    x: 487.56
+    y: 530.64
+  bump_pad3:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 265.32
+  bump_pad30:
+    mirror: false
+    rotation: 0
+    x: 487.56
+    y: 663.3
+  bump_pad31:
+    mirror: false
+    rotation: 0
+    x: 609.45
+    y: 198.99
+  bump_pad32:
+    mirror: false
+    rotation: 0
+    x: 609.45
+    y: 331.65
+  bump_pad33:
+    mirror: false
+    rotation: 0
+    x: 609.45
+    y: 464.31
+  bump_pad34:
+    mirror: false
+    rotation: 0
+    x: 609.45
+    y: 596.97
+  bump_pad35:
+    mirror: false
+    rotation: 0
+    x: 609.45
+    y: 66.33
+  bump_pad36:
+    mirror: false
+    rotation: 0
+    x: 609.45
+    y: 729.63
+  bump_pad4:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 397.98
+  bump_pad5:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 530.64
+  bump_pad6:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 663.3
+  bump_pad7:
+    mirror: false
+    rotation: 0
+    x: 121.89
+    y: 198.99
+  bump_pad8:
+    mirror: false
+    rotation: 0
+    x: 121.89
+    y: 331.65
+  bump_pad9:
+    mirror: false
+    rotation: 0
+    x: 121.89
+    y: 464.31
+ports:
+  e1_1_e1: bump_pad,e1
+  e1_1_e2: bump_pad,e2
+  e1_1_e3: bump_pad,e3
+  e1_1_e4: bump_pad,e4
+  e1_2_e1: bump_pad11,e1
+  e1_2_e2: bump_pad11,e2
+  e1_2_e3: bump_pad11,e3
+  e1_2_e4: bump_pad11,e4
+  e1_3_e1: bump_pad13,e1
+  e1_3_e2: bump_pad13,e2
+  e1_3_e3: bump_pad13,e3
+  e1_3_e4: bump_pad13,e4
+  e1_4_e1: bump_pad23,e1
+  e1_4_e2: bump_pad23,e2
+  e1_4_e3: bump_pad23,e3
+  e1_4_e4: bump_pad23,e4
+  e1_5_e1: bump_pad25,e1
+  e1_5_e2: bump_pad25,e2
+  e1_5_e3: bump_pad25,e3
+  e1_5_e4: bump_pad25,e4
+  e1_6_e1: bump_pad35,e1
+  e1_6_e2: bump_pad35,e2
+  e1_6_e3: bump_pad35,e3
+  e1_6_e4: bump_pad35,e4
+  e2_1_e1: bump_pad2,e1
+  e2_1_e2: bump_pad2,e2
+  e2_1_e3: bump_pad2,e3
+  e2_1_e4: bump_pad2,e4
+  e2_2_e1: bump_pad7,e1
+  e2_2_e2: bump_pad7,e2
+  e2_2_e3: bump_pad7,e3
+  e2_2_e4: bump_pad7,e4
+  e2_3_e1: bump_pad14,e1
+  e2_3_e2: bump_pad14,e2
+  e2_3_e3: bump_pad14,e3
+  e2_3_e4: bump_pad14,e4
+  e2_4_e1: bump_pad19,e1
+  e2_4_e2: bump_pad19,e2
+  e2_4_e3: bump_pad19,e3
+  e2_4_e4: bump_pad19,e4
+  e2_5_e1: bump_pad26,e1
+  e2_5_e2: bump_pad26,e2
+  e2_5_e3: bump_pad26,e3
+  e2_5_e4: bump_pad26,e4
+  e2_6_e1: bump_pad31,e1
+  e2_6_e2: bump_pad31,e2
+  e2_6_e3: bump_pad31,e3
+  e2_6_e4: bump_pad31,e4
+  e3_1_e1: bump_pad3,e1
+  e3_1_e2: bump_pad3,e2
+  e3_1_e3: bump_pad3,e3
+  e3_1_e4: bump_pad3,e4
+  e3_2_e1: bump_pad8,e1
+  e3_2_e2: bump_pad8,e2
+  e3_2_e3: bump_pad8,e3
+  e3_2_e4: bump_pad8,e4
+  e3_3_e1: bump_pad15,e1
+  e3_3_e2: bump_pad15,e2
+  e3_3_e3: bump_pad15,e3
+  e3_3_e4: bump_pad15,e4
+  e3_4_e1: bump_pad20,e1
+  e3_4_e2: bump_pad20,e2
+  e3_4_e3: bump_pad20,e3
+  e3_4_e4: bump_pad20,e4
+  e3_5_e1: bump_pad27,e1
+  e3_5_e2: bump_pad27,e2
+  e3_5_e3: bump_pad27,e3
+  e3_5_e4: bump_pad27,e4
+  e3_6_e1: bump_pad32,e1
+  e3_6_e2: bump_pad32,e2
+  e3_6_e3: bump_pad32,e3
+  e3_6_e4: bump_pad32,e4
+  e4_1_e1: bump_pad4,e1
+  e4_1_e2: bump_pad4,e2
+  e4_1_e3: bump_pad4,e3
+  e4_1_e4: bump_pad4,e4
+  e4_2_e1: bump_pad9,e1
+  e4_2_e2: bump_pad9,e2
+  e4_2_e3: bump_pad9,e3
+  e4_2_e4: bump_pad9,e4
+  e4_3_e1: bump_pad16,e1
+  e4_3_e2: bump_pad16,e2
+  e4_3_e3: bump_pad16,e3
+  e4_3_e4: bump_pad16,e4
+  e4_4_e1: bump_pad21,e1
+  e4_4_e2: bump_pad21,e2
+  e4_4_e3: bump_pad21,e3
+  e4_4_e4: bump_pad21,e4
+  e4_5_e1: bump_pad28,e1
+  e4_5_e2: bump_pad28,e2
+  e4_5_e3: bump_pad28,e3
+  e4_5_e4: bump_pad28,e4
+  e4_6_e1: bump_pad33,e1
+  e4_6_e2: bump_pad33,e2
+  e4_6_e3: bump_pad33,e3
+  e4_6_e4: bump_pad33,e4
+  e5_1_e1: bump_pad5,e1
+  e5_1_e2: bump_pad5,e2
+  e5_1_e3: bump_pad5,e3
+  e5_1_e4: bump_pad5,e4
+  e5_2_e1: bump_pad10,e1
+  e5_2_e2: bump_pad10,e2
+  e5_2_e3: bump_pad10,e3
+  e5_2_e4: bump_pad10,e4
+  e5_3_e1: bump_pad17,e1
+  e5_3_e2: bump_pad17,e2
+  e5_3_e3: bump_pad17,e3
+  e5_3_e4: bump_pad17,e4
+  e5_4_e1: bump_pad22,e1
+  e5_4_e2: bump_pad22,e2
+  e5_4_e3: bump_pad22,e3
+  e5_4_e4: bump_pad22,e4
+  e5_5_e1: bump_pad29,e1
+  e5_5_e2: bump_pad29,e2
+  e5_5_e3: bump_pad29,e3
+  e5_5_e4: bump_pad29,e4
+  e5_6_e1: bump_pad34,e1
+  e5_6_e2: bump_pad34,e2
+  e5_6_e3: bump_pad34,e3
+  e5_6_e4: bump_pad34,e4
+  e6_1_e1: bump_pad6,e1
+  e6_1_e2: bump_pad6,e2
+  e6_1_e3: bump_pad6,e3
+  e6_1_e4: bump_pad6,e4
+  e6_2_e1: bump_pad12,e1
+  e6_2_e2: bump_pad12,e2
+  e6_2_e3: bump_pad12,e3
+  e6_2_e4: bump_pad12,e4
+  e6_3_e1: bump_pad18,e1
+  e6_3_e2: bump_pad18,e2
+  e6_3_e3: bump_pad18,e3
+  e6_3_e4: bump_pad18,e4
+  e6_4_e1: bump_pad24,e1
+  e6_4_e2: bump_pad24,e2
+  e6_4_e3: bump_pad24,e3
+  e6_4_e4: bump_pad24,e4
+  e6_5_e1: bump_pad30,e1
+  e6_5_e2: bump_pad30,e2
+  e6_5_e3: bump_pad30,e3
+  e6_5_e4: bump_pad30,e4
+  e6_6_e1: bump_pad36,e1
+  e6_6_e2: bump_pad36,e2
+  e6_6_e3: bump_pad36,e3
+  e6_6_e4: bump_pad36,e4

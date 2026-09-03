@@ -1,0 +1,12 @@
+info:
+  dy: 10
+  length: 10
+name: wire_corner_CSmetal_routing_PNe1_e2_PTelectrical_electr_83412a9d
+settings:
+  cross_section: metal_routing
+  port_names:
+  - e1
+  - e2
+  port_types:
+  - electrical
+  - electrical

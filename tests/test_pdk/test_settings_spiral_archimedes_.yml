@@ -1,0 +1,8 @@
+info: {}
+name: spiral_archimedes_W1_NT5_S2_AR2_LWG
+settings:
+  angle_resolution: 2
+  layer: WG
+  n_turns: 5
+  separation: 2
+  width: 1

@@ -1,0 +1,13 @@
+info:
+  min_bend_radius: 10.855
+name: fanout2x2_Cmmi2x2_PS20_BLNone_N101_SPFselect_ports_Mgds_0c5c771d
+settings:
+  component: mmi2x2
+  cross_section: strip
+  npoints: 101
+  port1: o1
+  port2: o2
+  port3: o3
+  port4: o4
+  port_spacing: 20
+  select_ports: Fselect_ports_Mgdsfactorypport_SPToptical

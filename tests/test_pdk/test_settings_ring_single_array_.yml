@@ -1,0 +1,6 @@
+info: {}
+name: ring_single_array_Rring_single_S15_LODNone_CSstrip
+settings:
+  cross_section: strip
+  ring: ring_single
+  spacing: 15

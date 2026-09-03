@@ -1,0 +1,31 @@
+instances:
+  taper:
+    component: taper
+    info:
+      length: 150
+      width1: 0.5
+      width2: 11
+    settings:
+      cross_section: strip
+      layer: null
+      length: 150
+      port: null
+      port_names:
+      - o1
+      - o2
+      port_types:
+      - optical
+      - optical
+      width1: 0.5
+      width2: 11
+      with_bbox: true
+      with_two_ports: true
+nets: []
+placements:
+  taper:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+ports:
+  o1: taper,o1

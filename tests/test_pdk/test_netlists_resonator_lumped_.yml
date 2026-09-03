@@ -1,0 +1,128 @@
+instances:
+  interdigital_capacitor:
+    component: interdigital_capacitor
+    info: {}
+    settings:
+      finger_gap: 2
+      finger_length: 20
+      fingers: 4
+      layer:
+      - 1
+      - 0
+      thickness: 5
+  rectangle:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 1
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 20
+      - 2
+  rectangle2:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 1
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 2
+      - 20
+  rectangle3:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 1
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 5
+      - 5
+  rectangle4:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 1
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 5
+      - 5
+  spiral:
+    component: spiral
+    info:
+      length: 977.644
+    settings:
+      bend: bend_euler
+      cross_section: xs_4a304818
+      length: 100
+      n_loops: 3
+      spacing: 3
+      straight: straight
+nets:
+- p1: rectangle,e3
+  p2: rectangle2,e2
+placements:
+  interdigital_capacitor:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+  rectangle:
+    mirror: false
+    rotation: 0
+    x: 32
+    y: -1
+  rectangle2:
+    mirror: false
+    rotation: 0
+    x: 51
+    y: -20
+  rectangle3:
+    mirror: false
+    rotation: 0
+    x: -10
+    y: 10
+  rectangle4:
+    mirror: false
+    rotation: 0
+    x: 37
+    y: 10
+  spiral:
+    mirror: false
+    rotation: 0
+    x: 52
+    y: 0
+ports:
+  input: rectangle3,e4
+  output: rectangle4,e4

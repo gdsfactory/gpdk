@@ -1,0 +1,10 @@
+info:
+  size: 36.244
+name: bump_pad_S36p244_LMTOP_PW10_PLM2_PTpad_AVTrue
+settings:
+  add_via: true
+  layer: MTOP
+  port_layer: M2
+  port_type: pad
+  port_width: 10
+  size: 36.244

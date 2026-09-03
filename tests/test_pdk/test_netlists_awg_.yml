@@ -1,0 +1,1294 @@
+instances:
+  bend_euler:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler10:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler11:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler12:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler13:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler14:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler15:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler16:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler17:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler18:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler19:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler2:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler20:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler3:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler4:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler5:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler6:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler7:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler8:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  bend_euler9:
+    component: bend_euler
+    info:
+      dy: 10
+      length: 16.637
+      min_bend_radius: 7.061
+      radius: 10
+      route_info_length: 16.637
+      route_info_min_bend_radius: 7.061
+      route_info_n_bend_90: 1
+      route_info_strip_length: 16.637
+      route_info_type: strip
+      route_info_weight: 16.637
+      width: 0.5
+    settings:
+      allow_min_radius_violation: false
+      angle: 90
+      angular_step: null
+      cross_section: strip
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: 10
+      width: 0.5
+      with_arc_floorplan: true
+  free_propagation_region:
+    component: free_propagation_region
+    info:
+      length: 20
+      width1: 2
+      width2: 20
+    settings:
+      cross_section: strip
+      inputs: 1
+      length: 20
+      outputs: 10
+      wg_width: 0.5
+      width1: 2
+      width2: 20
+  free_propagation_region2:
+    component: free_propagation_region
+    info:
+      length: 20
+      width1: 10
+      width2: 20
+    settings:
+      cross_section: strip
+      inputs: 3
+      length: 20
+      outputs: 10
+      wg_width: 0.5
+      width1: 10
+      width2: 20
+  straight:
+    component: straight
+    info:
+      length: 10.5
+      route_info_length: 10.5
+      route_info_strip_length: 10.5
+      route_info_type: strip
+      route_info_weight: 10.5
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 10.5
+      npoints: 2
+      width: 0.5
+  straight10:
+    component: straight
+    info:
+      length: 1.5
+      route_info_length: 1.5
+      route_info_strip_length: 1.5
+      route_info_type: strip
+      route_info_weight: 1.5
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 1.5
+      npoints: 2
+      width: 0.5
+  straight11:
+    component: straight
+    info:
+      length: 1.5
+      route_info_length: 1.5
+      route_info_strip_length: 1.5
+      route_info_type: strip
+      route_info_weight: 1.5
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 1.5
+      npoints: 2
+      width: 0.5
+  straight12:
+    component: straight
+    info:
+      length: 23.5
+      route_info_length: 23.5
+      route_info_strip_length: 23.5
+      route_info_type: strip
+      route_info_weight: 23.5
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 23.5
+      npoints: 2
+      width: 0.5
+  straight13:
+    component: straight
+    info:
+      length: 27.834
+      route_info_length: 27.834
+      route_info_strip_length: 27.834
+      route_info_type: strip
+      route_info_weight: 27.834
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 27.834
+      npoints: 2
+      width: 0.5
+  straight14:
+    component: straight
+    info:
+      length: 32.166
+      route_info_length: 32.166
+      route_info_strip_length: 32.166
+      route_info_type: strip
+      route_info_weight: 32.166
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 32.166
+      npoints: 2
+      width: 0.5
+  straight15:
+    component: straight
+    info:
+      length: 36.5
+      route_info_length: 36.5
+      route_info_strip_length: 36.5
+      route_info_type: strip
+      route_info_weight: 36.5
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 36.5
+      npoints: 2
+      width: 0.5
+  straight16:
+    component: straight
+    info:
+      length: 3
+      route_info_length: 3
+      route_info_strip_length: 3
+      route_info_type: strip
+      route_info_weight: 3
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 3
+      npoints: 2
+      width: 0.5
+  straight17:
+    component: straight
+    info:
+      length: 3
+      route_info_length: 3
+      route_info_strip_length: 3
+      route_info_type: strip
+      route_info_weight: 3
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 3
+      npoints: 2
+      width: 0.5
+  straight18:
+    component: straight
+    info:
+      length: 40.834
+      route_info_length: 40.834
+      route_info_strip_length: 40.834
+      route_info_type: strip
+      route_info_weight: 40.834
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 40.834
+      npoints: 2
+      width: 0.5
+  straight19:
+    component: straight
+    info:
+      length: 45.166
+      route_info_length: 45.166
+      route_info_strip_length: 45.166
+      route_info_type: strip
+      route_info_weight: 45.166
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 45.166
+      npoints: 2
+      width: 0.5
+  straight2:
+    component: straight
+    info:
+      length: 10.5
+      route_info_length: 10.5
+      route_info_strip_length: 10.5
+      route_info_type: strip
+      route_info_weight: 10.5
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 10.5
+      npoints: 2
+      width: 0.5
+  straight20:
+    component: straight
+    info:
+      length: 49.5
+      route_info_length: 49.5
+      route_info_strip_length: 49.5
+      route_info_type: strip
+      route_info_weight: 49.5
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 49.5
+      npoints: 2
+      width: 0.5
+  straight21:
+    component: straight
+    info:
+      length: 4.5
+      route_info_length: 4.5
+      route_info_strip_length: 4.5
+      route_info_type: strip
+      route_info_weight: 4.5
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 4.5
+      npoints: 2
+      width: 0.5
+  straight22:
+    component: straight
+    info:
+      length: 4.5
+      route_info_length: 4.5
+      route_info_strip_length: 4.5
+      route_info_type: strip
+      route_info_weight: 4.5
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 4.5
+      npoints: 2
+      width: 0.5
+  straight23:
+    component: straight
+    info:
+      length: 6
+      route_info_length: 6
+      route_info_strip_length: 6
+      route_info_type: strip
+      route_info_weight: 6
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 6
+      npoints: 2
+      width: 0.5
+  straight24:
+    component: straight
+    info:
+      length: 6
+      route_info_length: 6
+      route_info_strip_length: 6
+      route_info_type: strip
+      route_info_weight: 6
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 6
+      npoints: 2
+      width: 0.5
+  straight25:
+    component: straight
+    info:
+      length: 7.5
+      route_info_length: 7.5
+      route_info_strip_length: 7.5
+      route_info_type: strip
+      route_info_weight: 7.5
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 7.5
+      npoints: 2
+      width: 0.5
+  straight26:
+    component: straight
+    info:
+      length: 7.5
+      route_info_length: 7.5
+      route_info_strip_length: 7.5
+      route_info_type: strip
+      route_info_weight: 7.5
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 7.5
+      npoints: 2
+      width: 0.5
+  straight27:
+    component: straight
+    info:
+      length: 9
+      route_info_length: 9
+      route_info_strip_length: 9
+      route_info_type: strip
+      route_info_weight: 9
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 9
+      npoints: 2
+      width: 0.5
+  straight28:
+    component: straight
+    info:
+      length: 9
+      route_info_length: 9
+      route_info_strip_length: 9
+      route_info_type: strip
+      route_info_weight: 9
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 9
+      npoints: 2
+      width: 0.5
+  straight3:
+    component: straight
+    info:
+      length: 10.5
+      route_info_length: 10.5
+      route_info_strip_length: 10.5
+      route_info_type: strip
+      route_info_weight: 10.5
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 10.5
+      npoints: 2
+      width: 0.5
+  straight4:
+    component: straight
+    info:
+      length: 12
+      route_info_length: 12
+      route_info_strip_length: 12
+      route_info_type: strip
+      route_info_weight: 12
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 12
+      npoints: 2
+      width: 0.5
+  straight5:
+    component: straight
+    info:
+      length: 12
+      route_info_length: 12
+      route_info_strip_length: 12
+      route_info_type: strip
+      route_info_weight: 12
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 12
+      npoints: 2
+      width: 0.5
+  straight6:
+    component: straight
+    info:
+      length: 13.5
+      route_info_length: 13.5
+      route_info_strip_length: 13.5
+      route_info_type: strip
+      route_info_weight: 13.5
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 13.5
+      npoints: 2
+      width: 0.5
+  straight7:
+    component: straight
+    info:
+      length: 13.5
+      route_info_length: 13.5
+      route_info_strip_length: 13.5
+      route_info_type: strip
+      route_info_weight: 13.5
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 13.5
+      npoints: 2
+      width: 0.5
+  straight8:
+    component: straight
+    info:
+      length: 14.834
+      route_info_length: 14.834
+      route_info_strip_length: 14.834
+      route_info_type: strip
+      route_info_weight: 14.834
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 14.834
+      npoints: 2
+      width: 0.5
+  straight9:
+    component: straight
+    info:
+      length: 19.166
+      route_info_length: 19.166
+      route_info_strip_length: 19.166
+      route_info_type: strip
+      route_info_weight: 19.166
+      width: 0.5
+    settings:
+      cross_section: strip
+      length: 19.166
+      npoints: 2
+      width: 0.5
+nets:
+- p1: bend_euler2,o1
+  p2: straight27,o1
+- p1: bend_euler2,o2
+  p2: straight15,o2
+- p1: bend_euler3,o1
+  p2: straight,o1
+- p1: bend_euler3,o2
+  p2: straight18,o2
+- p1: bend_euler4,o1
+  p2: straight4,o1
+- p1: bend_euler4,o2
+  p2: straight19,o2
+- p1: bend_euler5,o1
+  p2: straight6,o1
+- p1: bend_euler5,o2
+  p2: straight20,o2
+- p1: bend_euler6,o1
+  p2: straight23,o1
+- p1: bend_euler6,o2
+  p2: straight13,o2
+- p1: bend_euler7,o1
+  p2: straight2,o1
+- p1: bend_euler7,o2
+  p2: free_propagation_region2,E9
+- p1: bend_euler8,o1
+  p2: straight8,o1
+- p1: bend_euler8,o2
+  p2: straight10,o2
+- p1: bend_euler9,o1
+  p2: straight21,o1
+- p1: bend_euler9,o2
+  p2: straight12,o2
+- p1: bend_euler10,o1
+  p2: straight9,o1
+- p1: bend_euler10,o2
+  p2: straight16,o2
+- p1: bend_euler11,o1
+  p2: straight12,o1
+- p1: bend_euler11,o2
+  p2: straight22,o2
+- p1: bend_euler12,o1
+  p2: straight13,o1
+- p1: bend_euler12,o2
+  p2: straight24,o2
+- p1: bend_euler13,o1
+  p2: straight14,o1
+- p1: bend_euler13,o2
+  p2: straight26,o2
+- p1: bend_euler14,o1
+  p2: straight15,o1
+- p1: bend_euler14,o2
+  p2: straight28,o2
+- p1: bend_euler15,o1
+  p2: straight18,o1
+- p1: bend_euler15,o2
+  p2: straight3,o2
+- p1: bend_euler16,o1
+  p2: straight19,o1
+- p1: bend_euler16,o2
+  p2: straight5,o2
+- p1: bend_euler17,o1
+  p2: straight20,o1
+- p1: bend_euler17,o2
+  p2: straight7,o2
+- p1: bend_euler18,o1
+  p2: straight17,o1
+- p1: bend_euler18,o2
+  p2: straight9,o2
+- p1: bend_euler19,o1
+  p2: straight11,o1
+- p1: bend_euler19,o2
+  p2: straight8,o2
+- p1: bend_euler20,o1
+  p2: free_propagation_region,E0
+- p1: bend_euler20,o2
+  p2: straight2,o2
+- p1: bend_euler,o1
+  p2: straight25,o1
+- p1: bend_euler,o2
+  p2: straight14,o2
+- p1: free_propagation_region2,E0
+  p2: straight7,o1
+- p1: free_propagation_region2,E1
+  p2: straight5,o1
+- p1: free_propagation_region2,E2
+  p2: straight3,o1
+- p1: free_propagation_region2,E3
+  p2: straight28,o1
+- p1: free_propagation_region2,E4
+  p2: straight26,o1
+- p1: free_propagation_region2,E5
+  p2: straight24,o1
+- p1: free_propagation_region2,E6
+  p2: straight22,o1
+- p1: free_propagation_region2,E7
+  p2: straight16,o1
+- p1: free_propagation_region2,E8
+  p2: straight10,o1
+- p1: free_propagation_region,E1
+  p2: straight11,o2
+- p1: free_propagation_region,E2
+  p2: straight17,o2
+- p1: free_propagation_region,E3
+  p2: straight21,o2
+- p1: free_propagation_region,E4
+  p2: straight23,o2
+- p1: free_propagation_region,E5
+  p2: straight25,o2
+- p1: free_propagation_region,E6
+  p2: straight27,o2
+- p1: free_propagation_region,E7
+  p2: straight,o2
+- p1: free_propagation_region,E8
+  p2: straight4,o2
+- p1: free_propagation_region,E9
+  p2: straight6,o2
+placements:
+  bend_euler:
+    mirror: true
+    rotation: 90
+    x: -1.083
+    y: 27.5
+  bend_euler10:
+    mirror: true
+    rotation: 0
+    x: 34.583
+    y: 33
+  bend_euler11:
+    mirror: true
+    rotation: 0
+    x: 36.75
+    y: 34.5
+  bend_euler12:
+    mirror: true
+    rotation: 0
+    x: 38.917
+    y: 36
+  bend_euler13:
+    mirror: true
+    rotation: 0
+    x: 41.083
+    y: 37.5
+  bend_euler14:
+    mirror: true
+    rotation: 0
+    x: 43.25
+    y: 39
+  bend_euler15:
+    mirror: true
+    rotation: 0
+    x: 45.417
+    y: 40.5
+  bend_euler16:
+    mirror: true
+    rotation: 0
+    x: 47.583
+    y: 42
+  bend_euler17:
+    mirror: true
+    rotation: 0
+    x: 49.75
+    y: 43.5
+  bend_euler18:
+    mirror: true
+    rotation: 90
+    x: 5.417
+    y: 23
+  bend_euler19:
+    mirror: true
+    rotation: 90
+    x: 7.583
+    y: 21.5
+  bend_euler2:
+    mirror: true
+    rotation: 90
+    x: -3.25
+    y: 29
+  bend_euler20:
+    mirror: true
+    rotation: 90
+    x: 9.75
+    y: 20
+  bend_euler3:
+    mirror: true
+    rotation: 90
+    x: -5.417
+    y: 30.5
+  bend_euler4:
+    mirror: true
+    rotation: 90
+    x: -7.583
+    y: 32
+  bend_euler5:
+    mirror: true
+    rotation: 90
+    x: -9.75
+    y: 33.5
+  bend_euler6:
+    mirror: true
+    rotation: 90
+    x: 1.083
+    y: 26
+  bend_euler7:
+    mirror: true
+    rotation: 0
+    x: 30.25
+    y: 30
+  bend_euler8:
+    mirror: true
+    rotation: 0
+    x: 32.417
+    y: 31.5
+  bend_euler9:
+    mirror: true
+    rotation: 90
+    x: 3.25
+    y: 24.5
+  free_propagation_region:
+    mirror: false
+    rotation: 90
+    x: 0
+    y: 0
+  free_propagation_region2:
+    mirror: false
+    rotation: 90
+    x: 50
+    y: 0
+  straight:
+    mirror: false
+    rotation: 270
+    x: -5.417
+    y: 30.5
+  straight10:
+    mirror: false
+    rotation: 90
+    x: 42.417
+    y: 20
+  straight11:
+    mirror: false
+    rotation: 270
+    x: 7.583
+    y: 21.5
+  straight12:
+    mirror: false
+    rotation: 180
+    x: 36.75
+    y: 34.5
+  straight13:
+    mirror: false
+    rotation: 180
+    x: 38.917
+    y: 36
+  straight14:
+    mirror: false
+    rotation: 180
+    x: 41.083
+    y: 37.5
+  straight15:
+    mirror: false
+    rotation: 180
+    x: 43.25
+    y: 39
+  straight16:
+    mirror: false
+    rotation: 90
+    x: 44.583
+    y: 20
+  straight17:
+    mirror: false
+    rotation: 270
+    x: 5.417
+    y: 23
+  straight18:
+    mirror: false
+    rotation: 180
+    x: 45.417
+    y: 40.5
+  straight19:
+    mirror: false
+    rotation: 180
+    x: 47.583
+    y: 42
+  straight2:
+    mirror: false
+    rotation: 180
+    x: 30.25
+    y: 30
+  straight20:
+    mirror: false
+    rotation: 180
+    x: 49.75
+    y: 43.5
+  straight21:
+    mirror: false
+    rotation: 270
+    x: 3.25
+    y: 24.5
+  straight22:
+    mirror: false
+    rotation: 90
+    x: 46.75
+    y: 20
+  straight23:
+    mirror: false
+    rotation: 270
+    x: 1.083
+    y: 26
+  straight24:
+    mirror: false
+    rotation: 90
+    x: 48.917
+    y: 20
+  straight25:
+    mirror: false
+    rotation: 270
+    x: -1.083
+    y: 27.5
+  straight26:
+    mirror: false
+    rotation: 90
+    x: 51.083
+    y: 20
+  straight27:
+    mirror: false
+    rotation: 270
+    x: -3.25
+    y: 29
+  straight28:
+    mirror: false
+    rotation: 90
+    x: 53.25
+    y: 20
+  straight3:
+    mirror: false
+    rotation: 90
+    x: 55.417
+    y: 20
+  straight4:
+    mirror: false
+    rotation: 270
+    x: -7.583
+    y: 32
+  straight5:
+    mirror: false
+    rotation: 90
+    x: 57.583
+    y: 20
+  straight6:
+    mirror: false
+    rotation: 270
+    x: -9.75
+    y: 33.5
+  straight7:
+    mirror: false
+    rotation: 90
+    x: 59.75
+    y: 20
+  straight8:
+    mirror: false
+    rotation: 180
+    x: 32.417
+    y: 31.5
+  straight9:
+    mirror: false
+    rotation: 180
+    x: 34.583
+    y: 33
+ports:
+  E0: free_propagation_region2,W0
+  E1: free_propagation_region2,W1
+  E2: free_propagation_region2,W2
+  o1: free_propagation_region,o1

@@ -1,0 +1,12 @@
+info: {}
+name: litho_steps_LW1_2_4_8_16_LS10_H100_LWG
+settings:
+  height: 100
+  layer: WG
+  line_spacing: 10
+  line_widths:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16

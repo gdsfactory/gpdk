@@ -1,0 +1,60 @@
+instances:
+  coupler:
+    component: coupler
+    info:
+      min_bend_radius: 11.744
+      path_length: 20.48
+    settings:
+      allow_min_radius_violation: false
+      bend: bend_s
+      cross_section: strip
+      dx: 10
+      dy: 4
+      gap: 0.2
+      length: 0.1
+  dbr:
+    component: dbr
+    info: {}
+    settings:
+      cross_section: strip
+      l1: 0.159
+      l2: 0.159
+      n: 10
+      straight_length: 0.01
+      w1: 0.45
+      w2: 0.55
+  dbr2:
+    component: dbr
+    info: {}
+    settings:
+      cross_section: strip
+      l1: 0.159
+      l2: 0.159
+      n: 10
+      straight_length: 0.01
+      w1: 0.45
+      w2: 0.55
+nets:
+- p1: coupler,o2
+  p2: dbr,o1
+- p1: coupler,o3
+  p2: dbr2,o1
+placements:
+  coupler:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+  dbr:
+    mirror: false
+    rotation: 180
+    x: -10.01
+    y: 2.35
+  dbr2:
+    mirror: false
+    rotation: 0
+    x: 10.11
+    y: 2.35
+ports:
+  o1: coupler,o1
+  o2: coupler,o4

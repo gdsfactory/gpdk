@@ -1,0 +1,212 @@
+instances:
+  straight:
+    component: straight
+    info:
+      length: 420
+      route_info_length: 420
+      route_info_type: xs_28f5a27d
+      route_info_weight: 420
+      route_info_xs_28f5a27d_length: 420
+      width: 0.3
+    settings:
+      cross_section: strip_no_ports
+      length: 420
+      npoints: 2
+      width: 0.3
+  straight10:
+    component: straight
+    info:
+      length: 420
+      route_info_length: 420
+      route_info_type: xs_28f5a27d
+      route_info_weight: 420
+      route_info_xs_28f5a27d_length: 420
+      width: 0.3
+    settings:
+      cross_section: strip_no_ports
+      length: 420
+      npoints: 2
+      width: 0.3
+  straight2:
+    component: straight
+    info:
+      length: 420
+      route_info_length: 420
+      route_info_type: xs_28f5a27d
+      route_info_weight: 420
+      route_info_xs_28f5a27d_length: 420
+      width: 0.3
+    settings:
+      cross_section: strip_no_ports
+      length: 420
+      npoints: 2
+      width: 0.3
+  straight3:
+    component: straight
+    info:
+      length: 420
+      route_info_length: 420
+      route_info_type: xs_28f5a27d
+      route_info_weight: 420
+      route_info_xs_28f5a27d_length: 420
+      width: 0.3
+    settings:
+      cross_section: strip_no_ports
+      length: 420
+      npoints: 2
+      width: 0.3
+  straight4:
+    component: straight
+    info:
+      length: 420
+      route_info_length: 420
+      route_info_type: xs_28f5a27d
+      route_info_weight: 420
+      route_info_xs_28f5a27d_length: 420
+      width: 0.3
+    settings:
+      cross_section: strip_no_ports
+      length: 420
+      npoints: 2
+      width: 0.3
+  straight5:
+    component: straight
+    info:
+      length: 420
+      route_info_length: 420
+      route_info_type: xs_28f5a27d
+      route_info_weight: 420
+      route_info_xs_28f5a27d_length: 420
+      width: 0.3
+    settings:
+      cross_section: strip_no_ports
+      length: 420
+      npoints: 2
+      width: 0.3
+  straight6:
+    component: straight
+    info:
+      length: 420
+      route_info_length: 420
+      route_info_type: xs_28f5a27d
+      route_info_weight: 420
+      route_info_xs_28f5a27d_length: 420
+      width: 0.3
+    settings:
+      cross_section: strip_no_ports
+      length: 420
+      npoints: 2
+      width: 0.3
+  straight7:
+    component: straight
+    info:
+      length: 420
+      route_info_length: 420
+      route_info_type: xs_28f5a27d
+      route_info_weight: 420
+      route_info_xs_28f5a27d_length: 420
+      width: 0.3
+    settings:
+      cross_section: strip_no_ports
+      length: 420
+      npoints: 2
+      width: 0.3
+  straight8:
+    component: straight
+    info:
+      length: 420
+      route_info_length: 420
+      route_info_type: xs_28f5a27d
+      route_info_weight: 420
+      route_info_xs_28f5a27d_length: 420
+      width: 0.3
+    settings:
+      cross_section: strip_no_ports
+      length: 420
+      npoints: 2
+      width: 0.3
+  straight9:
+    component: straight
+    info:
+      length: 420
+      route_info_length: 420
+      route_info_type: xs_28f5a27d
+      route_info_weight: 420
+      route_info_xs_28f5a27d_length: 420
+      width: 0.3
+    settings:
+      cross_section: strip_no_ports
+      length: 420
+      npoints: 2
+      width: 0.3
+  text_rectangular:
+    component: text_rectangular
+    info: {}
+    settings:
+      font: rectangular_font
+      justify: left
+      layer: WG
+      layers: null
+      position:
+      - 0
+      - 0
+      size: 1
+      text: 300 300
+nets: []
+placements:
+  straight:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 1.35
+  straight10:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0.75
+  straight2:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0.15
+  straight3:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 1.95
+  straight4:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 2.55
+  straight5:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 3.15
+  straight6:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 3.75
+  straight7:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 4.35
+  straight8:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 4.95
+  straight9:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 5.55
+  text_rectangular:
+    mirror: false
+    rotation: 0
+    x: 425
+    y: 0
+ports: {}

@@ -1,0 +1,10 @@
+info: {}
+name: dash_W10_WE1_L20_TL5_TL2_NBP30_LWG
+settings:
+  layer: WG
+  length: 20
+  n_bezier_points: 30
+  taper_length: 5
+  tip_length: 2
+  width: 10
+  width_end: 1

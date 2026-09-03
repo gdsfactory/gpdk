@@ -1,0 +1,7 @@
+info: {}
+name: resolution_test_pattern_R50_NS36_W1_LWG
+settings:
+  layer: WG
+  n_spokes: 36
+  radius: 50
+  width: 1

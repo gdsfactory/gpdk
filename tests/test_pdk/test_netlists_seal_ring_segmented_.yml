@@ -1,0 +1,208 @@
+instances:
+  array:
+    component: array
+    info: {}
+    settings:
+      add_ports: true
+      auto_rename_ports: false
+      centered: false
+      column_pitch: 150
+      columns: 1
+      component: via_stack_m1_mtop_S3_10_LM1_M2_MTOP_LONone_Vvia1_via2_N_e489a0aa
+      post_process: null
+      row_pitch: 12
+      rows: 37
+      size: null
+  array2:
+    component: array
+    info: {}
+    settings:
+      add_ports: true
+      auto_rename_ports: false
+      centered: false
+      column_pitch: 150
+      columns: 1
+      component: via_stack_m1_mtop_S3_10_LM1_M2_MTOP_LONone_Vvia1_via2_N_e489a0aa
+      post_process: null
+      row_pitch: 12
+      rows: 37
+      size: null
+  array3:
+    component: array
+    info: {}
+    settings:
+      add_ports: true
+      auto_rename_ports: false
+      centered: false
+      column_pitch: 150
+      columns: 1
+      component: via_stack_m1_mtop_S3_10_LM1_M2_MTOP_LONone_Vvia1_via2_N_e489a0aa
+      post_process: null
+      row_pitch: 12
+      rows: 37
+      size: null
+  array4:
+    component: array
+    info: {}
+    settings:
+      add_ports: true
+      auto_rename_ports: false
+      centered: false
+      column_pitch: 150
+      columns: 1
+      component: via_stack_m1_mtop_S3_10_LM1_M2_MTOP_LONone_Vvia1_via2_N_e489a0aa
+      post_process: null
+      row_pitch: 12
+      rows: 37
+      size: null
+  array5:
+    component: array
+    info: {}
+    settings:
+      add_ports: true
+      auto_rename_ports: false
+      centered: false
+      column_pitch: 12
+      columns: 37
+      component: via_stack_m1_mtop_S10_3_LM1_M2_MTOP_LONone_Vvia1_via2_N_2aa45e50
+      post_process: null
+      row_pitch: 150
+      rows: 1
+      size: null
+  array6:
+    component: array
+    info: {}
+    settings:
+      add_ports: true
+      auto_rename_ports: false
+      centered: false
+      column_pitch: 12
+      columns: 37
+      component: via_stack_m1_mtop_S10_3_LM1_M2_MTOP_LONone_Vvia1_via2_N_2aa45e50
+      post_process: null
+      row_pitch: 150
+      rows: 1
+      size: null
+  array7:
+    component: array
+    info: {}
+    settings:
+      add_ports: true
+      auto_rename_ports: false
+      centered: false
+      column_pitch: 12
+      columns: 37
+      component: via_stack_m1_mtop_S10_3_LM1_M2_MTOP_LONone_Vvia1_via2_N_2aa45e50
+      post_process: null
+      row_pitch: 150
+      rows: 1
+      size: null
+  array8:
+    component: array
+    info: {}
+    settings:
+      add_ports: true
+      auto_rename_ports: false
+      centered: false
+      column_pitch: 12
+      columns: 37
+      component: via_stack_m1_mtop_S10_3_LM1_M2_MTOP_LONone_Vvia1_via2_N_2aa45e50
+      post_process: null
+      row_pitch: 150
+      rows: 1
+      size: null
+  via_stack_corner45_extended:
+    component: via_stack_corner45_extended
+    info: {}
+    settings:
+      corner: via_stack_corner45
+      length: 10
+      via_stack: via_stack
+      width: 3
+  via_stack_corner45_extended2:
+    component: via_stack_corner45_extended
+    info: {}
+    settings:
+      corner: via_stack_corner45
+      length: 10
+      via_stack: via_stack
+      width: 3
+  via_stack_corner45_extended3:
+    component: via_stack_corner45_extended
+    info: {}
+    settings:
+      corner: via_stack_corner45
+      length: 10
+      via_stack: via_stack
+      width: 3
+  via_stack_corner45_extended4:
+    component: via_stack_corner45_extended
+    info: {}
+    settings:
+      corner: via_stack_corner45
+      length: 10
+      via_stack: via_stack
+      width: 3
+nets: []
+placements:
+  array:
+    mirror: false
+    rotation: 0
+    x: 1.5
+    y: 29.061
+  array2:
+    mirror: false
+    rotation: 0
+    x: 493.5
+    y: 35.061
+  array3:
+    mirror: false
+    rotation: 0
+    x: 498.5
+    y: 29.061
+  array4:
+    mirror: false
+    rotation: 0
+    x: 6.5
+    y: 35.061
+  array5:
+    mirror: false
+    rotation: 0
+    x: 31.061
+    y: 1.5
+  array6:
+    mirror: false
+    rotation: 0
+    x: 31.061
+    y: 498.5
+  array7:
+    mirror: false
+    rotation: 0
+    x: 33.061
+    y: 6.5
+  array8:
+    mirror: false
+    rotation: 0
+    x: 37.061
+    y: 493.5
+  via_stack_corner45_extended:
+    mirror: true
+    rotation: 0
+    x: 3
+    y: 13
+  via_stack_corner45_extended2:
+    mirror: false
+    rotation: 0
+    x: 3
+    y: 487
+  via_stack_corner45_extended3:
+    mirror: false
+    rotation: 180
+    x: 497
+    y: 13
+  via_stack_corner45_extended4:
+    mirror: true
+    rotation: 180
+    x: 497
+    y: 487
+ports: {}

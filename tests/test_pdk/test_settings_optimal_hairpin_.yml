@@ -1,0 +1,11 @@
+info: {}
+name: optimal_hairpin_W0p2_P0p6_L10_TR4_NP50_L1_0
+settings:
+  layer:
+  - 1
+  - 0
+  length: 10
+  num_pts: 50
+  pitch: 0.6
+  turn_ratio: 4
+  width: 0.2

@@ -1,0 +1,28 @@
+instances:
+  circle:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 5
+  circle2:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WGCLAD
+      radius: 62.5
+nets: []
+placements:
+  circle:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+  circle2:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+ports: {}

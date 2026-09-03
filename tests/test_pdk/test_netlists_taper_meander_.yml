@@ -1,0 +1,19 @@
+instances:
+  taper_section:
+    component: taper_section
+    info: {}
+    settings:
+      layer: WG
+      num_pts: 50
+      x_end: '1001'
+      x_start: '1'
+nets: []
+placements:
+  taper_section:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+ports:
+  o1: taper_section,o1
+  o2: taper_section,o2

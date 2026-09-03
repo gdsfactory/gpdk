@@ -1,0 +1,138 @@
+instances:
+  bend_s:
+    component: bend_s
+    info:
+      end_angle: 0
+      length: 22.771
+      min_bend_radius: 10.855
+      route_info_length: 22.771
+      route_info_min_bend_radius: 10.855
+      route_info_n_bend_s: 1
+      route_info_strip_length: 22.771
+      route_info_type: strip
+      route_info_weight: 22.771
+      start_angle: 0
+    settings:
+      allow_min_radius_violation: false
+      cross_section: strip
+      npoints: 101
+      size:
+      - 20
+      - 9.375
+      width: null
+  bend_s2:
+    component: bend_s
+    info:
+      end_angle: 0
+      length: 22.771
+      min_bend_radius: 10.855
+      route_info_length: 22.771
+      route_info_min_bend_radius: 10.855
+      route_info_n_bend_s: 1
+      route_info_strip_length: 22.771
+      route_info_type: strip
+      route_info_weight: 22.771
+      start_angle: 0
+    settings:
+      allow_min_radius_violation: false
+      cross_section: strip
+      npoints: 101
+      size:
+      - 20
+      - 9.375
+      width: null
+  bend_s3:
+    component: bend_s
+    info:
+      end_angle: 0
+      length: 22.771
+      min_bend_radius: 10.855
+      route_info_length: 22.771
+      route_info_min_bend_radius: 10.855
+      route_info_n_bend_s: 1
+      route_info_strip_length: 22.771
+      route_info_type: strip
+      route_info_weight: 22.771
+      start_angle: 0
+    settings:
+      allow_min_radius_violation: false
+      cross_section: strip
+      npoints: 101
+      size:
+      - 20
+      - 9.375
+      width: null
+  bend_s4:
+    component: bend_s
+    info:
+      end_angle: 0
+      length: 22.771
+      min_bend_radius: 10.855
+      route_info_length: 22.771
+      route_info_min_bend_radius: 10.855
+      route_info_n_bend_s: 1
+      route_info_strip_length: 22.771
+      route_info_type: strip
+      route_info_weight: 22.771
+      start_angle: 0
+    settings:
+      allow_min_radius_violation: false
+      cross_section: strip
+      npoints: 101
+      size:
+      - 20
+      - 9.375
+      width: null
+  mmi2x2:
+    component: mmi2x2
+    info: {}
+    settings:
+      cross_section: strip
+      gap_mmi: 0.25
+      length_mmi: 5.5
+      length_taper: 10
+      straight: straight
+      taper: taper
+      width: null
+      width_mmi: 2.5
+      width_taper: 1
+nets:
+- p1: bend_s2,o1
+  p2: mmi2x2,o2
+- p1: bend_s3,o1
+  p2: mmi2x2,o4
+- p1: bend_s4,o1
+  p2: mmi2x2,o3
+- p1: bend_s,o1
+  p2: mmi2x2,o1
+placements:
+  bend_s:
+    mirror: false
+    rotation: 180
+    x: -10
+    y: -0.625
+  bend_s2:
+    mirror: true
+    rotation: 180
+    x: -10
+    y: 0.625
+  bend_s3:
+    mirror: true
+    rotation: 0
+    x: 15.5
+    y: -0.625
+  bend_s4:
+    mirror: false
+    rotation: 0
+    x: 15.5
+    y: 0.625
+  mmi2x2:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+ports:
+  o1: bend_s,o2
+  o2: bend_s2,o2
+  o3: bend_s4,o2
+  o4: bend_s3,o2

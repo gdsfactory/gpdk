@@ -1,0 +1,11 @@
+info: {}
+name: meander_channel_CW1_NT5_TS5_SL20_RL5_RH5_LWG_PToptical
+settings:
+  channel_width: 1
+  layer: WG
+  n_turns: 5
+  port_type: optical
+  reservoir_height: 5
+  reservoir_length: 5
+  straight_length: 20
+  turn_spacing: 5

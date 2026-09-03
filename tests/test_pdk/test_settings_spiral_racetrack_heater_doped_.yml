@@ -1,0 +1,11 @@
+info: {}
+name: spiral_racetrack_heater_doped_MRNone_SL30_S2_N8_Sstraig_c5c52dbc
+settings:
+  bend: bend_euler
+  bend_s: bend_s
+  heater_cross_section: npp
+  num: 8
+  spacing: 2
+  straight: straight
+  straight_length: 30
+  waveguide_cross_section: strip

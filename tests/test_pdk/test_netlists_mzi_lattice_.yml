@@ -1,0 +1,43 @@
+instances:
+  mzi_coupler:
+    component: mzi_coupler
+    info: {}
+    settings:
+      add_optical_ports_arms: false
+      auto_detect_port_names: false
+      auto_rename_ports: true
+      bend: bend_euler
+      combiner: coupler_G0p3_L20_D4_D10_CSstrip_AMRVFalse_Bbend_s
+      cross_section: strip
+      cross_section_x_bot: null
+      cross_section_x_top: null
+      delta_length: 10
+      length_x: null
+      length_y: 2
+      min_length: 0.01
+      mirror_bot: false
+      nbends: 2
+      port1: o1
+      port2: o2
+      port_e0_combiner: o4
+      port_e0_splitter: o4
+      port_e1_combiner: o3
+      port_e1_splitter: o3
+      splitter: coupler_G0p2_L10_D4_D10_CSstrip_AMRVFalse_Bbend_s
+      straight: straight
+      straight_x_bot: null
+      straight_x_top: null
+      straight_y: null
+      with_splitter: true
+nets: []
+placements:
+  mzi_coupler:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+ports:
+  o1: mzi_coupler,o1
+  o2: mzi_coupler,o2
+  o3: mzi_coupler,o3
+  o4: mzi_coupler,o4

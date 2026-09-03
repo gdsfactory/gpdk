@@ -1,0 +1,8 @@
+info: {}
+name: gear_NT20_MS2_PA20_HRNone_HHR0_LWG
+settings:
+  hub_hole_radius: 0
+  layer: WG
+  module_size: 2
+  n_teeth: 20
+  pressure_angle: 20

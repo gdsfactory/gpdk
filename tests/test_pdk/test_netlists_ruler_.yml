@@ -1,0 +1,622 @@
+instances:
+  rectangle:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 10
+  rectangle10:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 55
+  rectangle11:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 55
+  rectangle12:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle13:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle14:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle15:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle16:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle17:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle18:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle19:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle2:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 10
+  rectangle20:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle21:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 5
+  rectangle3:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 10
+  rectangle4:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 10
+  rectangle5:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 10
+  rectangle6:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 10
+  rectangle7:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 10
+  rectangle8:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 10
+  rectangle9:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: null
+      size:
+      - 2
+      - 10
+  text_rectangular:
+    component: text_rectangular
+    info: {}
+    settings:
+      font: rectangular_font
+      justify: left
+      layer: WG
+      layers: null
+      position:
+      - 0
+      - 0
+      size: 0.7
+      text: '0'
+  text_rectangular10:
+    component: text_rectangular
+    info: {}
+    settings:
+      font: rectangular_font
+      justify: left
+      layer: WG
+      layers: null
+      position:
+      - 0
+      - 0
+      size: 0.7
+      text: '-60'
+  text_rectangular11:
+    component: text_rectangular
+    info: {}
+    settings:
+      font: rectangular_font
+      justify: left
+      layer: WG
+      layers: null
+      position:
+      - 0
+      - 0
+      size: 0.7
+      text: '-70'
+  text_rectangular2:
+    component: text_rectangular
+    info: {}
+    settings:
+      font: rectangular_font
+      justify: left
+      layer: WG
+      layers: null
+      position:
+      - 0
+      - 0
+      size: 0.7
+      text: '-10'
+  text_rectangular3:
+    component: text_rectangular
+    info: {}
+    settings:
+      font: rectangular_font
+      justify: left
+      layer: WG
+      layers: null
+      position:
+      - 0
+      - 0
+      size: 0.7
+      text: '-40'
+  text_rectangular4:
+    component: text_rectangular
+    info: {}
+    settings:
+      font: rectangular_font
+      justify: left
+      layer: WG
+      layers: null
+      position:
+      - 0
+      - 0
+      size: 0.7
+      text: '-30'
+  text_rectangular5:
+    component: text_rectangular
+    info: {}
+    settings:
+      font: rectangular_font
+      justify: left
+      layer: WG
+      layers: null
+      position:
+      - 0
+      - 0
+      size: 0.7
+      text: '-90'
+  text_rectangular6:
+    component: text_rectangular
+    info: {}
+    settings:
+      font: rectangular_font
+      justify: left
+      layer: WG
+      layers: null
+      position:
+      - 0
+      - 0
+      size: 0.7
+      text: '-80'
+  text_rectangular7:
+    component: text_rectangular
+    info: {}
+    settings:
+      font: rectangular_font
+      justify: left
+      layer: WG
+      layers: null
+      position:
+      - 0
+      - 0
+      size: 0.7
+      text: '-100'
+  text_rectangular8:
+    component: text_rectangular
+    info: {}
+    settings:
+      font: rectangular_font
+      justify: left
+      layer: WG
+      layers: null
+      position:
+      - 0
+      - 0
+      size: 0.7
+      text: '-50'
+  text_rectangular9:
+    component: text_rectangular
+    info: {}
+    settings:
+      font: rectangular_font
+      justify: left
+      layer: WG
+      layers: null
+      position:
+      - 0
+      - 0
+      size: 0.7
+      text: '-20'
+nets: []
+placements:
+  rectangle:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 5
+  rectangle10:
+    mirror: false
+    rotation: 0
+    x: 100
+    y: 0
+  rectangle11:
+    mirror: false
+    rotation: 0
+    x: 50
+    y: 0
+  rectangle12:
+    mirror: false
+    rotation: 0
+    x: 15
+    y: 20
+  rectangle13:
+    mirror: false
+    rotation: 0
+    x: 25
+    y: 30
+  rectangle14:
+    mirror: false
+    rotation: 0
+    x: 35
+    y: 40
+  rectangle15:
+    mirror: false
+    rotation: 0
+    x: 45
+    y: 50
+  rectangle16:
+    mirror: false
+    rotation: 0
+    x: 5
+    y: 10
+  rectangle17:
+    mirror: false
+    rotation: 0
+    x: 55
+    y: 5
+  rectangle18:
+    mirror: false
+    rotation: 0
+    x: 65
+    y: 15
+  rectangle19:
+    mirror: false
+    rotation: 0
+    x: 75
+    y: 25
+  rectangle2:
+    mirror: false
+    rotation: 0
+    x: 10
+    y: 15
+  rectangle20:
+    mirror: false
+    rotation: 0
+    x: 85
+    y: 35
+  rectangle21:
+    mirror: false
+    rotation: 0
+    x: 95
+    y: 45
+  rectangle3:
+    mirror: false
+    rotation: 0
+    x: 20
+    y: 25
+  rectangle4:
+    mirror: false
+    rotation: 0
+    x: 30
+    y: 35
+  rectangle5:
+    mirror: false
+    rotation: 0
+    x: 40
+    y: 45
+  rectangle6:
+    mirror: false
+    rotation: 0
+    x: 60
+    y: 10
+  rectangle7:
+    mirror: false
+    rotation: 0
+    x: 70
+    y: 20
+  rectangle8:
+    mirror: false
+    rotation: 0
+    x: 80
+    y: 30
+  rectangle9:
+    mirror: false
+    rotation: 0
+    x: 90
+    y: 40
+  text_rectangular:
+    mirror: false
+    rotation: 90
+    x: 99
+    y: 1
+  text_rectangular10:
+    mirror: false
+    rotation: 90
+    x: 39
+    y: 46
+  text_rectangular11:
+    mirror: false
+    rotation: 90
+    x: 29
+    y: 36
+  text_rectangular2:
+    mirror: false
+    rotation: 90
+    x: 89
+    y: 41
+  text_rectangular3:
+    mirror: false
+    rotation: 90
+    x: 59
+    y: 11
+  text_rectangular4:
+    mirror: false
+    rotation: 90
+    x: 69
+    y: 21
+  text_rectangular5:
+    mirror: false
+    rotation: 90
+    x: 9
+    y: 16
+  text_rectangular6:
+    mirror: false
+    rotation: 90
+    x: 19
+    y: 26
+  text_rectangular7:
+    mirror: false
+    rotation: 90
+    x: -1
+    y: 6
+  text_rectangular8:
+    mirror: false
+    rotation: 90
+    x: 49
+    y: 1
+  text_rectangular9:
+    mirror: false
+    rotation: 90
+    x: 79
+    y: 31
+ports: {}

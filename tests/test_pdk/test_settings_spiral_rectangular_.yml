@@ -1,0 +1,8 @@
+info: {}
+name: spiral_rectangular_NT4_W1_SL10_P3_LWG
+settings:
+  layer: WG
+  n_turns: 4
+  pitch: 3
+  start_length: 10
+  width: 1

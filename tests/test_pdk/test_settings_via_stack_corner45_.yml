@@ -1,0 +1,14 @@
+info:
+  layer: MTOP
+name: via_stack_corner45_W10_LM1_M2_MTOP_LONone_Vvia1_via2_No_067486e6
+settings:
+  correct_size: false
+  layers:
+  - M1
+  - M2
+  - MTOP
+  vias:
+  - via1
+  - via2
+  - null
+  width: 10

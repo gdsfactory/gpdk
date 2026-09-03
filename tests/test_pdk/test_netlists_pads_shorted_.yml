@@ -1,0 +1,248 @@
+instances:
+  pad:
+    component: pad
+    info:
+      size:
+      - 100
+      - 100
+      xsize: 100
+      ysize: 100
+    settings:
+      bbox_layers: null
+      bbox_offsets: null
+      layer: MTOP
+      port_inclusion: 0
+      port_orientation: 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: pad
+      size:
+      - 100
+      - 100
+  pad2:
+    component: pad
+    info:
+      size:
+      - 100
+      - 100
+      xsize: 100
+      ysize: 100
+    settings:
+      bbox_layers: null
+      bbox_offsets: null
+      layer: MTOP
+      port_inclusion: 0
+      port_orientation: 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: pad
+      size:
+      - 100
+      - 100
+  pad3:
+    component: pad
+    info:
+      size:
+      - 100
+      - 100
+      xsize: 100
+      ysize: 100
+    settings:
+      bbox_layers: null
+      bbox_offsets: null
+      layer: MTOP
+      port_inclusion: 0
+      port_orientation: 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: pad
+      size:
+      - 100
+      - 100
+  pad4:
+    component: pad
+    info:
+      size:
+      - 100
+      - 100
+      xsize: 100
+      ysize: 100
+    settings:
+      bbox_layers: null
+      bbox_offsets: null
+      layer: MTOP
+      port_inclusion: 0
+      port_orientation: 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: pad
+      size:
+      - 100
+      - 100
+  pad5:
+    component: pad
+    info:
+      size:
+      - 100
+      - 100
+      xsize: 100
+      ysize: 100
+    settings:
+      bbox_layers: null
+      bbox_offsets: null
+      layer: MTOP
+      port_inclusion: 0
+      port_orientation: 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: pad
+      size:
+      - 100
+      - 100
+  pad6:
+    component: pad
+    info:
+      size:
+      - 100
+      - 100
+      xsize: 100
+      ysize: 100
+    settings:
+      bbox_layers: null
+      bbox_offsets: null
+      layer: MTOP
+      port_inclusion: 0
+      port_orientation: 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: pad
+      size:
+      - 100
+      - 100
+  pad7:
+    component: pad
+    info:
+      size:
+      - 100
+      - 100
+      xsize: 100
+      ysize: 100
+    settings:
+      bbox_layers: null
+      bbox_offsets: null
+      layer: MTOP
+      port_inclusion: 0
+      port_orientation: 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: pad
+      size:
+      - 100
+      - 100
+  pad8:
+    component: pad
+    info:
+      size:
+      - 100
+      - 100
+      xsize: 100
+      ysize: 100
+    settings:
+      bbox_layers: null
+      bbox_offsets: null
+      layer: MTOP
+      port_inclusion: 0
+      port_orientation: 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: pad
+      size:
+      - 100
+      - 100
+  rectangle:
+    component: rectangle
+    info: {}
+    settings:
+      centered: true
+      layer: MTOP
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 1050
+      - 10
+nets: []
+placements:
+  pad:
+    mirror: false
+    rotation: 0
+    x: -225
+    y: 0
+  pad2:
+    mirror: false
+    rotation: 0
+    x: -375
+    y: 0
+  pad3:
+    mirror: false
+    rotation: 0
+    x: -525
+    y: 0
+  pad4:
+    mirror: false
+    rotation: 0
+    x: -75
+    y: 0
+  pad5:
+    mirror: false
+    rotation: 0
+    x: 225
+    y: 0
+  pad6:
+    mirror: false
+    rotation: 0
+    x: 375
+    y: 0
+  pad7:
+    mirror: false
+    rotation: 0
+    x: 525
+    y: 0
+  pad8:
+    mirror: false
+    rotation: 0
+    x: 75
+    y: 0
+  rectangle:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+ports: {}

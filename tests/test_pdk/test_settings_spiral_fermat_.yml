@@ -1,0 +1,8 @@
+info: {}
+name: spiral_fermat_W1_NT5_A5_AR2_LWG
+settings:
+  a: 5
+  angle_resolution: 2
+  layer: WG
+  n_turns: 5
+  width: 1

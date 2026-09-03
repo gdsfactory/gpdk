@@ -1,0 +1,9 @@
+info: {}
+name: array_hexagonal_Ccircle_C10_R10_P25_CTrue_APTrue
+settings:
+  add_ports: true
+  centered: true
+  columns: 10
+  component: circle
+  pitch: 25
+  rows: 10

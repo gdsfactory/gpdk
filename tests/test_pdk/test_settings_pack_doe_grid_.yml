@@ -1,0 +1,9 @@
+info:
+  doe_names:
+  - straight_L5_N2_CSstrip_WNone
+  doe_settings:
+  - length: 5
+name: pack_doe_grid_DNone_SNone_DPFalse_FNone_WTFalse
+settings:
+  do_permutations: false
+  with_text: false

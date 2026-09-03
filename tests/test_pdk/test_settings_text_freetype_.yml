@@ -1,0 +1,8 @@
+info: {}
+name: text_freetype_Ta_S10_Jleft_FOCRmApttf_LWG_LNone
+settings:
+  font: OCRmApttf
+  justify: left
+  layer: WG
+  size: 10
+  text: a

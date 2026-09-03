@@ -1,0 +1,68 @@
+instances:
+  circle:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer:
+      - 1
+      - 0
+      radius: 100
+  circle2:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer:
+      - 1
+      - 0
+      radius: 100
+  circle3:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer:
+      - 1
+      - 0
+      radius: 5
+  rectangle:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer:
+      - 2
+      - 0
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 0.15
+      - 0.3
+nets: []
+placements:
+  circle:
+    mirror: false
+    rotation: 0
+    x: -103
+    y: 0
+  circle2:
+    mirror: false
+    rotation: 0
+    x: 103
+    y: 0
+  circle3:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+  rectangle:
+    mirror: false
+    rotation: 0
+    x: -0.075
+    y: -0.15
+ports: {}

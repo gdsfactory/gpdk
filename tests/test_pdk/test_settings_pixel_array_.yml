@@ -1,0 +1,19 @@
+info: {}
+name: 'pixel_array_P
+
+  _XXX
+
+  X___X
+
+  XXXXX
+
+  X___X
+
+  X___X
+
+
+  _PS10_LM1'
+settings:
+  layer: M1
+  pixel_size: 10
+  pixels: "\n XXX\nX   X\nXXXXX\nX   X\nX   X\n\n"

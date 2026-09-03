@@ -1,0 +1,11 @@
+info: {}
+name: coupler_pulley_R10_RWNone_G0p2_CA60_WL40_WH10_NS128_CSstrip_LWG
+settings:
+  coupling_angle: 60
+  cross_section: strip
+  gap: 0.2
+  layer: WG
+  n_segments: 128
+  radius: 10
+  wg_height: 10
+  wg_length: 40

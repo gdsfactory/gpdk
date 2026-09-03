@@ -1,0 +1,32 @@
+instances:
+  triangle:
+    component: triangle
+    info: {}
+    settings:
+      layer: WG
+      x: 10
+      xtop: 0
+      y: 20
+      ybot: 0
+  triangle2:
+    component: triangle
+    info: {}
+    settings:
+      layer: WG
+      x: 10
+      xtop: 0
+      y: 20
+      ybot: 0
+nets: []
+placements:
+  triangle:
+    mirror: true
+    rotation: 0
+    x: 0
+    y: -3
+  triangle2:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+ports: {}

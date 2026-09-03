@@ -1,0 +1,11 @@
+info: {}
+name: array_Cpad_C6_R1_CP150_RP150_APTrue_SNone_CFalse_PPNone_ARPFalse
+settings:
+  add_ports: true
+  auto_rename_ports: false
+  centered: false
+  column_pitch: 150
+  columns: 6
+  component: pad
+  row_pitch: 150
+  rows: 1

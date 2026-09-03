@@ -1,0 +1,14 @@
+info: {}
+name: via_stack_with_offset_m1_m3_LM1_M2_MTOP_S10_10_SNone_LO_b1d15fce
+settings:
+  layers:
+  - M1
+  - M2
+  - MTOP
+  size:
+  - 10
+  - 10
+  vias:
+  - null
+  - via1
+  - via2

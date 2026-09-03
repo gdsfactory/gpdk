@@ -1,0 +1,15 @@
+info: {}
+name: compass_S4_2_LWG_PTelectrical_PI0_PO180_90_0_m90_ARPTrue
+settings:
+  auto_rename_ports: true
+  layer: WG
+  port_inclusion: 0
+  port_orientations:
+  - 180
+  - 90
+  - 0
+  - -90
+  port_type: electrical
+  size:
+  - 4
+  - 2

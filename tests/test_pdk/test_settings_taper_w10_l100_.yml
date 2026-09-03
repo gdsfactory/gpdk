@@ -1,0 +1,5 @@
+info: {}
+name: taper_w10_l100_Ftaper_strip_0p5_10_100pcsv_CSstrip
+settings:
+  cross_section: strip
+  filepath: taper_strip_0p5_10_100pcsv

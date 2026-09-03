@@ -1,0 +1,175 @@
+instances:
+  bezier:
+    component: bezier
+    info:
+      end_angle: 0
+      length: 42.085
+      min_bend_radius: 44.312
+      route_info_length: 42.085
+      route_info_min_bend_radius: 44.312
+      route_info_n_bend_s: 1
+      route_info_strip_length: 42.085
+      route_info_type: strip
+      route_info_weight: 42.085
+      start_angle: 45
+    settings:
+      allow_min_radius_violation: false
+      bend_radius_error_type: null
+      control_points:
+      - - 2.828
+        - 2.828
+      - - 17.256
+        - 17.366
+      - - 30.858
+        - 20.027
+      - - 40
+        - 20
+      cross_section: strip
+      end_angle: 0
+      npoints: 101
+      start_angle: 45
+      width: null
+      with_manhattan_facing_angles: true
+    virtual: true
+  bezier2:
+    component: bezier
+    info:
+      end_angle: 0
+      length: 42.085
+      min_bend_radius: 44.312
+      route_info_length: 42.085
+      route_info_min_bend_radius: 44.312
+      route_info_n_bend_s: 1
+      route_info_strip_length: 42.085
+      route_info_type: strip
+      route_info_weight: 42.085
+      start_angle: 45
+    settings:
+      allow_min_radius_violation: false
+      bend_radius_error_type: null
+      control_points:
+      - - 2.828
+        - 2.828
+      - - 17.256
+        - 17.366
+      - - 30.858
+        - 20.027
+      - - 40
+        - 20
+      cross_section: strip
+      end_angle: 0
+      npoints: 101
+      start_angle: 45
+      width: null
+      with_manhattan_facing_angles: true
+    virtual: true
+  bezier3:
+    component: bezier
+    info:
+      end_angle: 0
+      length: 42.085
+      min_bend_radius: 44.312
+      route_info_length: 42.085
+      route_info_min_bend_radius: 44.312
+      route_info_n_bend_s: 1
+      route_info_strip_length: 42.085
+      route_info_type: strip
+      route_info_weight: 42.085
+      start_angle: 45
+    settings:
+      allow_min_radius_violation: false
+      bend_radius_error_type: null
+      control_points:
+      - - 2.828
+        - 2.828
+      - - 17.256
+        - 17.366
+      - - 30.858
+        - 20.027
+      - - 40
+        - 20
+      cross_section: strip
+      end_angle: 0
+      npoints: 101
+      start_angle: 45
+      width: null
+      with_manhattan_facing_angles: true
+    virtual: true
+  bezier4:
+    component: bezier
+    info:
+      end_angle: 0
+      length: 42.085
+      min_bend_radius: 44.312
+      route_info_length: 42.085
+      route_info_min_bend_radius: 44.312
+      route_info_n_bend_s: 1
+      route_info_strip_length: 42.085
+      route_info_type: strip
+      route_info_weight: 42.085
+      start_angle: 45
+    settings:
+      allow_min_radius_violation: false
+      bend_radius_error_type: null
+      control_points:
+      - - 2.828
+        - 2.828
+      - - 17.256
+        - 17.366
+      - - 30.858
+        - 20.027
+      - - 40
+        - 20
+      cross_section: strip
+      end_angle: 0
+      npoints: 101
+      start_angle: 45
+      width: null
+      with_manhattan_facing_angles: true
+    virtual: true
+  crossing:
+    component: crossing
+    info: {}
+    settings:
+      arm: crossing_arm
+    virtual: true
+nets:
+- p1: bezier2,o2
+  p2: crossing,o4
+- p1: bezier3,o2
+  p2: crossing,o1
+- p1: bezier4,o2
+  p2: crossing,o3
+- p1: bezier,o2
+  p2: crossing,o2
+placements:
+  bezier:
+    mirror: false
+    rotation: 315
+    x: -45.255
+    y: 16.971
+  bezier2:
+    mirror: false
+    rotation: 135
+    x: 45.255
+    y: -16.971
+  bezier3:
+    mirror: true
+    rotation: 45.0
+    x: -45.255
+    y: -16.971
+  bezier4:
+    mirror: true
+    rotation: 225
+    x: 45.255
+    y: 16.971
+  crossing:
+    mirror: false
+    rotation: 45.0
+    x: 0
+    y: 0
+ports:
+  o1: bezier2,o1
+  o2: bezier3,o1
+  o3: bezier4,o1
+  o4: bezier,o1

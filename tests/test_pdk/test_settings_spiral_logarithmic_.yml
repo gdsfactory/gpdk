@@ -1,0 +1,9 @@
+info: {}
+name: spiral_logarithmic_W0p5_NT4_A1_B0p1_AR2_LWG
+settings:
+  a: 1
+  angle_resolution: 2
+  b: 0.1
+  layer: WG
+  n_turns: 4
+  width: 0.5

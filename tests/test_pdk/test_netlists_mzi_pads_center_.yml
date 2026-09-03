@@ -1,0 +1,496 @@
+instances:
+  array:
+    component: array
+    info: {}
+    settings:
+      add_ports: true
+      auto_rename_ports: false
+      centered: false
+      column_pitch: 100
+      columns: 3
+      component: pad_small
+      post_process: null
+      row_pitch: 150
+      rows: 1
+      size: null
+  mzi:
+    component: mzi
+    info: {}
+    settings:
+      add_optical_ports_arms: false
+      auto_detect_port_names: false
+      auto_rename_ports: false
+      bend: bend_euler
+      combiner: null
+      cross_section: strip
+      cross_section_x_bot: null
+      cross_section_x_top: null
+      delta_length: 40
+      length_x: 500
+      length_y: 40
+      min_length: 0.01
+      mirror_bot: false
+      nbends: 2
+      port1: o1
+      port2: o2
+      port_e0_combiner: o3
+      port_e0_splitter: o3
+      port_e1_combiner: o2
+      port_e1_splitter: o2
+      splitter: mmi1x2
+      straight: straight
+      straight_x_bot: straight_heater_metal
+      straight_x_top: straight_heater_metal
+      straight_y: null
+      with_splitter: true
+  straight:
+    component: straight
+    info:
+      length: 102.4
+      route_info_length: 102.4
+      route_info_metal3_length: 102.4
+      route_info_type: metal3
+      route_info_weight: 102.4
+      width: 10
+    settings:
+      cross_section: metal_routing
+      length: 102.4
+      npoints: 2
+      width: 10
+  straight10:
+    component: straight
+    info:
+      length: 3
+      route_info_length: 3
+      route_info_metal3_length: 3
+      route_info_type: metal3
+      route_info_weight: 3
+      width: 10
+    settings:
+      cross_section: metal_routing
+      length: 3
+      npoints: 2
+      width: 10
+  straight11:
+    component: straight
+    info:
+      length: 60.125
+      route_info_length: 60.125
+      route_info_metal3_length: 60.125
+      route_info_type: metal3
+      route_info_weight: 60.125
+      width: 10
+    settings:
+      cross_section: metal_routing
+      length: 60.125
+      npoints: 2
+      width: 10
+  straight12:
+    component: straight
+    info:
+      length: 74.125
+      route_info_length: 74.125
+      route_info_metal3_length: 74.125
+      route_info_type: metal3
+      route_info_weight: 74.125
+      width: 10
+    settings:
+      cross_section: metal_routing
+      length: 74.125
+      npoints: 2
+      width: 10
+  straight2:
+    component: straight
+    info:
+      length: 115.4
+      route_info_length: 115.4
+      route_info_metal3_length: 115.4
+      route_info_type: metal3
+      route_info_weight: 115.4
+      width: 10
+    settings:
+      cross_section: metal_routing
+      length: 115.4
+      npoints: 2
+      width: 10
+  straight3:
+    component: straight
+    info:
+      length: 12.125
+      route_info_length: 12.125
+      route_info_metal3_length: 12.125
+      route_info_type: metal3
+      route_info_weight: 12.125
+      width: 10
+    settings:
+      cross_section: metal_routing
+      length: 12.125
+      npoints: 2
+      width: 10
+  straight4:
+    component: straight
+    info:
+      length: 250.4
+      route_info_length: 250.4
+      route_info_metal3_length: 250.4
+      route_info_type: metal3
+      route_info_weight: 250.4
+      width: 10
+    settings:
+      cross_section: metal_routing
+      length: 250.4
+      npoints: 2
+      width: 10
+  straight5:
+    component: straight
+    info:
+      length: 250.4
+      route_info_length: 250.4
+      route_info_metal3_length: 250.4
+      route_info_type: metal3
+      route_info_weight: 250.4
+      width: 10
+    settings:
+      cross_section: metal_routing
+      length: 250.4
+      npoints: 2
+      width: 10
+  straight6:
+    component: straight
+    info:
+      length: 39.125
+      route_info_length: 39.125
+      route_info_metal3_length: 39.125
+      route_info_type: metal3
+      route_info_weight: 39.125
+      width: 10
+    settings:
+      cross_section: metal_routing
+      length: 39.125
+      npoints: 2
+      width: 10
+  straight7:
+    component: straight
+    info:
+      length: 3
+      route_info_length: 3
+      route_info_metal3_length: 3
+      route_info_type: metal3
+      route_info_weight: 3
+      width: 10
+    settings:
+      cross_section: metal_routing
+      length: 3
+      npoints: 2
+      width: 10
+  straight8:
+    component: straight
+    info:
+      length: 3
+      route_info_length: 3
+      route_info_metal3_length: 3
+      route_info_type: metal3
+      route_info_weight: 3
+      width: 10
+    settings:
+      cross_section: metal_routing
+      length: 3
+      npoints: 2
+      width: 10
+  straight9:
+    component: straight
+    info:
+      length: 3
+      route_info_length: 3
+      route_info_metal3_length: 3
+      route_info_type: metal3
+      route_info_weight: 3
+      width: 10
+    settings:
+      cross_section: metal_routing
+      length: 3
+      npoints: 2
+      width: 10
+  wire_corner:
+    component: wire_corner
+    info:
+      dy: 10
+      length: 10
+    settings:
+      cross_section: metal_routing
+      port_names:
+      - e1
+      - e2
+      port_types:
+      - electrical
+      - electrical
+      radius: 10
+      width: 10
+  wire_corner2:
+    component: wire_corner
+    info:
+      dy: 10
+      length: 10
+    settings:
+      cross_section: metal_routing
+      port_names:
+      - e1
+      - e2
+      port_types:
+      - electrical
+      - electrical
+      radius: 10
+      width: 10
+  wire_corner3:
+    component: wire_corner
+    info:
+      dy: 10
+      length: 10
+    settings:
+      cross_section: metal_routing
+      port_names:
+      - e1
+      - e2
+      port_types:
+      - electrical
+      - electrical
+      radius: 10
+      width: 10
+  wire_corner4:
+    component: wire_corner
+    info:
+      dy: 10
+      length: 10
+    settings:
+      cross_section: metal_routing
+      port_names:
+      - e1
+      - e2
+      port_types:
+      - electrical
+      - electrical
+      radius: 10
+      width: 10
+  wire_corner5:
+    component: wire_corner
+    info:
+      dy: 10
+      length: 10
+    settings:
+      cross_section: metal_routing
+      port_names:
+      - e1
+      - e2
+      port_types:
+      - electrical
+      - electrical
+      radius: 10
+      width: 10
+  wire_corner6:
+    component: wire_corner
+    info:
+      dy: 10
+      length: 10
+    settings:
+      cross_section: metal_routing
+      port_names:
+      - e1
+      - e2
+      port_types:
+      - electrical
+      - electrical
+      radius: 10
+      width: 10
+  wire_corner7:
+    component: wire_corner
+    info:
+      dy: 10
+      length: 10
+    settings:
+      cross_section: metal_routing
+      port_names:
+      - e1
+      - e2
+      port_types:
+      - electrical
+      - electrical
+      radius: 10
+      width: 10
+  wire_corner8:
+    component: wire_corner
+    info:
+      dy: 10
+      length: 10
+    settings:
+      cross_section: metal_routing
+      port_names:
+      - e1
+      - e2
+      port_types:
+      - electrical
+      - electrical
+      radius: 10
+      width: 10
+nets:
+- p1: straight2,e1
+  p2: wire_corner,e1
+- p1: straight3,e1
+  p2: wire_corner3,e1
+- p1: straight4,e1
+  p2: wire_corner2,e1
+- p1: straight4,e2
+  p2: wire_corner4,e2
+- p1: straight5,e1
+  p2: wire_corner7,e1
+- p1: straight5,e2
+  p2: wire_corner3,e2
+- p1: straight6,e1
+  p2: wire_corner4,e1
+- p1: straight7,e2
+  p2: wire_corner2,e2
+- p1: straight8,e1
+  p2: wire_corner8,e1
+- p1: straight8,e2
+  p2: wire_corner6,e2
+- p1: straight9,e2
+  p2: wire_corner7,e2
+- p1: straight10,e2
+  p2: wire_corner8,e2
+- p1: straight11,e2
+  p2: wire_corner,e2
+- p1: straight12,e1
+  p2: wire_corner6,e1
+- p1: straight12,e2
+  p2: wire_corner5,e2
+- p1: straight,e1
+  p2: wire_corner5,e1
+placements:
+  array:
+    mirror: false
+    rotation: 0
+    x: 185.5
+    y: -10
+  mzi:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+  straight:
+    mirror: false
+    rotation: 180
+    x: 527.9
+    y: -10
+  straight10:
+    mirror: false
+    rotation: 90
+    x: 545.9
+    y: 66.125
+  straight11:
+    mirror: false
+    rotation: 90
+    x: 25.1
+    y: -75.125
+  straight12:
+    mirror: false
+    rotation: 270
+    x: 532.9
+    y: 69.125
+  straight2:
+    mirror: false
+    rotation: 0
+    x: 30.1
+    y: -10
+  straight3:
+    mirror: false
+    rotation: 90
+    x: 285.5
+    y: -62.125
+  straight4:
+    mirror: false
+    rotation: 0
+    x: 30.1
+    y: 74.125
+  straight5:
+    mirror: false
+    rotation: 180
+    x: 540.9
+    y: -67.125
+  straight6:
+    mirror: false
+    rotation: 270
+    x: 285.5
+    y: 69.125
+  straight7:
+    mirror: false
+    rotation: 90
+    x: 25.1
+    y: 66.125
+  straight8:
+    mirror: false
+    rotation: 180
+    x: 540.9
+    y: 74.125
+  straight9:
+    mirror: false
+    rotation: 90
+    x: 545.9
+    y: -75.125
+  wire_corner:
+    mirror: false
+    rotation: 180
+    x: 25.1
+    y: -10
+  wire_corner2:
+    mirror: false
+    rotation: 180
+    x: 25.1
+    y: 74.125
+  wire_corner3:
+    mirror: false
+    rotation: 270
+    x: 285.5
+    y: -67.125
+  wire_corner4:
+    mirror: false
+    rotation: 90
+    x: 285.5
+    y: 74.125
+  wire_corner5:
+    mirror: false
+    rotation: 0
+    x: 532.9
+    y: -10
+  wire_corner6:
+    mirror: true
+    rotation: 90
+    x: 532.9
+    y: 74.125
+  wire_corner7:
+    mirror: true
+    rotation: 0
+    x: 545.9
+    y: -67.125
+  wire_corner8:
+    mirror: true
+    rotation: 0
+    x: 545.9
+    y: 74.125
+ports:
+  bot_l_e1: mzi,bot_l_e1
+  bot_l_e2: mzi,bot_l_e2
+  bot_l_e3: mzi,bot_l_e3
+  bot_l_e4: mzi,bot_l_e4
+  bot_r_e1: mzi,bot_r_e1
+  bot_r_e2: mzi,bot_r_e2
+  bot_r_e3: mzi,bot_r_e3
+  bot_r_e4: mzi,bot_r_e4
+  in_o1: mzi,in_o1
+  ou_o1: mzi,ou_o1
+  top_l_e1: mzi,top_l_e1
+  top_l_e2: mzi,top_l_e2
+  top_l_e3: mzi,top_l_e3
+  top_l_e4: mzi,top_l_e4
+  top_r_e1: mzi,top_r_e1
+  top_r_e2: mzi,top_r_e2
+  top_r_e3: mzi,top_r_e3
+  top_r_e4: mzi,top_r_e4

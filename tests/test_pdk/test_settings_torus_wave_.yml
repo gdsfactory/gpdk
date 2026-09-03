@@ -1,0 +1,10 @@
+info: {}
+name: torus_wave_IR5_OR10_A0p5_NO8_IPTrue_AR1_LWG
+settings:
+  amplitude: 0.5
+  angle_resolution: 1
+  in_phase: true
+  inner_radius: 5
+  layer: WG
+  n_oscillations: 8
+  outer_radius: 10

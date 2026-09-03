@@ -1,0 +1,9 @@
+info:
+  radius: 10
+name: coupler_ring_G0p2_RNone_LX4_Bbend_euler_Sstraight_CSstr_5d1b57a0
+settings:
+  bend: bend_euler
+  cross_section: strip
+  gap: 0.2
+  length_x: 4
+  straight: straight

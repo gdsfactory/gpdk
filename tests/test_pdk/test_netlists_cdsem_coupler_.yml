@@ -1,0 +1,94 @@
+instances:
+  coupler_straight:
+    component: coupler_straight
+    info: {}
+    settings:
+      cross_section: strip_no_ports
+      gap: 0.15
+      length: 420
+  coupler_straight2:
+    component: coupler_straight
+    info: {}
+    settings:
+      cross_section: strip_no_ports
+      gap: 0.2
+      length: 420
+  coupler_straight3:
+    component: coupler_straight
+    info: {}
+    settings:
+      cross_section: strip_no_ports
+      gap: 0.25
+      length: 420
+  text_rectangular:
+    component: text_rectangular
+    info: {}
+    settings:
+      font: rectangular_font
+      justify: left
+      layer: WG
+      layers: null
+      position:
+      - 0
+      - 0
+      size: 1
+      text: '150'
+  text_rectangular2:
+    component: text_rectangular
+    info: {}
+    settings:
+      font: rectangular_font
+      justify: left
+      layer: WG
+      layers: null
+      position:
+      - 0
+      - 0
+      size: 1
+      text: '200'
+  text_rectangular3:
+    component: text_rectangular
+    info: {}
+    settings:
+      font: rectangular_font
+      justify: left
+      layer: WG
+      layers: null
+      position:
+      - 0
+      - 0
+      size: 1
+      text: '250'
+nets: []
+placements:
+  coupler_straight:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0.25
+  coupler_straight2:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 7.25
+  coupler_straight3:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 14.25
+  text_rectangular:
+    mirror: false
+    rotation: 0
+    x: 425
+    y: 0
+  text_rectangular2:
+    mirror: false
+    rotation: 0
+    x: 425
+    y: 7
+  text_rectangular3:
+    mirror: false
+    rotation: 0
+    x: 425
+    y: 14
+ports: {}

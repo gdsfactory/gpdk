@@ -1,0 +1,11 @@
+info: {}
+name: ring_single_dut_Cstraight_G0p2_LX4_LY0_RNone_Ccoupler_r_5e9017af
+settings:
+  bend: bend_euler
+  component: straight
+  coupler: coupler_ring
+  gap: 0.2
+  length_x: 4
+  length_y: 0
+  port_name: o1
+  with_component: true

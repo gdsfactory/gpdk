@@ -1,0 +1,30 @@
+info: {}
+name: cdsem_straight_density_W0p3_0p3_0p3_0p3_0p3_0p3_0p3_0p3_f4d5e4c9
+settings:
+  cross_section: strip_no_ports
+  gaps:
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  label: ''
+  length: 420
+  text: text_rectangular
+  text_size: 1
+  widths:
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3

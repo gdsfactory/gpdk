@@ -1,0 +1,9 @@
+info: {}
+name: cantilever_BW2_BL20_AW5_AL5_LWG_PTelectrical
+settings:
+  anchor_length: 5
+  anchor_width: 5
+  beam_length: 20
+  beam_width: 2
+  layer: WG
+  port_type: electrical

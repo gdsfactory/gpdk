@@ -1,0 +1,88 @@
+instances:
+  rectangle:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG_PIN
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 2.1
+      - 2.1
+  rectangle2:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: WG_PIN
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 2.1
+      - 2.1
+  rectangle3:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: M3
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 2.1
+      - 31.66
+  rectangle4:
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: M3
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 2.1
+      - 31.66
+nets:
+- p1: rectangle2,e4
+  p2: rectangle4,e4
+- p1: rectangle,e4
+  p2: rectangle3,e4
+placements:
+  rectangle:
+    mirror: false
+    rotation: 0
+    x: -3.15
+    y: 0
+  rectangle2:
+    mirror: false
+    rotation: 0
+    x: 1.05
+    y: 0
+  rectangle3:
+    mirror: false
+    rotation: 0
+    x: -3.15
+    y: 0
+  rectangle4:
+    mirror: false
+    rotation: 0
+    x: 1.05
+    y: 0
+ports: {}

@@ -1,0 +1,1204 @@
+instances:
+  circle:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle10:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle100:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle11:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle12:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle13:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle14:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle15:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle16:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle17:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle18:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle19:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle2:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle20:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle21:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle22:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle23:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle24:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle25:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle26:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle27:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle28:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle29:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle3:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle30:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle31:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle32:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle33:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle34:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle35:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle36:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle37:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle38:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle39:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle4:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle40:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle41:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle42:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle43:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle44:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle45:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle46:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle47:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle48:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle49:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle5:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle50:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle51:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle52:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle53:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle54:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle55:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle56:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle57:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle58:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle59:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle6:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle60:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle61:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle62:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle63:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle64:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle65:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle66:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle67:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle68:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle69:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle7:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle70:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle71:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle72:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle73:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle74:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle75:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle76:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle77:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle78:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle79:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle8:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle80:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle81:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle82:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle83:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle84:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle85:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle86:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle87:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle88:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle89:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle9:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle90:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle91:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle92:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle93:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle94:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle95:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle96:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle97:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle98:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+  circle99:
+    component: circle
+    info: {}
+    settings:
+      angle_resolution: 2.5
+      layer: WG
+      radius: 10
+nets: []
+placements:
+  circle:
+    mirror: false
+    rotation: 0
+    x: -106.25
+    y: -32.476
+  circle10:
+    mirror: false
+    rotation: 0
+    x: -118.75
+    y: 75.777
+  circle100:
+    mirror: false
+    rotation: 0
+    x: 93.75
+    y: 97.428
+  circle11:
+    mirror: false
+    rotation: 0
+    x: -18.75
+    y: -10.825
+  circle12:
+    mirror: false
+    rotation: 0
+    x: -18.75
+    y: -54.127
+  circle13:
+    mirror: false
+    rotation: 0
+    x: -18.75
+    y: -97.428
+  circle14:
+    mirror: false
+    rotation: 0
+    x: -18.75
+    y: 32.476
+  circle15:
+    mirror: false
+    rotation: 0
+    x: -18.75
+    y: 75.777
+  circle16:
+    mirror: false
+    rotation: 0
+    x: -31.25
+    y: -32.476
+  circle17:
+    mirror: false
+    rotation: 0
+    x: -31.25
+    y: -75.777
+  circle18:
+    mirror: false
+    rotation: 0
+    x: -31.25
+    y: 10.825
+  circle19:
+    mirror: false
+    rotation: 0
+    x: -31.25
+    y: 54.126
+  circle2:
+    mirror: false
+    rotation: 0
+    x: -106.25
+    y: -75.777
+  circle20:
+    mirror: false
+    rotation: 0
+    x: -31.25
+    y: 97.428
+  circle21:
+    mirror: false
+    rotation: 0
+    x: -43.75
+    y: -10.825
+  circle22:
+    mirror: false
+    rotation: 0
+    x: -43.75
+    y: -54.127
+  circle23:
+    mirror: false
+    rotation: 0
+    x: -43.75
+    y: -97.428
+  circle24:
+    mirror: false
+    rotation: 0
+    x: -43.75
+    y: 32.476
+  circle25:
+    mirror: false
+    rotation: 0
+    x: -43.75
+    y: 75.777
+  circle26:
+    mirror: false
+    rotation: 0
+    x: -56.25
+    y: -32.476
+  circle27:
+    mirror: false
+    rotation: 0
+    x: -56.25
+    y: -75.777
+  circle28:
+    mirror: false
+    rotation: 0
+    x: -56.25
+    y: 10.825
+  circle29:
+    mirror: false
+    rotation: 0
+    x: -56.25
+    y: 54.126
+  circle3:
+    mirror: false
+    rotation: 0
+    x: -106.25
+    y: 10.825
+  circle30:
+    mirror: false
+    rotation: 0
+    x: -56.25
+    y: 97.428
+  circle31:
+    mirror: false
+    rotation: 0
+    x: -6.25
+    y: -32.476
+  circle32:
+    mirror: false
+    rotation: 0
+    x: -6.25
+    y: -75.777
+  circle33:
+    mirror: false
+    rotation: 0
+    x: -6.25
+    y: 10.825
+  circle34:
+    mirror: false
+    rotation: 0
+    x: -6.25
+    y: 54.126
+  circle35:
+    mirror: false
+    rotation: 0
+    x: -6.25
+    y: 97.428
+  circle36:
+    mirror: false
+    rotation: 0
+    x: -68.75
+    y: -10.825
+  circle37:
+    mirror: false
+    rotation: 0
+    x: -68.75
+    y: -54.127
+  circle38:
+    mirror: false
+    rotation: 0
+    x: -68.75
+    y: -97.428
+  circle39:
+    mirror: false
+    rotation: 0
+    x: -68.75
+    y: 32.476
+  circle4:
+    mirror: false
+    rotation: 0
+    x: -106.25
+    y: 54.126
+  circle40:
+    mirror: false
+    rotation: 0
+    x: -68.75
+    y: 75.777
+  circle41:
+    mirror: false
+    rotation: 0
+    x: -81.25
+    y: -32.476
+  circle42:
+    mirror: false
+    rotation: 0
+    x: -81.25
+    y: -75.777
+  circle43:
+    mirror: false
+    rotation: 0
+    x: -81.25
+    y: 10.825
+  circle44:
+    mirror: false
+    rotation: 0
+    x: -81.25
+    y: 54.126
+  circle45:
+    mirror: false
+    rotation: 0
+    x: -81.25
+    y: 97.428
+  circle46:
+    mirror: false
+    rotation: 0
+    x: -93.75
+    y: -10.825
+  circle47:
+    mirror: false
+    rotation: 0
+    x: -93.75
+    y: -54.127
+  circle48:
+    mirror: false
+    rotation: 0
+    x: -93.75
+    y: -97.428
+  circle49:
+    mirror: false
+    rotation: 0
+    x: -93.75
+    y: 32.476
+  circle5:
+    mirror: false
+    rotation: 0
+    x: -106.25
+    y: 97.428
+  circle50:
+    mirror: false
+    rotation: 0
+    x: -93.75
+    y: 75.777
+  circle51:
+    mirror: false
+    rotation: 0
+    x: 106.25
+    y: -10.825
+  circle52:
+    mirror: false
+    rotation: 0
+    x: 106.25
+    y: -54.127
+  circle53:
+    mirror: false
+    rotation: 0
+    x: 106.25
+    y: -97.428
+  circle54:
+    mirror: false
+    rotation: 0
+    x: 106.25
+    y: 32.476
+  circle55:
+    mirror: false
+    rotation: 0
+    x: 106.25
+    y: 75.777
+  circle56:
+    mirror: false
+    rotation: 0
+    x: 118.75
+    y: -32.476
+  circle57:
+    mirror: false
+    rotation: 0
+    x: 118.75
+    y: -75.777
+  circle58:
+    mirror: false
+    rotation: 0
+    x: 118.75
+    y: 10.825
+  circle59:
+    mirror: false
+    rotation: 0
+    x: 118.75
+    y: 54.126
+  circle6:
+    mirror: false
+    rotation: 0
+    x: -118.75
+    y: -10.825
+  circle60:
+    mirror: false
+    rotation: 0
+    x: 118.75
+    y: 97.428
+  circle61:
+    mirror: false
+    rotation: 0
+    x: 18.75
+    y: -32.476
+  circle62:
+    mirror: false
+    rotation: 0
+    x: 18.75
+    y: -75.777
+  circle63:
+    mirror: false
+    rotation: 0
+    x: 18.75
+    y: 10.825
+  circle64:
+    mirror: false
+    rotation: 0
+    x: 18.75
+    y: 54.126
+  circle65:
+    mirror: false
+    rotation: 0
+    x: 18.75
+    y: 97.428
+  circle66:
+    mirror: false
+    rotation: 0
+    x: 31.25
+    y: -10.825
+  circle67:
+    mirror: false
+    rotation: 0
+    x: 31.25
+    y: -54.127
+  circle68:
+    mirror: false
+    rotation: 0
+    x: 31.25
+    y: -97.428
+  circle69:
+    mirror: false
+    rotation: 0
+    x: 31.25
+    y: 32.476
+  circle7:
+    mirror: false
+    rotation: 0
+    x: -118.75
+    y: -54.127
+  circle70:
+    mirror: false
+    rotation: 0
+    x: 31.25
+    y: 75.777
+  circle71:
+    mirror: false
+    rotation: 0
+    x: 43.75
+    y: -32.476
+  circle72:
+    mirror: false
+    rotation: 0
+    x: 43.75
+    y: -75.777
+  circle73:
+    mirror: false
+    rotation: 0
+    x: 43.75
+    y: 10.825
+  circle74:
+    mirror: false
+    rotation: 0
+    x: 43.75
+    y: 54.126
+  circle75:
+    mirror: false
+    rotation: 0
+    x: 43.75
+    y: 97.428
+  circle76:
+    mirror: false
+    rotation: 0
+    x: 56.25
+    y: -10.825
+  circle77:
+    mirror: false
+    rotation: 0
+    x: 56.25
+    y: -54.127
+  circle78:
+    mirror: false
+    rotation: 0
+    x: 56.25
+    y: -97.428
+  circle79:
+    mirror: false
+    rotation: 0
+    x: 56.25
+    y: 32.476
+  circle8:
+    mirror: false
+    rotation: 0
+    x: -118.75
+    y: -97.428
+  circle80:
+    mirror: false
+    rotation: 0
+    x: 56.25
+    y: 75.777
+  circle81:
+    mirror: false
+    rotation: 0
+    x: 6.25
+    y: -10.825
+  circle82:
+    mirror: false
+    rotation: 0
+    x: 6.25
+    y: -54.127
+  circle83:
+    mirror: false
+    rotation: 0
+    x: 6.25
+    y: -97.428
+  circle84:
+    mirror: false
+    rotation: 0
+    x: 6.25
+    y: 32.476
+  circle85:
+    mirror: false
+    rotation: 0
+    x: 6.25
+    y: 75.777
+  circle86:
+    mirror: false
+    rotation: 0
+    x: 68.75
+    y: -32.476
+  circle87:
+    mirror: false
+    rotation: 0
+    x: 68.75
+    y: -75.777
+  circle88:
+    mirror: false
+    rotation: 0
+    x: 68.75
+    y: 10.825
+  circle89:
+    mirror: false
+    rotation: 0
+    x: 68.75
+    y: 54.126
+  circle9:
+    mirror: false
+    rotation: 0
+    x: -118.75
+    y: 32.476
+  circle90:
+    mirror: false
+    rotation: 0
+    x: 68.75
+    y: 97.428
+  circle91:
+    mirror: false
+    rotation: 0
+    x: 81.25
+    y: -10.825
+  circle92:
+    mirror: false
+    rotation: 0
+    x: 81.25
+    y: -54.127
+  circle93:
+    mirror: false
+    rotation: 0
+    x: 81.25
+    y: -97.428
+  circle94:
+    mirror: false
+    rotation: 0
+    x: 81.25
+    y: 32.476
+  circle95:
+    mirror: false
+    rotation: 0
+    x: 81.25
+    y: 75.777
+  circle96:
+    mirror: false
+    rotation: 0
+    x: 93.75
+    y: -32.476
+  circle97:
+    mirror: false
+    rotation: 0
+    x: 93.75
+    y: -75.777
+  circle98:
+    mirror: false
+    rotation: 0
+    x: 93.75
+    y: 10.825
+  circle99:
+    mirror: false
+    rotation: 0
+    x: 93.75
+    y: 54.126
+ports: {}

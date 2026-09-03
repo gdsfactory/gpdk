@@ -1,0 +1,11 @@
+info: {}
+name: folded_spring_BW0p5_BL20_NF4_FG1_AW5_AL3_LWG_PTelectrical
+settings:
+  anchor_length: 3
+  anchor_width: 5
+  beam_length: 20
+  beam_width: 0.5
+  fold_gap: 1
+  layer: WG
+  n_folds: 4
+  port_type: electrical
