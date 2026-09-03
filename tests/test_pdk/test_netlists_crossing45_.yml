@@ -155,7 +155,7 @@ placements:
     y: -16.971
   bezier3:
     mirror: true
-    rotation: 45.0
+    rotation: 45
     x: -45.255
     y: -16.971
   bezier4:
@@ -165,7 +165,7 @@ placements:
     y: 16.971
   crossing:
     mirror: false
-    rotation: 45.0
+    rotation: 45
     x: 0
     y: 0
 ports:
