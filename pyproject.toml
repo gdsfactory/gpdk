@@ -58,6 +58,7 @@ ignore-words-list = "te, te/tm, ba, fpr, fpr_spacing, ro, nd, donot, schem"
 name = "gpdk"
 
 [tool.gdsfactoryplus.drc]
+pdk = "demopdk"
 timeout = 300
 
 [tool.gdsfactoryplus.pdk]
