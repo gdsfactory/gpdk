@@ -6,6 +6,7 @@ requires = ["flit_core >=3.2,<4"]
 
 [dependency-groups]
 dev = [
+  "gdsfactoryplus",
   "ruff>=0.16.5"
 ]
 
@@ -31,7 +32,6 @@ version = "0.0.1"
 
 [project.optional-dependencies]
 dev = [
-  "gdsfactoryplus",
   "jsondiff",
   "pre-commit",
   "pytest",
