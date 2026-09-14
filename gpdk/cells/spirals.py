@@ -142,6 +142,7 @@ def delay_snake_sbend(
         sbend_xsize: sbend size.
         cross_section: cross_section spec.
 
+    ```text
                          length1
          <----------------------------
                length2    spacing    |
@@ -155,6 +156,7 @@ def delay_snake_sbend(
                |
                ---------------------->----------->
                    length3              length4
+    ```
 
         We adjust length2 and length3
     """
@@ -288,6 +290,7 @@ def spiral_inductor(
     turns: int = 16,
     outer_diameter: float = 800,
     tail: float = 50.0,
+    layer: LayerSpec = "M1",
 ) -> gf.Component:
     r"""Generates a spiral inductor for superconducting resonator applications, particularly in qubit readout circuits.
 
@@ -295,7 +298,7 @@ def spiral_inductor(
     The inductor is designed with a square spiral geometry, featuring inner and outer connection tails.
 
     See J. M. Hornibrook, J. I. Colless, A. C. Mahoney, X. G. Croot, S. Blanvillain, H. Lu, A. C. Gossard, D. J. Reilly;
-    Frequency multiplexing for readout of spin qubits. Appl. Phys. Lett. 10 March 2014; 104 (10): 103108. https://doi.org/10.1063/1.4868107
+    Frequency multiplexing for readout of spin qubits. Appl. Phys. Lett. 10 March 2014; 104 (10): 103108. <https://doi.org/10.1063/1.4868107>
 
     Args:
         width: Width of the inductor track in microns. Determines the cross-sectional area of the inductor.
@@ -303,6 +306,7 @@ def spiral_inductor(
         turns: Number of complete spiral turns. Higher values increase inductance but require more space.
         outer_diameter: Overall size of the inductor in microns. Defines the maximum extent of the spiral.
         tail: Length of the inner and outer connection tails in microns. Used for connecting to other circuit elements.
+        layer: Metal layer for the inductor geometry and ports.
 
     Returns:
         Component: A GDSFactory component containing the spiral inductor pattern.
@@ -313,6 +317,7 @@ def spiral_inductor(
         turns=turns,
         outer_diameter=outer_diameter,
         tail=tail,
+        layer=layer,
     )
 
 
@@ -445,7 +450,7 @@ def spiral_racetrack_heater_doped(
 ) -> gf.Component:
     r"""Returns spiral racetrack with a heater between the loops.
 
-    based on https://doi.org/10.1364/OL.400230 but with the heater between the loops.
+    based on <https://doi.org/10.1364/OL.400230> but with the heater between the loops.
 
     Args:
         min_radius: smallest radius in um. Defaults to the radius of the cross-section.
@@ -486,7 +491,7 @@ def spiral_racetrack_heater_metal(
 ) -> gf.Component:
     r"""Returns spiral racetrack with a heater above.
 
-    based on https://doi.org/10.1364/OL.400230 .
+    based on <https://doi.org/10.1364/OL.400230> .
 
     Args:
         min_radius: smallest radius. Defaults to the radius of the cross-section.

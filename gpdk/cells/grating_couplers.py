@@ -111,13 +111,16 @@ def grating_coupler_dual_pol(
                    /  /  /  /
                   /  /  /  /
 
+    ```text
                 _|-|_|-|_|-|___  --> unit_cells
                    base_layer |
             o1  ______________|
+    ```
 
 
         top view
 
+    ```text
                    -------------
                // | o   o   o  |
         o1 __ //  | o   o   o  |
@@ -128,6 +131,7 @@ def grating_coupler_dual_pol(
                     \\       //
                          |
                          o2
+    ```
     """
     return _components.grating_coupler_dual_pol(
         unit_cell=unit_cell,
@@ -187,9 +191,11 @@ def grating_coupler_elliptical(
                    /  /  /  /
                   /  /  /  /
 
+    ```text
                 _|-|_|-|_|-|___ layer
                    layer_slab |
             o1  ______________|
+    ```
     """
     return _components.grating_coupler_elliptical(
         polarization=polarization,
@@ -251,11 +257,13 @@ def grating_coupler_elliptical_arbitrary(
             Positive bias increases gap and reduces width to keep period constant.
         cross_section: cross_section spec for waveguide port.
 
-    https://en.wikipedia.org/wiki/Ellipse
-    c = (a1 ** 2 - b1 ** 2) ** 0.5
-    e = (1 - (b1 / a1) ** 2) ** 0.5
-    print(e)
+    Notes:
+        Ellipse conventions, see <https://en.wikipedia.org/wiki/Ellipse>
 
+        c = (a1 ** 2 - b1 ** 2) ** 0.5
+        e = (1 - (b1 / a1) ** 2) ** 0.5
+
+    ```text
                       fiber
 
                    /  /  /  /
@@ -264,6 +272,7 @@ def grating_coupler_elliptical_arbitrary(
                 _|-|_|-|_|-|___ layer
                    layer_slab |
             o1  ______________|
+    ```
     """
     return _components.grating_coupler_elliptical_arbitrary(
         gaps=gaps,
@@ -348,8 +357,8 @@ def grating_coupler_elliptical_lumerical(
     r"""Returns a grating coupler from lumerical inverse design 3D optimization.
 
     this is a wrapper of components.grating_coupler_elliptical_arbitrary
-    https://support.lumerical.com/hc/en-us/articles/1500000306621
-    https://support.lumerical.com/hc/en-us/articles/360042800573
+    <https://support.lumerical.com/hc/en-us/articles/1500000306621>
+    <https://support.lumerical.com/hc/en-us/articles/360042800573>
 
     Here are the simulation settings used in lumerical
 
@@ -459,8 +468,8 @@ def grating_coupler_elliptical_lumerical_etch70(
     r"""Returns a grating coupler from lumerical inverse design 3D optimization.
 
     this is a wrapper of components.grating_coupler_elliptical_arbitrary
-    https://support.lumerical.com/hc/en-us/articles/1500000306621
-    https://support.lumerical.com/hc/en-us/articles/360042800573
+    <https://support.lumerical.com/hc/en-us/articles/1500000306621>
+    <https://support.lumerical.com/hc/en-us/articles/360042800573>
 
     Here are the simulation settings used in lumerical
 
@@ -540,9 +549,11 @@ def grating_coupler_elliptical_te(
                    /  /  /  /
                   /  /  /  /
 
+    ```text
                 _|-|_|-|_|-|___ layer
                    layer_slab |
             o1  ______________|
+    ```
     """
     return _components.grating_coupler_elliptical_te(
         polarization=polarization,
@@ -605,9 +616,11 @@ def grating_coupler_elliptical_tm(
                    /  /  /  /
                   /  /  /  /
 
+    ```text
                 _|-|_|-|_|-|___ layer
                    layer_slab |
             o1  ______________|
+    ```
     """
     return _components.grating_coupler_elliptical_tm(
         polarization=polarization,
@@ -670,10 +683,12 @@ def grating_coupler_elliptical_trenches(
 
                       fiber
 
+    ```text
                    /  /  /  /
                   /  /  /  /
                 _|-|_|-|_|-|___
         WG  o1  ______________|
+    ```
     """
     return _components.grating_coupler_elliptical_trenches(
         polarization=polarization,
@@ -732,9 +747,11 @@ def grating_coupler_elliptical_uniform(
                    /  /  /  /
                   /  /  /  /
 
+    ```text
                 _|-|_|-|_|-|___ layer
                    layer_slab |
             o1  ______________|
+    ```
     """
     return _components.grating_coupler_elliptical_uniform(
         n_periods=n_periods,
@@ -825,11 +842,14 @@ def grating_coupler_rectangular(
                    /  /  /  /
                   /  /  /  /
 
+    ```text
                 _|-|_|-|_|-|___ layer
                    layer_slab |
             o1  ______________|
+    ```
 
 
+    ```text
         top view     _________
                     /| | | | |
                    / | | | | |
@@ -842,6 +862,7 @@ def grating_coupler_rectangular(
                     \|_|_|_|_|
                  <-->
                 taper_length
+    ```
     """
     return _components.grating_coupler_rectangular(
         n_periods=n_periods,
@@ -902,12 +923,15 @@ def grating_coupler_rectangular_arbitrary(
                    /  /  /  /
                   /  /  /  /
 
+    ```text
                 _|-|_|-|_|-|___ layer
                    layer_slab |
             o1  ______________|
+    ```
 
 
 
+    ```text
         top view     _________
                     /| | | | |
                    / | | | | |
@@ -920,6 +944,7 @@ def grating_coupler_rectangular_arbitrary(
                     \|_|_|_|_|
                  <-->
                 taper_length
+    ```
     """
     return _components.grating_coupler_rectangular_arbitrary(
         gaps=gaps,
@@ -979,10 +1004,12 @@ def grating_coupler_te(
 
                       fiber
 
+    ```text
                    /  /  /  /
                   /  /  /  /
                 _|-|_|-|_|-|___
         WG  o1  ______________|
+    ```
     """
     return _components.grating_coupler_te(
         polarization=polarization,
@@ -1045,10 +1072,12 @@ def grating_coupler_tm(
 
                       fiber
 
+    ```text
                    /  /  /  /
                   /  /  /  /
                 _|-|_|-|_|-|___
         WG  o1  ______________|
+    ```
     """
     return _components.grating_coupler_tm(
         polarization=polarization,

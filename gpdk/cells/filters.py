@@ -45,7 +45,7 @@ def awg(
     r"""Returns an Arrayed Waveguide grating.
 
     To simulate you can use
-    https://github.com/dnrobin/awg-python
+    <https://github.com/dnrobin/awg-python>
 
     Args:
         arms: number of arms.
@@ -92,14 +92,18 @@ def dbr(
         cross_section: cross_section spec.
         straight_length: length of the straight section between cutbacks.
 
+    ```text
            l1      l2
         <-----><-------->
                 _________
         _______|
+    ```
 
+    ```text
           w1       w2       ...  n times
         _______
                |_________
+    ```
     """
     return _components.dbr(
         w1=w1,
@@ -127,17 +131,20 @@ def dbr_cell(
         l1: thin length in um.
         w2: thick width in um.
         l2: thick length in um.
-        n: number of periods.
         cross_section: cross_section spec.
 
+    ```text
            l1      l2
         <-----><-------->
                 _________
         _______|
+    ```
 
+    ```text
           w1       w2
         _______
                |_________
+    ```
     """
     return _components.dbr_cell(
         w1=w1,
@@ -176,14 +183,18 @@ def dbr_tapered(
        fin_size: Specifies the x- and y-size of the `fins`. Defaults to 200 nm x 50 nm
        cross_section: cross_section spec.
 
+    ```text
                  period
         <-----><-------->
                 _________
         _______|
+    ```
 
+    ```text
           w1       w2       ...  n times
         _______
                |_________
+    ```
     """
     return _components.dbr_tapered(
         length=length,
@@ -338,7 +349,7 @@ def mode_converter(
 
     By matching the effective indices of two waveguides with different widths,
     light can couple from different transverse modes e.g. TE0 <-> TE1.
-    https://doi.org/10.1109/JPHOT.2019.2941742
+    <https://doi.org/10.1109/JPHOT.2019.2941742>
 
     Args:
         gap: directional coupler gap.
@@ -352,6 +363,7 @@ def mode_converter(
         taper_length: taper length.
         cross_section: cross_section spec.
 
+    ```text
         o2 ---           --- o4
               \         /
                \       /
@@ -359,6 +371,7 @@ def mode_converter(
         o1 -----=======----- o3
                 |-----|
                 length
+    ```
 
         = : multimode width
         - : singlemode width

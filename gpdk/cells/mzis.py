@@ -79,6 +79,7 @@ def mzi(
         auto_rename_ports: if True, renames ports.
         auto_detect_port_names: whether to auto detect ports names. Ignores port_e* arguments if True.
 
+    ```text
                        b2______b3
                       |  sxtop  |
               straight_y        |
@@ -93,6 +94,7 @@ def mzi(
                       |         |
                      b6__sxbot__b7
                           Lx
+    ```
     """
     return _components.mzi(
         delta_length=delta_length,
@@ -184,6 +186,7 @@ def mzi1x2(
         auto_rename_ports: if True, renames ports.
         auto_detect_port_names: whether to auto detect ports names. Ignores port_e* arguments if True.
 
+    ```text
                        b2______b3
                       |  sxtop  |
               straight_y        |
@@ -198,6 +201,7 @@ def mzi1x2(
                       |         |
                      b6__sxbot__b7
                           Lx
+    ```
     """
     return _components.mzi1x2(
         delta_length=delta_length,
@@ -289,6 +293,7 @@ def mzi1x2_2x2(
         auto_rename_ports: if True, renames ports.
         auto_detect_port_names: whether to auto detect ports names. Ignores port_e* arguments if True.
 
+    ```text
                        b2______b3
                       |  sxtop  |
               straight_y        |
@@ -303,6 +308,7 @@ def mzi1x2_2x2(
                       |         |
                      b6__sxbot__b7
                           Lx
+    ```
     """
     return _components.mzi1x2_2x2(
         delta_length=delta_length,
@@ -394,6 +400,7 @@ def mzi2x2_2x2(
         auto_rename_ports: if True, renames ports.
         auto_detect_port_names: whether to auto detect ports names. Ignores port_e* arguments if True.
 
+    ```text
                        b2______b3
                       |  sxtop  |
               straight_y        |
@@ -408,6 +415,7 @@ def mzi2x2_2x2(
                       |         |
                      b6__sxbot__b7
                           Lx
+    ```
     """
     return _components.mzi2x2_2x2(
         delta_length=delta_length,
@@ -499,6 +507,7 @@ def mzi2x2_2x2_phase_shifter(
         auto_rename_ports: if True, renames ports.
         auto_detect_port_names: whether to auto detect ports names. Ignores port_e* arguments if True.
 
+    ```text
                        b2______b3
                       |  sxtop  |
               straight_y        |
@@ -513,6 +522,7 @@ def mzi2x2_2x2_phase_shifter(
                       |         |
                      b6__sxbot__b7
                           Lx
+    ```
     """
     return _components.mzi2x2_2x2_phase_shifter(
         delta_length=delta_length,
@@ -604,6 +614,7 @@ def mzi_coupler(
         auto_rename_ports: if True, renames ports.
         auto_detect_port_names: whether to auto detect ports names. Ignores port_e* arguments if True.
 
+    ```text
                        b2______b3
                       |  sxtop  |
               straight_y        |
@@ -618,6 +629,7 @@ def mzi_coupler(
                       |         |
                      b6__sxbot__b7
                           Lx
+    ```
     """
     return _components.mzi_coupler(
         delta_length=delta_length,
@@ -678,6 +690,7 @@ def mzi_lattice(
         straight_x_bot: bottom straight for length_x.
         cross_section: for routing (sxtop/sxbot to combiner).
 
+    ```text
                ______             ______
               |      |           |      |
               |      |           |      |
@@ -688,6 +701,7 @@ def mzi_lattice(
               |      |           |      |
               |______|           |      |
                                  |______|
+    ```
     """
     return _components.mzi_lattice(
         coupler_lengths=coupler_lengths,
@@ -742,6 +756,7 @@ def mzi_lattice_mmi(
         straight_x_bot: bottom straight for length_x.
         cross_section: for routing (sxtop/sxbot to combiner).
 
+    ```text
                ______             ______
               |      |           |      |
               |      |           |      |
@@ -752,6 +767,7 @@ def mzi_lattice_mmi(
               |      |           |      |
               |______|           |      |
                                  |______|
+    ```
     """
     return _components.mzi_lattice_mmi(
         coupler_widths=coupler_widths,
@@ -903,6 +919,7 @@ def mzi_phase_shifter(
         auto_rename_ports: if True, renames ports.
         auto_detect_port_names: whether to auto detect ports names. Ignores port_e* arguments if True.
 
+    ```text
                        b2______b3
                       |  sxtop  |
               straight_y        |
@@ -917,6 +934,7 @@ def mzi_phase_shifter(
                       |         |
                      b6__sxbot__b7
                           Lx
+    ```
     """
     return _components.mzi_phase_shifter(
         delta_length=delta_length,
@@ -1008,6 +1026,7 @@ def mzi_phase_shifter_top_heater_metal(
         auto_rename_ports: if True, renames ports.
         auto_detect_port_names: whether to auto detect ports names. Ignores port_e* arguments if True.
 
+    ```text
                        b2______b3
                       |  sxtop  |
               straight_y        |
@@ -1022,6 +1041,7 @@ def mzi_phase_shifter_top_heater_metal(
                       |         |
                      b6__sxbot__b7
                           Lx
+    ```
     """
     return _components.mzi_phase_shifter_top_heater_metal(
         delta_length=delta_length,
@@ -1113,6 +1133,7 @@ def mzi_pin(
         auto_rename_ports: if True, renames ports.
         auto_detect_port_names: whether to auto detect ports names. Ignores port_e* arguments if True.
 
+    ```text
                        b2______b3
                       |  sxtop  |
               straight_y        |
@@ -1127,6 +1148,7 @@ def mzi_pin(
                       |         |
                      b6__sxbot__b7
                           Lx
+    ```
     """
     return _components.mzi_pin(
         delta_length=delta_length,
@@ -1181,7 +1203,7 @@ def mzit(
     r"""Mzi tolerant to fabrication variations.
 
     based on Yufei Xing thesis
-    http://photonics.intec.ugent.be/publications/PhD.asp?ID=250
+    <http://photonics.intec.ugent.be/publications/PhD.asp?ID=250>
 
     Args:
         w0: input waveguide width (um).
@@ -1202,6 +1224,7 @@ def mzit(
         coupler2: coupler2 spec.
         cross_section: cross_section spec.
 
+    ```text
                            cp1
             4   2 __                  __  3___w0_t2   _w2___
                     \                /                      \
@@ -1220,6 +1243,7 @@ def mzit(
                   __/                 \ E0_w0__t2 __w1______/
             1   1
                            cp2
+    ```
     """
     return _components.mzit(
         w0=w0,
@@ -1251,6 +1275,13 @@ def mzit_lattice(
 ) -> gf.Component:
     r"""Mzi fab tolerant lattice filter.
 
+    Args:
+        coupler_lengths: list of coupler lengths, in um. One per coupler.
+        coupler_gaps: list of coupler gaps, in um. One per coupler.
+        delta_lengths: list of length differences between the MZI arms, in um.
+            One per MZI, so one less than the number of couplers.
+        mzi: MZI component spec.
+
     ```text
                     cp1
     o4  o2 __                  __ o3___w0_t2   _w2___
@@ -1271,12 +1302,6 @@ def mzit_lattice(
     o1  o1                      \___w0___t2___w1_____/
                     cpN       o4
     ```
-
-    Args:
-        coupler_lengths: see :func:`gdsfactory.components.mzis.mzit.mzit_lattice` for details.
-        coupler_gaps: see :func:`gdsfactory.components.mzis.mzit.mzit_lattice` for details.
-        delta_lengths: see :func:`gdsfactory.components.mzis.mzit.mzit_lattice` for details.
-        mzi: see :func:`gdsfactory.components.mzis.mzit.mzit_lattice` for details.
     """
     return _components.mzit_lattice(
         coupler_lengths=coupler_lengths,
@@ -1346,6 +1371,7 @@ def mzm(
         auto_rename_ports: if True, renames ports.
         auto_detect_port_names: whether to auto detect ports names. Ignores port_e* arguments if True.
 
+    ```text
                        b2______b3
                       |  sxtop  |
               straight_y        |
@@ -1360,6 +1386,7 @@ def mzm(
                       |         |
                      b6__sxbot__b7
                           Lx
+    ```
     """
     return _components.mzm(
         delta_length=delta_length,

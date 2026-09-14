@@ -338,7 +338,7 @@ def add_padding_to_size_container(
 
 @gf.cell
 def add_pads_bot(
-    component: ComponentSpec = "straight_heater_metal",
+    component: ComponentSpec = "interdigitated_electrodes",
     select_ports: SelectPorts = _default_select_ports_electrical,
     port_names: Strs | None = None,
     cross_section: CrossSectionSpec = "metal_routing",
@@ -437,7 +437,7 @@ def add_pads_bot(
 
 @gf.cell
 def add_pads_top(
-    component: ComponentSpec = "straight_heater_metal",
+    component: ComponentSpec = "interdigitated_electrodes",
     select_ports: SelectPorts = _default_select_ports_electrical,
     port_names: Strs | None = None,
     cross_section: CrossSectionSpec = "metal_routing",

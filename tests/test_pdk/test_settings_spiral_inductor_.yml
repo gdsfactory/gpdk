@@ -1,7 +1,8 @@
 info:
   length: 35637.695
-name: spiral_inductor_W3_P3_T16_OD800_T50
+name: spiral_inductor_W3_P3_T16_OD800_T50_LM1
 settings:
+  layer: M1
   outer_diameter: 800
   pitch: 3
   tail: 50

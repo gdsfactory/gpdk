@@ -1,7 +1,8 @@
 info:
-  frequency_estimate: 150
+  frequency_estimate: 118.656
   gap: 6
-  length: 1000
+  length: 1264.159
+  meander_turns: 4
   resonator_type: cpw
   width: 10
 name: resonator_cpw_L1000_W10_G6_MP50_MW200_CG5_CL100_LM1_0_L_1fbcb8b7

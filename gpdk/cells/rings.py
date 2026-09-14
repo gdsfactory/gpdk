@@ -53,12 +53,14 @@ def coupler_bend(
         bend: for bend.
         bend_output: for bend.
 
+    ```text
             r   4
             |   |
             |  / ___3
             | / /
         2____/ /
         1_____/
+    ```
     """
     return _components.coupler_bend(
         radius=radius,
@@ -88,8 +90,6 @@ def coupler_ring_bend(
     Args:
         radius: um. Default is None, which uses the default radius of the cross_section.
         coupler_gap: um.
-        angle_inner: of the inner bend, from beginning to end. Depending on the bend chosen, gap may not be preserved.
-        angle_outer: of the outer bend, from beginning to end. Depending on the bend chosen, gap may not be preserved.
         coupling_angle_coverage: degrees.
         length_x: horizontal straight length.
         cross_section_inner: spec inner bend.
@@ -122,14 +122,15 @@ def disk(
     r"""Disk Resonator.
 
     Args:
-       radius: disk resonator radius.
-       gap: Distance between the bus straight and resonator.
-       wrap_angle_deg: Angle in degrees between 0 and 180.
-        determines how much the bus straight wraps along the resonator.
-        0 corresponds to a straight bus straight.
-        180 corresponds to a bus straight wrapped around half of the resonator.
-       parity (1 or -1): 1, resonator left from bus straight, -1 resonator to the right.
-       cross_section: cross_section spec.
+        radius: disk resonator radius.
+        gap: Distance between the bus straight and resonator.
+        wrap_angle_deg: Angle in degrees between 0 and 180.
+            determines how much the bus straight wraps along the resonator.
+            0 corresponds to a straight bus straight.
+            180 corresponds to a bus straight wrapped around half of the resonator.
+        parity: 1 or -1. 1 places the resonator left from the bus straight,
+            -1 places it to the right.
+        cross_section: cross_section spec.
     """
     return _components.disk(
         radius=radius,
@@ -157,20 +158,21 @@ def disk_heater(
     r"""Disk Resonator with top metal heater.
 
     Args:
-       radius: disk resonator radius.
-       gap: Distance between the bus straight and resonator.
-       wrap_angle_deg: Angle in degrees between 0 and 180.
-        determines how much the bus straight wraps along the resonator.
-        0 corresponds to a straight bus straight.
-        180 corresponds to a bus straight wrapped around half of the resonator.
-       parity (1 or -1): 1, resonator left from bus straight, -1 resonator to the right.
-       cross_section: cross_section spec.
-       heater_layer: layer of the heater.
-       via_stack: via stack component.
-       heater_width: width of the heater.
-       heater_extent: length of heater beyond disk.
-       via_width: size of the square via at the end of the heater.
-       port_orientation: in degrees.
+        radius: disk resonator radius.
+        gap: Distance between the bus straight and resonator.
+        wrap_angle_deg: Angle in degrees between 0 and 180.
+            determines how much the bus straight wraps along the resonator.
+            0 corresponds to a straight bus straight.
+            180 corresponds to a bus straight wrapped around half of the resonator.
+        parity: 1 or -1. 1 places the resonator left from the bus straight,
+            -1 places it to the right.
+        cross_section: cross_section spec.
+        heater_layer: layer of the heater.
+        via_stack: via stack component.
+        heater_width: width of the heater.
+        heater_extent: length of heater beyond disk.
+        via_width: size of the square via at the end of the heater.
+        port_orientation: in degrees.
     """
     return _components.disk_heater(
         radius=radius,
@@ -326,16 +328,19 @@ def ring_crow_couplers(
         ring_cross_sections: cross_section for the ring.
         couplers: coupling component between rings and bus.
 
+    ```text
          --==ct==-- gap[N-1]   <------- couplers[N-1]
           |      |
           sl     sr ring[N-1]
           |      |
          --==cb==-- gap[N-2]   <------- couplers[N-2]
+    ```
 
              .
              .
              .
 
+    ```text
          --==ct==--
           |      |
           sl     sr lengths_y[1], ring[1]
@@ -347,6 +352,7 @@ def ring_crow_couplers(
           sl     sr lengths_y[0], ring[0]
           |      |
          --==cb==-- gap[0]      <------- couplers[0]
+    ```
 
           length_x
     """
@@ -392,6 +398,7 @@ def ring_double(
         cross_section: cross_section spec.
         length_extension: straight length extension at the end of the coupler bottom ports.
 
+    ```text
            o2──────▲─────────o3
                    │gap_top
            xx──────▼─────────xxx
@@ -411,6 +418,7 @@ def ring_double(
                      │gap
              o1──────▼─────────◄──────────────► o4
                                 length_extension
+    ```
     """
     return _components.ring_double(
         gap=gap,
@@ -515,6 +523,7 @@ def ring_double_heater(
         length_extension_top: straight length extension at the end of the coupler top ports.
         length_extension_bot: straight length extension at the end of the coupler bottom ports.
 
+    ```text
            o2──────▲─────────o3
                    │gap_top
            xx──────▼─────────xxx
@@ -533,6 +542,7 @@ def ring_double_heater(
             xxx──────▲─────────xxx
                      │gap
              o1──────▼─────────o4
+    ```
     """
     return _components.ring_double_heater(
         gap=gap,
@@ -583,8 +593,6 @@ def ring_double_pn(
         drop_gap: gap to drop waveguide. Top gap.
         radius: for the bend and coupler.
         doping_angle: angle in degrees representing portion of ring that is doped.
-        length_x: ring coupler length.
-        length_y: vertical straight length.
         cross_section: cross_section spec for non-PN doped rib waveguide sections.
         pn_cross_section: cross section of pn junction.
         doped_heater: boolean for if we include doped heater or not.
@@ -660,6 +668,7 @@ def ring_single(
     Raises:
         ValueError: If length_x or length_y is negative.
 
+    ```text
                     xxxxxxxxxxxxx
                 xxxxx           xxxx
               xxx                   xxx
@@ -678,6 +687,7 @@ def ring_single(
                          │gap
                  o1──────▼─────────o2◄──────────────►
                                      length_extension
+    ```
     """
     return _components.ring_single(
         gap=gap,
@@ -707,11 +717,13 @@ def ring_single_array(
         list_of_dicts: settings for each ring.
         cross_section: spec.
 
+    ```text
            ______               ______
           |      |             |      |
           |      |  length_y   |      |
           |      |             |      |
          --======-- spacing ----==gap==--
+    ```
 
           length_x
     """
@@ -745,8 +757,6 @@ def ring_single_bend_coupler(
         radius: um.
         gap: um.
         coupling_angle_coverage: degrees.
-        angle_inner: of the inner bend, from beginning to end. Depending on the bend chosen, gap may not be preserved.
-        angle_outer: of the outer bend, from beginning to end. Depending on the bend chosen, gap may not be preserved.
         bend_all_angle: for bend.
         bend: for bend.
         bend_output: for bend.
@@ -870,6 +880,7 @@ def ring_single_heater(
         length_extension_top: straight length extension at the end of the coupler top ports.
         length_extension_bot: straight length extension at the end of the coupler bottom ports.
 
+    ```text
            o2──────▲─────────o3
                    │gap_top
            xx──────▼─────────xxx
@@ -888,6 +899,7 @@ def ring_single_heater(
             xxx──────▲─────────xxx
                      │gap
              o1──────▼─────────o4
+    ```
     """
     return _components.ring_single_heater(
         gap=gap,
@@ -936,8 +948,6 @@ def ring_single_pn(
         gap: gap between for coupler.
         radius: for the bend and coupler.
         doping_angle: angle in degrees representing portion of ring that is doped.
-        length_x: ring coupler length.
-        length_y: vertical straight length.
         cross_section: cross_section spec for non-PN doped rib waveguide sections.
         pn_cross_section: cross section of pn junction.
         doped_heater: boolean for if we include doped heater or not.
