@@ -28,6 +28,7 @@ def C(
         layer: layer spec.
         port_type: optical or electrical.
 
+    ```text
          ______
         |       o1
         |   ___
@@ -35,6 +36,7 @@ def C(
         |  |___
         ||<---> size[0]
         |______ o2
+    ```
     """
     return _components.C(
         width=width,
@@ -408,6 +410,7 @@ def nxn(
         wg_margin: margin from straight to component edge.
         kwargs: port_settings.
 
+    ```text
             3   4
             |___|_
         2 -|      |- 5
@@ -415,6 +418,7 @@ def nxn(
         1 -|______|- 6
             |   |
             8   7
+    ```
     """
     return _components.nxn(
         west=west,
@@ -601,6 +605,7 @@ def rectangles(
         port_type: optical, electrical.
         port_orientations: list of port_orientations to add.
 
+    ```text
             ┌──────────────┐
             │              │
             │   ┌──────┐   │
@@ -610,6 +615,7 @@ def rectangles(
             │   └──────┘   │
             │              │
             └──────────────┘
+    ```
     """
     return _components.rectangles(
         size=size,
@@ -786,6 +792,7 @@ def triangle(
         ybot: bottom ysize.
         layer: layer.
 
+    ```text
         xtop
            _
           | \
@@ -796,6 +803,7 @@ def triangle(
           |      \
           |______|ybot
               x
+    ```
     """
     return _components.triangle(
         x=x,
@@ -975,6 +983,7 @@ def triangle_thin(
         ybot: bottom ysize.
         layer: layer.
 
+    ```text
         xtop
            _
           | \
@@ -985,6 +994,7 @@ def triangle_thin(
           |      \
           |______|ybot
               x
+    ```
     """
     return _components.triangle_thin(
         x=x,

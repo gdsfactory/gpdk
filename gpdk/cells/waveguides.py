@@ -75,11 +75,13 @@ def crossing45(
     The 45 Degree crossing CANNOT be kept as an SRef since
     we only allow for multiples of 90Deg rotations in SRef.
 
+    ```text
         ----   ----
             \ /
              X
             / \
         ---    ----
+    ```
     """
     return _components.crossing45(
         crossing=crossing,
@@ -170,8 +172,10 @@ def straight(
         cross_section: specification (CrossSection, string or dict).
         width: width of the waveguide. If None, it will use the width of the cross_section.
 
+    ```text
         o1  ──────────────── o2
                 length
+    ```
     """
     return _components.straight(
         length=length,
@@ -196,8 +200,10 @@ def straight_all_angle(
         cross_section: specification (CrossSection, string or dict).
         width: width of the waveguide. If None, it will use the width of the cross_section.
 
+    ```text
         o1  ──────────────── o2
                 length
+    ```
     """
     return _components.straight_all_angle(
         length=length,
@@ -252,7 +258,7 @@ def straight_heater_doped_rib(
 ) -> gf.Component:
     r"""Returns a doped thermal phase shifter.
 
-    dimensions from https://doi.org/10.1364/OE.27.010456
+    dimensions from <https://doi.org/10.1364/OE.27.010456>
 
     Args:
         length: of the waveguide in um.
@@ -272,6 +278,7 @@ def straight_heater_doped_rib(
         xoffset_tip2: distance in um from output taper to via_stack.
 
 
+    ```text
                               length
         |<--------------------------------------------->|
         |              length_section                   |
@@ -292,11 +299,13 @@ def straight_heater_doped_rib(
             |        |____heater_width____|        |
             |        |                    |        |
             |________|                    |________|
+    ```
 
         taper         cross_section_heater
 
 
 
+    ```text
                                    |<------width------>|
                                     ____________________ heater_gap             slab_gap
              top_via_stack         |                   |<---------->| bot_via_stack   <-->
@@ -308,6 +317,7 @@ def straight_heater_doped_rib(
                                                                       heater_width
         <------------------------------------------------------------------------------>
                                        slab_width
+    ```
     """
     return _components.straight_heater_doped_rib(
         length=length,
@@ -365,6 +375,7 @@ def straight_heater_doped_strip(
         xoffset_tip1: distance in um from input taper to via_stack.
         xoffset_tip2: distance in um from output taper to via_stack.
 
+    ```text
                               length
           <-|--------|--------------------------------->
             |        | length_section
@@ -381,9 +392,11 @@ def straight_heater_doped_strip(
                                           |          |
                                           |          |
                                           |__________|
+    ```
 
     cross_section
 
+    ```text
                                   |<------width------>|
           ____________             ___________________               ______________
          |            |           |     undoped Si    |             |              |
@@ -391,6 +404,7 @@ def straight_heater_doped_strip(
          |____________|           |___________________|             |______________|
                                                                      <------------>
                                                         heater_gap     heater_width
+    ```
     """
     return _components.straight_heater_doped_strip(
         length=length,
@@ -433,7 +447,7 @@ def straight_heater_meander(
     based on SungWon Chung, Makoto Nakai, and Hossein Hashemi,
     Low-power thermo-optic silicon modulator for large-scale photonic integrated systems
     Opt. Express 27, 13430-13459 (2019)
-    https://www.osapublishing.org/oe/abstract.cfm?URI=oe-27-9-13430
+    <https://www.osapublishing.org/oe/abstract.cfm?URI=oe-27-9-13430>
 
     Args:
         length: total length of the optical path.
@@ -489,7 +503,7 @@ def straight_heater_meander_doped(
     based on SungWon Chung, Makoto Nakai, and Hossein Hashemi,
     Low-power thermo-optic silicon modulator for large-scale photonic integrated systems
     Opt. Express 27, 13430-13459 (2019)
-    https://www.osapublishing.org/oe/abstract.cfm?URI=oe-27-9-13430
+    <https://www.osapublishing.org/oe/abstract.cfm?URI=oe-27-9-13430>
 
     Args:
         length: total length of the optical path.
@@ -541,7 +555,7 @@ def straight_heater_metal(
 ) -> gf.Component:
     r"""Returns a thermal phase shifter.
 
-    dimensions from https://doi.org/10.1364/OE.27.010456
+    dimensions from <https://doi.org/10.1364/OE.27.010456>
 
     Args:
         length: of the waveguide.
@@ -599,7 +613,7 @@ def straight_heater_metal_90_90(
 ) -> gf.Component:
     r"""Returns a thermal phase shifter.
 
-    dimensions from https://doi.org/10.1364/OE.27.010456
+    dimensions from <https://doi.org/10.1364/OE.27.010456>
 
     Args:
         length: of the waveguide.
@@ -650,11 +664,10 @@ def straight_heater_metal_simple(
 ) -> gf.Component:
     r"""Returns a thermal phase shifter that has properly fixed electrical connectivity to extract a suitable electrical netlist and models.
 
-    dimensions from https://doi.org/10.1364/OE.27.010456.
+    dimensions from <https://doi.org/10.1364/OE.27.010456>.
 
     Args:
         length: of the waveguide.
-        length_undercut: length of each undercut section.
         cross_section_heater: for heated sections. heater metal only.
         cross_section_waveguide_heater: for heated sections.
         via_stack: via stack.
@@ -695,7 +708,7 @@ def straight_heater_metal_undercut(
 ) -> gf.Component:
     r"""Returns a thermal phase shifter.
 
-    dimensions from https://doi.org/10.1364/OE.27.010456
+    dimensions from <https://doi.org/10.1364/OE.27.010456>
 
     Args:
         length: of the waveguide.
@@ -753,7 +766,7 @@ def straight_heater_metal_undercut_90_90(
 ) -> gf.Component:
     r"""Returns a thermal phase shifter.
 
-    dimensions from https://doi.org/10.1364/OE.27.010456
+    dimensions from <https://doi.org/10.1364/OE.27.010456>
 
     Args:
         length: of the waveguide.
@@ -836,18 +849,18 @@ def straight_pin(
     r"""Returns rib waveguide with doping and via_stacks used for PN and PIN modulators.
 
     For PIN:
-    https://doi.org/10.1364/OE.26.029983
+    <https://doi.org/10.1364/OE.26.029983>
 
     500um length for PI phase shift
-    https://ieeexplore.ieee.org/document/8268112
+    <https://ieeexplore.ieee.org/document/8268112>
 
     to go beyond 2PI, you will need at least 1mm
-    https://ieeexplore.ieee.org/document/8853396/
+    <https://ieeexplore.ieee.org/document/8853396/>
 
     For PN:
     Typical lengths in practice are 2-5mm depending on doping,engineering and application:
-    https://opg.optica.org/oe/fulltext.cfm?uri=oe-21-25-30350&id=275107
-    https://opg.optica.org/oe/fulltext.cfm?uri=oe-20-11-12014&id=233271
+    <https://opg.optica.org/oe/fulltext.cfm?uri=oe-21-25-30350&id=275107>
+    <https://opg.optica.org/oe/fulltext.cfm?uri=oe-20-11-12014&id=233271>
 
     Args:
         length: of the waveguide.
@@ -884,13 +897,13 @@ def straight_pin_slot(
 ) -> gf.Component:
     r"""Returns a PIN straight waveguide with slotted via.
 
-    https://doi.org/10.1364/OE.26.029983
+    <https://doi.org/10.1364/OE.26.029983>
 
     500um length for PI phase shift
-    https://ieeexplore.ieee.org/document/8268112
+    <https://ieeexplore.ieee.org/document/8268112>
 
     to go beyond 2PI, you will need at least 1mm
-    https://ieeexplore.ieee.org/document/8853396/
+    <https://ieeexplore.ieee.org/document/8853396/>
 
     Args:
         length: of the waveguide.
@@ -934,18 +947,18 @@ def straight_pn(
     r"""Returns rib waveguide with doping and via_stacks used for PN and PIN modulators.
 
     For PIN:
-    https://doi.org/10.1364/OE.26.029983
+    <https://doi.org/10.1364/OE.26.029983>
 
     500um length for PI phase shift
-    https://ieeexplore.ieee.org/document/8268112
+    <https://ieeexplore.ieee.org/document/8268112>
 
     to go beyond 2PI, you will need at least 1mm
-    https://ieeexplore.ieee.org/document/8853396/
+    <https://ieeexplore.ieee.org/document/8853396/>
 
     For PN:
     Typical lengths in practice are 2-5mm depending on doping,engineering and application:
-    https://opg.optica.org/oe/fulltext.cfm?uri=oe-21-25-30350&id=275107
-    https://opg.optica.org/oe/fulltext.cfm?uri=oe-20-11-12014&id=233271
+    <https://opg.optica.org/oe/fulltext.cfm?uri=oe-21-25-30350&id=275107>
+    <https://opg.optica.org/oe/fulltext.cfm?uri=oe-20-11-12014&id=233271>
 
     Args:
         length: of the waveguide.
@@ -982,13 +995,13 @@ def straight_pn_slot(
 ) -> gf.Component:
     r"""Returns a PIN straight waveguide with slotted via.
 
-    https://doi.org/10.1364/OE.26.029983
+    <https://doi.org/10.1364/OE.26.029983>
 
     500um length for PI phase shift
-    https://ieeexplore.ieee.org/document/8268112
+    <https://ieeexplore.ieee.org/document/8268112>
 
     to go beyond 2PI, you will need at least 1mm
-    https://ieeexplore.ieee.org/document/8853396/
+    <https://ieeexplore.ieee.org/document/8853396/>
 
     Args:
         length: of the waveguide.
@@ -1129,8 +1142,10 @@ def wire_straight(
         cross_section: specification (CrossSection, string or dict).
         width: width of the waveguide. If None, it will use the width of the cross_section.
 
+    ```text
         o1  ──────────────── o2
                 length
+    ```
     """
     return _components.wire_straight(
         length=length,

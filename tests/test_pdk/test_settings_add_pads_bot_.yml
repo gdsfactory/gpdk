@@ -1,0 +1,15 @@
+info: {}
+name: add_pads_bot_Cinterdigitated_electrodes_SPFselect_ports_9b0b274a
+settings:
+  allow_width_mismatch: true
+  auto_taper: true
+  avoid_component_bbox: false
+  bend: wire_corner
+  component: interdigitated_electrodes
+  cross_section: metal_routing
+  pad: pad_rectangular
+  pad_pitch: 100
+  pad_port_name: e1
+  port_type: electrical
+  select_ports: Fselect_ports_Mgdsfactorypport_SPTelectrical
+  straight_separation: 15

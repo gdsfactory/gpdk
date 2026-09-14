@@ -236,15 +236,19 @@ def array(
 
         2 rows x 4 columns
 
+    ```text
           column_pitch
           <---------->
          ___        ___       ___        ___
         |   |      |   |     |   |      |   |
         |___|      |___|     |___|      |___|
+    ```
 
+    ```text
          ___        ___       ___        ___
         |   |      |   |     |   |      |   |
         |___|      |___|     |___|      |___|
+    ```
     """
     return _components.array(
         component=component,
@@ -374,7 +378,7 @@ def component_sequence(
         s = "AB-H-H-H-H-BA"
         c = gf.components.component_sequence(sequence=s, symbol_to_component=symbol_to_component)
         c.plot()
-        ```
+    ```
     """
     return _components.component_sequence(
         sequence=sequence,

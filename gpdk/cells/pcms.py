@@ -674,6 +674,7 @@ def greek_cross(
         via_stack: via component to attach to the cross.
         layer_index: index of the layer to connect the via_stack to.
 
+    ```text
             via_stack
             <------->
             _________       length          ________
@@ -682,18 +683,19 @@ def greek_cross(
             |       |======== width =======|        |
             |_______|<--> |   ↑       |<-->|________|
                     offset            offset
+    ```
 
 
     References:
     - Walton, Anthony J.. “MICROELECTRONIC TEST STRUCTURES.” (1999).
     - W. Versnel, Analysis of the Greek cross, a Van der Pauw structure with finite
       contacts, Solid-State Electronics, Volume 22, Issue 11, 1979, Pages 911-914,
-      ISSN 0038-1101, https://doi.org/10.1016/0038-1101(79)90061-3.
+      ISSN 0038-1101, <https://doi.org/10.1016/0038-1101>(79)90061-3.
     - S. Enderling et al., "Sheet resistance measurement of non-standard cleanroom
       materials using suspended Greek cross test structures," IEEE Transactions on
       Semiconductor Manufacturing, vol. 19, no. 1, pp. 2-9, Feb. 2006,
       doi: 10.1109/TSM.2005.863248.
-    - https://download.tek.com/document/S530_VanDerPauwSheetRstnce.pdf
+    - <https://download.tek.com/document/S530_VanDerPauwSheetRstnce.pdf>
     """
     return _components.greek_cross(
         length=length,
@@ -841,11 +843,11 @@ def pixel(
     size: int = 1,
     layer: LayerSpec = "WG",
 ) -> gf.Component:
-    r"""Pixel cell.
+    r"""Returns a square pixel, the building block of the QR code.
 
     Args:
-        size: see :func:`gdsfactory.components.pcms.version_stamp.pixel` for details.
-        layer: see :func:`gdsfactory.components.pcms.version_stamp.pixel` for details.
+        size: side length of the square, in um.
+        layer: layer to use.
     """
     return _components.pixel(
         size=size,
@@ -1019,7 +1021,6 @@ def ruler(
         layer: Specific layer to put the ruler geometry on.
         bbox_layers: Layers to include in the bounding box.
         bbox_offset: Offsets for each bounding box layer.
-        cross_section: Cross-section spec for the ruler. Overrides layer if provided.
         long_marks: Marks that are long.
         text_size: Size of the text in um.
     """

@@ -308,6 +308,7 @@ def bend_euler_s(
         port1: input port name.
         port2: output port name.
 
+    ```text
                         _____ o2
                        /
                       /
@@ -318,6 +319,7 @@ def bend_euler_s(
                   /
                  /
          o1_____/
+    ```
     """
     return _components.bend_euler_s(
         radius=radius,
@@ -329,6 +331,203 @@ def bend_euler_s(
         width=width,
         cross_section=cross_section,
         allow_min_radius_violation=allow_min_radius_violation,
+        port1=port1,
+        port2=port2,
+    )
+
+
+@gf.cell(tags=["bends"], schematic_function=bend_schematic)
+def bend_modified_hermite(
+    radius: float = 15,
+    angle: float = 90.0,
+    inner_tangent_magnitude: float = 26.5,
+    outer_tangent_magnitude: float = 30,
+    npoints: int = 100,
+    cross_section: CrossSectionSpec = "strip",
+    allow_min_radius_violation: bool = False,
+    layer: LayerSpec | None = None,
+    width1: float | None = None,
+    width2: float | None = None,
+    port1: str = "o1",
+    port2: str = "o2",
+) -> gf.Component:
+    r"""Modified Hermite curve, described in "Low-Loss Silicon Nitride Bent Waveguides at O-Band with Modified Hermite Curves", Donghao Li et al, <https://www.mdpi.com/2304-6732/13/2/175> .
+
+    Default parameters are taken from Table 3 of <https://www.mdpi.com/2304-6732/13/2/175> .
+
+    Note that the default inner_tangent_magnitude and outer_tangent_magnitude parameters will need to be changed if you change radius or angle, as optimal values for those parameters depend on radius and angle.
+
+    Args:
+        radius: effective bend radius
+        angle: angle, in degrees.
+        inner_tangent_magnitude: a1 parameter from Li et al.
+        outer_tangent_magnitude: a2 parameter from Li et al.
+        npoints: number of points to use for the inner wall of the curve, and the outer wall.
+        cross_section: spec (CrossSection, string or dict).
+        allow_min_radius_violation: if True allows radius to be smaller than cross_section radius.
+        layer: layer to use. Defaults to cross_section.layer.
+        width1: width to use at input. Defaults to cross_section.width.
+        width2: width to use at output. Defaults to cross_section.width.
+        port1: name of input port.
+        port2: name of output port.
+    """
+    return _components.bend_modified_hermite(
+        radius=radius,
+        angle=angle,
+        inner_tangent_magnitude=inner_tangent_magnitude,
+        outer_tangent_magnitude=outer_tangent_magnitude,
+        npoints=npoints,
+        cross_section=cross_section,
+        allow_min_radius_violation=allow_min_radius_violation,
+        layer=layer,
+        width1=width1,
+        width2=width2,
+        port1=port1,
+        port2=port2,
+    )
+
+
+@gf.cell(tags=["bends"], schematic_function=bend_schematic)
+def bend_modified_hermite180(
+    radius: float = 15,
+    angle: float = 180,
+    inner_tangent_magnitude: float = 26.5,
+    outer_tangent_magnitude: float = 30,
+    npoints: int = 100,
+    cross_section: CrossSectionSpec = "strip",
+    allow_min_radius_violation: bool = False,
+    layer: LayerSpec | None = None,
+    width1: float | None = None,
+    width2: float | None = None,
+    port1: str = "o1",
+    port2: str = "o2",
+) -> gf.Component:
+    r"""Modified Hermite curve, described in "Low-Loss Silicon Nitride Bent Waveguides at O-Band with Modified Hermite Curves", Donghao Li et al, <https://www.mdpi.com/2304-6732/13/2/175> .
+
+    Default parameters are taken from Table 3 of <https://www.mdpi.com/2304-6732/13/2/175> .
+
+    Note that the default inner_tangent_magnitude and outer_tangent_magnitude parameters will need to be changed if you change radius or angle, as optimal values for those parameters depend on radius and angle.
+
+    Args:
+        radius: effective bend radius
+        angle: angle, in degrees.
+        inner_tangent_magnitude: a1 parameter from Li et al.
+        outer_tangent_magnitude: a2 parameter from Li et al.
+        npoints: number of points to use for the inner wall of the curve, and the outer wall.
+        cross_section: spec (CrossSection, string or dict).
+        allow_min_radius_violation: if True allows radius to be smaller than cross_section radius.
+        layer: layer to use. Defaults to cross_section.layer.
+        width1: width to use at input. Defaults to cross_section.width.
+        width2: width to use at output. Defaults to cross_section.width.
+        port1: name of input port.
+        port2: name of output port.
+    """
+    return _components.bend_modified_hermite180(
+        radius=radius,
+        angle=angle,
+        inner_tangent_magnitude=inner_tangent_magnitude,
+        outer_tangent_magnitude=outer_tangent_magnitude,
+        npoints=npoints,
+        cross_section=cross_section,
+        allow_min_radius_violation=allow_min_radius_violation,
+        layer=layer,
+        width1=width1,
+        width2=width2,
+        port1=port1,
+        port2=port2,
+    )
+
+
+@gf.vcell
+def bend_modified_hermite_all_angle(
+    radius: float = 15,
+    angle: float = 90.0,
+    inner_tangent_magnitude: float = 26.5,
+    outer_tangent_magnitude: float = 30,
+    npoints: int = 100,
+    cross_section: CrossSectionSpec = "strip",
+    allow_min_radius_violation: bool = False,
+    layer: LayerSpec | None = None,
+    width1: float | None = None,
+    width2: float | None = None,
+    port1: str = "o1",
+    port2: str = "o2",
+) -> gf.ComponentAllAngle:
+    r"""Modified Hermite curve, described in "Low-Loss Silicon Nitride Bent Waveguides at O-Band with Modified Hermite Curves", Donghao Li et al, <https://www.mdpi.com/2304-6732/13/2/175> .
+
+    Default parameters are taken from Table 3 of <https://www.mdpi.com/2304-6732/13/2/175> .
+
+    This is the all_angle version that can handle angles that aren't integer multiples of 90 degrees.
+
+
+    Note that the default inner_tangent_magnitude and outer_tangent_magnitude parameters will need to be changed if you change radius or angle, as optimal values for those parameters depend on radius and angle.
+
+    Args:
+        radius: effective bend radius
+        angle: angle, in degrees.
+        inner_tangent_magnitude: a1 parameter from Li et al.
+        outer_tangent_magnitude: a2 parameter from Li et al.
+        npoints: number of points to use for the inner wall of the curve, and the outer wall.
+        cross_section: spec (CrossSection, string or dict).
+        allow_min_radius_violation: if True allows radius to be smaller than cross_section radius.
+        layer: layer to use. Defaults to cross_section.layer.
+        width1: width to use at input. Defaults to cross_section.width.
+        width2: width to use at output. Defaults to cross_section.width.
+        port1: name of input port.
+        port2: name of output port.
+    """
+    return _components.bend_modified_hermite_all_angle(
+        radius=radius,
+        angle=angle,
+        inner_tangent_magnitude=inner_tangent_magnitude,
+        outer_tangent_magnitude=outer_tangent_magnitude,
+        npoints=npoints,
+        cross_section=cross_section,
+        allow_min_radius_violation=allow_min_radius_violation,
+        layer=layer,
+        width1=width1,
+        width2=width2,
+        port1=port1,
+        port2=port2,
+    )
+
+
+@gf.cell(tags=["bends"], schematic_function=sbend_schematic)
+def bend_modified_hermite_s(
+    radius: float = 15,
+    inner_tangent_magnitude: float = 26.5,
+    outer_tangent_magnitude: float = 30,
+    npoints: int = 100,
+    cross_section: CrossSectionSpec = "strip",
+    allow_min_radius_violation: bool = False,
+    layer: LayerSpec | None = None,
+    width: float | None = None,
+    port1: str = "o1",
+    port2: str = "o2",
+) -> gf.Component:
+    r"""Sbend made of 2 modified Hermite bends.
+
+    Args:
+        radius: effective bend radius
+        inner_tangent_magnitude: a1 parameter from Li et al.
+        outer_tangent_magnitude: a2 parameter from Li et al.
+        npoints: number of points to use for the inner wall of the curve, and the outer wall.
+        cross_section: spec (CrossSection, string or dict).
+        allow_min_radius_violation: if True allows radius to be smaller than cross_section radius.
+        layer: layer to use. Defaults to cross_section.layer.
+        width: width  at input and output (the width generally varies in the interior of the bend). Defaults to cross_section.width.
+        port1: name of input port.
+        port2: name of output port.
+    """
+    return _components.bend_modified_hermite_s(
+        radius=radius,
+        inner_tangent_magnitude=inner_tangent_magnitude,
+        outer_tangent_magnitude=outer_tangent_magnitude,
+        npoints=npoints,
+        cross_section=cross_section,
+        allow_min_radius_violation=allow_min_radius_violation,
+        layer=layer,
+        width=width,
         port1=port1,
         port2=port2,
     )
@@ -414,7 +613,7 @@ def bend_topic(
 ) -> gf.Component:
     r"""Returns a regular degree Third Order Polynomial Interconnected Circular (TOPIC) bend component.
 
-    The implementation follows the description in this publication https://arxiv.org/html/2411.15025v1.
+    The implementation follows the description in this publication <https://arxiv.org/html/2411.15025v1>.
 
     The bend consists of three parts:
     a. Initial transition from straight to bend, known as TOP segment.
@@ -456,7 +655,7 @@ def bend_topic180(
 ) -> gf.Component:
     r"""Returns a regular degree Third Order Polynomial Interconnected Circular (TOPIC) bend component.
 
-    The implementation follows the description in this publication https://arxiv.org/html/2411.15025v1.
+    The implementation follows the description in this publication <https://arxiv.org/html/2411.15025v1>.
 
     The bend consists of three parts:
     a. Initial transition from straight to bend, known as TOP segment.
@@ -498,7 +697,7 @@ def bend_topic_all_angle(
 ) -> gf.ComponentAllAngle:
     r"""Returns a Third Order Polynomial Interconnected Circular (TOPIC) bend component of arbitrary angle.
 
-    The implementation follows the description in this publication https://arxiv.org/html/2411.15025v1.
+    The implementation follows the description in this publication <https://arxiv.org/html/2411.15025v1>.
 
     The bend consists of three parts:
     a. Initial transition from straight to bend, known as TOP segment.
@@ -552,6 +751,7 @@ def bend_topic_s(
         port1: input port name.
         port2: output port name.
 
+    ```text
                         _____ o2
                        /
                       /
@@ -562,6 +762,7 @@ def bend_topic_s(
                   /
                  /
          o1_____/
+    ```
     """
     return _components.bend_topic_s(
         radius=radius,
@@ -623,6 +824,10 @@ __all__ = [
     "bend_euler180",
     "bend_euler_all_angle",
     "bend_euler_s",
+    "bend_modified_hermite",
+    "bend_modified_hermite180",
+    "bend_modified_hermite_all_angle",
+    "bend_modified_hermite_s",
     "bend_s",
     "bend_s_offset",
     "bend_topic",

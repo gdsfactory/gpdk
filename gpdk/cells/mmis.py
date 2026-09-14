@@ -61,6 +61,7 @@ def mmi(
         input_positions: optional positions of the inputs.
         output_positions: optional positions of the outputs.
 
+    ```text
                    length_mmi
                     <------>
                     ________
@@ -76,6 +77,7 @@ def mmi(
                  | |
                  <->
             length_taper
+    ```
     """
     return _components.mmi(
         inputs=inputs,
@@ -120,6 +122,7 @@ def mmi1x2(
         straight: straight function.
         cross_section: specification (CrossSection, string or dict).
 
+    ```text
                length_mmi
                 <------>
                 ________
@@ -132,6 +135,7 @@ def mmi1x2(
                |          __  o3
                |         /
                |________|
+    ```
 
              <->
         length_taper
@@ -157,7 +161,7 @@ def mmi1x2_with_sbend(
 ) -> gf.Component:
     r"""Returns 1x2 splitter for Cband.
 
-    https://opg.optica.org/oe/fulltext.cfm?uri=oe-21-1-1310&id=248418
+    <https://opg.optica.org/oe/fulltext.cfm?uri=oe-21-1-1310&id=248418>
 
     Args:
         with_sbend: add sbend.
@@ -196,6 +200,7 @@ def mmi2x2(
         straight: straight function.
         cross_section: spec.
 
+    ```text
                    length_mmi
                     <------>
                     ________
@@ -208,6 +213,7 @@ def mmi2x2(
             o1  __            __  o4
                   \          /
                    |________|
+    ```
 
                  <->
             length_taper
@@ -234,7 +240,7 @@ def mmi2x2_with_sbend(
     r"""Returns mmi2x2 for Cband.
 
     C_band 2x2MMI in 220nm thick silicon
-    https://opg.optica.org/oe/fulltext.cfm?uri=oe-25-23-28957&id=376719
+    <https://opg.optica.org/oe/fulltext.cfm?uri=oe-25-23-28957&id=376719>
 
     Args:
         with_sbend: add sbend.
@@ -277,7 +283,6 @@ def mmi_90degree_hybrid(
         width_mmi: in y direction.
         gap_mmi: (width_taper + gap between tapered wg)/2.
         straight: straight function.
-        with_bbox: box in bbox_layers and bbox_offsets avoid DRC sharp edges.
         cross_section: spec.
 
     ```text
@@ -370,6 +375,7 @@ def mmi_tapered(
         input_positions: optional positions of the inputs.
         output_positions: optional positions of the outputs.
 
+    ```text
                                        ┌───────────┐
                                        │           ├───────────────┐
                                        │           │               ├────────────┐
@@ -387,6 +393,7 @@ def mmi_tapered(
             start                                  length_taper_out      end
                                        ◄───────────►
                                         length_mmi
+    ```
     """
     return _components.mmi_tapered(
         inputs=inputs,

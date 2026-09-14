@@ -337,11 +337,11 @@ def pad_gs(
     length: float = 100,
     cross_section: str = "gs",
 ) -> gf.Component:
-    r"""pad_gs cell.
+    r"""Returns a ground-signal pad.
 
     Args:
-        length: see :func:`gdsfactory.components.pads.pad_gsg.pad_gs` for details.
-        cross_section: see :func:`gdsfactory.components.pads.pad_gsg.pad_gs` for details.
+        length: length of the GS transmission line, in um.
+        cross_section: GS cross_section spec.
     """
     return _components.pad_gs(
         length=length,
@@ -354,11 +354,11 @@ def pad_gsg(
     length: float = 100,
     cross_section: str = "gsg",
 ) -> gf.Component:
-    r"""pad_gsg cell.
+    r"""Returns a ground-signal-ground pad with electrical pins.
 
     Args:
-        length: see :func:`gdsfactory.components.pads.pad_gsg.pad_gsg` for details.
-        cross_section: see :func:`gdsfactory.components.pads.pad_gsg.pad_gsg` for details.
+        length: length of the GSG transmission line, in um.
+        cross_section: GSG cross_section spec.
     """
     return _components.pad_gsg(
         length=length,
@@ -555,6 +555,7 @@ def rectangle_with_slits(
         slit_row_pitch: pitch for rows of slits.
         slit_enclosure: from slit to rectangle edge.
 
+    ```text
         slit_enclosure
         _____________________________________
         |<--->                              |
@@ -574,6 +575,7 @@ def rectangle_with_slits(
         |            slit_size[0]           |
         |___________________________________|
                         size[0]
+    ```
     """
     return _components.rectangle_with_slits(
         size=size,
