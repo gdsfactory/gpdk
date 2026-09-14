@@ -42,6 +42,7 @@ def via(
         column_pitch: Optional pitch between columns of vias. Default is pitch.
         row_pitch: Optional pitch between rows of vias. Default is pitch.
 
+    ```text
         enclosure
         _________________________________________
         |<--->                                  |
@@ -54,6 +55,7 @@ def via(
         |      <------------->                  |
         |           pitch                       |
         |_______________________________________|
+    ```
     """
     return _components.via(
         size=size,
@@ -93,6 +95,7 @@ def via1(
         column_pitch: Optional pitch between columns of vias. Default is pitch.
         row_pitch: Optional pitch between rows of vias. Default is pitch.
 
+    ```text
         enclosure
         _________________________________________
         |<--->                                  |
@@ -105,6 +108,7 @@ def via1(
         |      <------------->                  |
         |           pitch                       |
         |_______________________________________|
+    ```
     """
     return _components.via1(
         size=size,
@@ -144,6 +148,7 @@ def via2(
         column_pitch: Optional pitch between columns of vias. Default is pitch.
         row_pitch: Optional pitch between rows of vias. Default is pitch.
 
+    ```text
         enclosure
         _________________________________________
         |<--->                                  |
@@ -156,6 +161,7 @@ def via2(
         |      <------------->                  |
         |           pitch                       |
         |_______________________________________|
+    ```
     """
     return _components.via2(
         size=size,
@@ -199,6 +205,7 @@ def via_chain(
         min_metal_spacing: min_metal_spacing.
         contact_offset: contact offset.
 
+    ```text
         side view:
                                               min_metal_spacing
            ┌────────────────────────────────────┐              ┌────────────────────────────────────┐
@@ -216,9 +223,12 @@ def via_chain(
            │ layers_bot                                                                              │
            │                                                                                         │
            └─────────────────────────────────────────────────────────────────────────────────────────┘
+    ```
 
+    ```text
            ◄─────────────────────────────────────────────────────────────────────────────────────────►
                                          2*e + w + min_metal_spacing + 2*e + w
+    ```
     """
     return _components.via_chain(
         num_vias=num_vias,
@@ -314,7 +324,7 @@ def via_stack(
     contains 4 ports (e1, e2, e3, e4)
 
     also know as Via array
-    http://www.vlsi-expert.com/2017/12/vias.html
+    <http://www.vlsi-expert.com/2017/12/vias.html>
 
     Args:
         size: of the layers.
@@ -415,7 +425,7 @@ def via_stack_heater_m2(
     contains 4 ports (e1, e2, e3, e4)
 
     also know as Via array
-    http://www.vlsi-expert.com/2017/12/vias.html
+    <http://www.vlsi-expert.com/2017/12/vias.html>
 
     Args:
         size: of the layers.
@@ -462,7 +472,7 @@ def via_stack_heater_m3(
     contains 4 ports (e1, e2, e3, e4)
 
     also know as Via array
-    http://www.vlsi-expert.com/2017/12/vias.html
+    <http://www.vlsi-expert.com/2017/12/vias.html>
 
     Args:
         size: of the layers.
@@ -509,7 +519,7 @@ def via_stack_heater_mtop(
     contains 4 ports (e1, e2, e3, e4)
 
     also know as Via array
-    http://www.vlsi-expert.com/2017/12/vias.html
+    <http://www.vlsi-expert.com/2017/12/vias.html>
 
     Args:
         size: of the layers.
@@ -556,7 +566,7 @@ def via_stack_heater_mtop_mini(
     contains 4 ports (e1, e2, e3, e4)
 
     also know as Via array
-    http://www.vlsi-expert.com/2017/12/vias.html
+    <http://www.vlsi-expert.com/2017/12/vias.html>
 
     Args:
         size: of the layers.
@@ -603,7 +613,7 @@ def via_stack_m1_m3(
     contains 4 ports (e1, e2, e3, e4)
 
     also know as Via array
-    http://www.vlsi-expert.com/2017/12/vias.html
+    <http://www.vlsi-expert.com/2017/12/vias.html>
 
     Args:
         size: of the layers.
@@ -650,7 +660,7 @@ def via_stack_m1_mtop(
     contains 4 ports (e1, e2, e3, e4)
 
     also know as Via array
-    http://www.vlsi-expert.com/2017/12/vias.html
+    <http://www.vlsi-expert.com/2017/12/vias.html>
 
     Args:
         size: of the layers.
@@ -697,7 +707,7 @@ def via_stack_m2_m3(
     contains 4 ports (e1, e2, e3, e4)
 
     also know as Via array
-    http://www.vlsi-expert.com/2017/12/vias.html
+    <http://www.vlsi-expert.com/2017/12/vias.html>
 
     Args:
         size: of the layers.
@@ -744,7 +754,7 @@ def via_stack_npp_m1(
     contains 4 ports (e1, e2, e3, e4)
 
     also know as Via array
-    http://www.vlsi-expert.com/2017/12/vias.html
+    <http://www.vlsi-expert.com/2017/12/vias.html>
 
     Args:
         size: of the layers.
@@ -791,7 +801,7 @@ def via_stack_slab_m1(
     contains 4 ports (e1, e2, e3, e4)
 
     also know as Via array
-    http://www.vlsi-expert.com/2017/12/vias.html
+    <http://www.vlsi-expert.com/2017/12/vias.html>
 
     Args:
         size: of the layers.
@@ -838,7 +848,7 @@ def via_stack_slab_m1_horizontal(
     contains 4 ports (e1, e2, e3, e4)
 
     also know as Via array
-    http://www.vlsi-expert.com/2017/12/vias.html
+    <http://www.vlsi-expert.com/2017/12/vias.html>
 
     Args:
         size: of the layers.
@@ -885,7 +895,7 @@ def via_stack_slab_m2(
     contains 4 ports (e1, e2, e3, e4)
 
     also know as Via array
-    http://www.vlsi-expert.com/2017/12/vias.html
+    <http://www.vlsi-expert.com/2017/12/vias.html>
 
     Args:
         size: of the layers.
@@ -932,7 +942,7 @@ def via_stack_slab_m3(
     contains 4 ports (e1, e2, e3, e4)
 
     also know as Via array
-    http://www.vlsi-expert.com/2017/12/vias.html
+    <http://www.vlsi-expert.com/2017/12/vias.html>
 
     Args:
         size: of the layers.
@@ -979,7 +989,7 @@ def via_stack_slab_npp_m3(
     contains 4 ports (e1, e2, e3, e4)
 
     also know as Via array
-    http://www.vlsi-expert.com/2017/12/vias.html
+    <http://www.vlsi-expert.com/2017/12/vias.html>
 
     Args:
         size: of the layers.
@@ -1032,6 +1042,7 @@ def via_stack_with_offset(
 
         side view
 
+    ```text
          __________________________
         |                          |
         |                          | layers[2]
@@ -1045,6 +1056,7 @@ def via_stack_with_offset(
         |            |
         |  sizes[0]  |  layers[0]
         |____________|
+    ```
 
             vias[0] = None
     """
@@ -1084,6 +1096,7 @@ def via_stack_with_offset_m1_m3(
 
         side view
 
+    ```text
          __________________________
         |                          |
         |                          | layers[2]
@@ -1097,6 +1110,7 @@ def via_stack_with_offset_m1_m3(
         |            |
         |  sizes[0]  |  layers[0]
         |____________|
+    ```
 
             vias[0] = None
     """
@@ -1136,6 +1150,7 @@ def via_stack_with_offset_ppp_m1(
 
         side view
 
+    ```text
          __________________________
         |                          |
         |                          | layers[2]
@@ -1149,6 +1164,7 @@ def via_stack_with_offset_ppp_m1(
         |            |
         |  sizes[0]  |  layers[0]
         |____________|
+    ```
 
             vias[0] = None
     """
@@ -1188,6 +1204,7 @@ def viac(
         column_pitch: Optional pitch between columns of vias. Default is pitch.
         row_pitch: Optional pitch between rows of vias. Default is pitch.
 
+    ```text
         enclosure
         _________________________________________
         |<--->                                  |
@@ -1200,6 +1217,7 @@ def viac(
         |      <------------->                  |
         |           pitch                       |
         |_______________________________________|
+    ```
     """
     return _components.viac(
         size=size,

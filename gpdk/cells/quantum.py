@@ -26,6 +26,7 @@ def coupler_capacitive(
     A capacitive coupler consists of two metal pads separated by a small gap,
     providing capacitive coupling between circuit elements like qubits and resonators.
 
+    ```text
                     ______               ______
           _______  |      |             |      | _______
          |       | |      |             |      ||       |
@@ -33,6 +34,7 @@ def coupler_capacitive(
          |       | |      |             |      ||       |
          |_______| |      |             |      ||_______|
                    |______|             |______|
+    ```
 
     Args:
         pad_width: Width of each coupling pad in μm.
@@ -91,6 +93,7 @@ def coupler_interdigital(
     Returns:
         Component: A gdsfactory component with the interdigital coupler geometry.
 
+    ```text
                     ┌────────┐
                    base columns
                    ↓                    ↓
@@ -105,6 +108,7 @@ def coupler_interdigital(
          │        │█                    █│        │
          │        │█████████████        █│        │
          └────────┘█                    █└────────┘
+    ```
     """
     return _components.coupler_interdigital(
         fingers=fingers,
@@ -155,6 +159,7 @@ def coupler_tunable(
     Returns:
         Component: A gdsfactory component with the tunable coupler geometry.
 
+    ```text
                     (connected to feed)
                          _______
                         |       |
@@ -176,6 +181,7 @@ def coupler_tunable(
                         |       |
                         |_______|
                     (connected to feed)
+    ```
     """
     return _components.coupler_tunable(
         pad_width=pad_width,
@@ -309,21 +315,28 @@ def resonator_cpw(
     layer_gap: LayerSpec = (2, 0),
     port_type: str = "electrical",
 ) -> gf.Component:
-    r"""Creates a coplanar waveguide (CPW) resonator.
+    r"""Creates a half-wave coplanar waveguide (CPW) resonator.
 
-    A CPW resonator consists of a meandered coplanar waveguide with coupling gaps
-    for capacitive coupling to feedlines or qubits.
+    The resonator is a meandered coplanar waveguide: a center conductor on
+    ``layer_metal`` flanked by two slots on ``layer_gap`` which are etched out of
+    the surrounding ground plane. Both ends are straight coupling arms whose
+    slots are widened (or narrowed) to ``coupling_gap`` so the coupling to a
+    feedline or qubit can be tuned independently of the resonator impedance.
 
     Args:
-        length: Total length of the resonator in μm.
+        length: Target length of the meandered section in μm. The number of
+            meander turns is rounded to fit; the length actually drawn is
+            reported in ``component.info["length"]``.
         width: Width of the center conductor in μm.
-        gap: Gap width on each side of the center conductor in μm.
-        meander_pitch: Pitch between meander segments in μm.
-        meander_width: Width of each meander section in μm.
-        coupling_gap: Gap for capacitive coupling in μm.
-        coupling_length: Length of the coupling region in μm.
-        layer_metal: Layer for the metal conductor.
-        layer_gap: Layer for the gaps (ground plane).
+        gap: Slot width on each side of the center conductor in μm.
+        meander_pitch: Pitch between meander runs in μm. Sets the bend radius to
+            ``meander_pitch / 2``.
+        meander_width: Span of each meander run in μm. Must exceed
+            ``meander_pitch``.
+        coupling_gap: Slot width in the coupling arms in μm.
+        coupling_length: Length of each coupling arm in μm.
+        layer_metal: Layer for the metal center conductor.
+        layer_gap: Layer for the slots etched out of the ground plane.
         port_type: Type of port to add to the component.
 
     Returns:
@@ -352,14 +365,16 @@ def resonator_lumped(
     inductor_width: float = 2.0,
     inductor_turns: int = 3,
     inductor_radius: float = 20.0,
+    inductor_run: float = 60.0,
     coupling_gap: float = 5.0,
     layer_metal: LayerSpec = (1, 0),
     port_type: str = "electrical",
 ) -> gf.Component:
-    r"""Creates a lumped element resonator with interdigital capacitor and spiral inductor.
+    r"""Creates a lumped element resonator: an interdigital capacitor in series with a meander inductor.
 
-    A lumped resonator consists of a capacitive element (interdigital capacitor)
-    and an inductive element (spiral inductor) forming an LC circuit.
+    The interdigital capacitor and the meander inductor are galvanically
+    connected by a straight interconnect, so the component is a two terminal
+    series LC with ports on the outer terminal of each element.
 
     Args:
         capacitor_fingers: Number of fingers in the interdigital capacitor.
@@ -367,9 +382,10 @@ def resonator_lumped(
         capacitor_finger_gap: Gap between capacitor fingers in μm.
         capacitor_thickness: Thickness of capacitor fingers in μm.
         inductor_width: Width of the inductor wire in μm.
-        inductor_turns: Number of turns in the spiral inductor.
-        inductor_radius: Radius of the spiral inductor in μm.
-        coupling_gap: Gap for capacitive coupling in μm.
+        inductor_turns: Number of 180 degree turns in the meander inductor.
+        inductor_radius: Bend radius of the meander inductor in μm.
+        inductor_run: Length of each straight run of the meander inductor in μm.
+        coupling_gap: Length of the interconnect between capacitor and inductor in μm.
         layer_metal: Layer for the metal structures.
         port_type: Type of port to add to the component.
 
@@ -384,6 +400,7 @@ def resonator_lumped(
         inductor_width=inductor_width,
         inductor_turns=inductor_turns,
         inductor_radius=inductor_radius,
+        inductor_run=inductor_run,
         coupling_gap=coupling_gap,
         layer_metal=layer_metal,
         port_type=port_type,

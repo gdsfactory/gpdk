@@ -38,6 +38,7 @@ def coupler(
         allow_min_radius_violation: if True does not check for min bend radius.
         bend: input and output sbend components.
 
+    ```text
                dx                                 dx
             |------|                           |------|
          o2 ________                           ______o3
@@ -47,6 +48,7 @@ def coupler(
                      /                       \            |
             ________/                         \_______    |
          o1                                          o4
+    ```
 
                         coupler_straight  coupler_symmetric
     """
@@ -119,12 +121,14 @@ def coupler90bend(
         cross_section_inner: spec inner bend.
         cross_section_outer: spec outer bend.
 
+    ```text
             r   3 4
             |   | |
             |  / /
             | / /
         2____/ /
         1_____/
+    ```
     """
     return _components.coupler90bend(
         radius=radius,
@@ -190,11 +194,12 @@ def coupler_adiabatic(
     r"""Returns 50/50 adiabatic coupler.
 
     Design based on asymmetric adiabatic 3dB coupler designs, such as those.
-    - https://doi.org/10.1364/CLEO.2010.CThAA2,
-    - https://doi.org/10.1364/CLEO_SI.2017.SF1I.5
-    - https://doi.org/10.1364/CLEO_SI.2018.STh4B.4
+    - <https://doi.org/10.1364/CLEO.2010.CThAA2>,
+    - <https://doi.org/10.1364/CLEO_SI.2017.SF1I.5>
+    - <https://doi.org/10.1364/CLEO_SI.2018.STh4B.4>
 
-    input Bezier curves, with poles set to half of the x-length of the S-bend.
+    The coupler comprises five regions:
+
     1. is the first half of input S-bend where input widths taper by +dw and -dw
     2. is the second half of the S-bend straight with constant, unbalanced widths
     3. is the region where the two asymmetric straights gradually come together
@@ -241,6 +246,7 @@ def coupler_asymmetric(
         dx: bend length in x direction.
         cross_section: spec.
 
+    ```text
                         dx
                      |-----|
                       _____ o2
@@ -248,6 +254,7 @@ def coupler_asymmetric(
                _____/          |
          gap o1____________    |  dy
                             o3
+    ```
     """
     return _components.coupler_asymmetric(
         gap=gap,
@@ -269,7 +276,7 @@ def coupler_bent(
 ) -> gf.Component:
     r"""Returns Broadband SOI curved / straight directional coupler.
 
-    based on: https://doi.org/10.1038/s41598-017-07618-6.
+    based on: <https://doi.org/10.1038/s41598-017-07618-6>.
 
     Args:
         gap: gap.
@@ -307,7 +314,7 @@ def coupler_broadband(
 ) -> gf.Component:
     r"""Returns broadband coupler component.
 
-    https://docs.flexcompute.com/projects/tidy3d/en/latest/notebooks/BroadbandDirectionalCoupler.html
+    <https://docs.flexcompute.com/projects/tidy3d/en/latest/notebooks/BroadbandDirectionalCoupler.html>
     proposed in Zeqin Lu, Han Yun, Yun Wang, Zhitian Chen, Fan Zhang, Nicolas A. F. Jaeger, and Lukas Chrostowski,
     "Broadband silicon photonic directional coupler using asymmetric-waveguide based phase control,"
     Opt. Express 23, 3795-3808 (2015), DOI: 10.1364/OE.23.003795.
@@ -456,6 +463,7 @@ def coupler_ring(
         cross_section_bend: optional bend cross_section spec.
         length_extension: straight length extension at the end of the coupler bottom ports.
 
+    ```text
           o2                              o3
           xx                              xx
           xx                             xx
@@ -467,6 +475,7 @@ def coupler_ring(
                          │gap
                  o1──────▼─────────◄──────────────► o4
                                     length_extension
+    ```
     """
     return _components.coupler_ring(
         gap=gap,
@@ -493,9 +502,11 @@ def coupler_straight(
         gap: between straights.
         cross_section: specification (CrossSection, string or dict).
 
+    ```text
         o2──────▲─────────o3
                 │gap
         o1──────▼─────────o4
+    ```
     """
     return _components.coupler_straight(
         length=length,
@@ -549,6 +560,7 @@ def coupler_symmetric(
         cross_section: section.
         allow_min_radius_violation: if True does not check for min bend radius.
 
+    ```text
                        dx
                     |-----|
                        ___ o3
@@ -559,6 +571,7 @@ def coupler_symmetric(
                      \        |
                       \___    |
                            o4
+    ```
     """
     return _components.coupler_symmetric(
         bend=bend,

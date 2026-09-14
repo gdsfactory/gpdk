@@ -31,14 +31,6 @@ skip_test: set[str] = {
     "rotate270",  # missing: component
     "straight_piecewise",  # missing: x, widths, layer
     "trim",  # missing: component, domain
-    # Pre-existing gdsfactory core bug, unrelated to gpdk's wrapping: reproduces
-    # identically calling gdsfactory core directly (generic PDK activated, zero
-    # gpdk involvement) -- `gf.routing.add_pads_bot()` /
-    # `gf.routing.add_pads_top()` raise
-    # `RuntimeError: Routing collision in ...` when routing to the default
-    # "straight_heater_metal" component.
-    "add_pads_bot",
-    "add_pads_top",
 }
 
 cell_names = sorted(name for name in PDK.cells if not name.startswith("_"))
@@ -82,6 +74,7 @@ skip_netlist: set[str] = {
     # arguments. Confirmed reproducing identically calling gdsfactory core
     # directly (generic PDK activated, zero gpdk involvement).
     "add_fiber_array_optical_south_electrical_north",
+    "add_pads_bot",
     "coupler_ring_bend",
     "delay_snake",
     "delay_snake2",
@@ -97,6 +90,7 @@ skip_netlist: set[str] = {
     # diff ignores internal cell-name differences, and `to_dict()` does not
     # reference this sub-component).
     "add_fiber_single",
+    "add_pads_top",
 }
 
 

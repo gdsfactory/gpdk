@@ -10,7 +10,7 @@ dev = [
 ]
 
 [project]
-authors = [{name = "gdsfactory community", email = "contact@gdsfactory.com"}]
+authors = [{ name = "gdsfactory community", email = "contact@gdsfactory.com" }]
 classifiers = [
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
@@ -18,12 +18,12 @@ classifiers = [
   "Operating System :: OS Independent"
 ]
 dependencies = [
-  "gdsfactory~=9.49.0",
+  "gdsfactory~=9.51.0",
   "gplugins[sax]~=2.1.0"
 ]
 description = "Generic PDK for gdsfactory"
 keywords = ["eda", "photonics", "python", "pdk"]
-license = {file = "LICENSE"}
+license = { file = "LICENSE" }
 name = "gpdk"
 readme = "README.md"
 requires-python = ">=3.12,<3.15"
@@ -108,7 +108,7 @@ convention = "google"
 "*" = ["klayout/**/*", "gds/**/*"]
 
 [tool.tbump]
-file = [{src = "README.md"}, {src = "pyproject.toml"}, {src = "gpdk/__init__.py"}]
+file = [{ src = "README.md" }, { src = "pyproject.toml" }, { src = "gpdk/__init__.py" }]
 
 [tool.tbump.git]
 message_template = "Bump to {new_version}"

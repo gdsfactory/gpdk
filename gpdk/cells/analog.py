@@ -69,7 +69,7 @@ def interdigital_capacitor(
     finger_length: float | int = 20.0,
     finger_gap: float | int = 2.0,
     thickness: float | int = 5.0,
-    layer: LayerSpec = "WG",
+    layer: LayerSpec = "M1",
 ) -> gf.Component:
     r"""Generate an interdigital capacitor component with ports on both ends.
 
@@ -95,7 +95,7 @@ def interdigital_capacitor(
 
     Returns:
         Component: A gdsfactory component with the interdigital capacitor geometry
-        and two ports ('o1' and 'o2') on opposing sides.
+        and two electrical ports ('e1' and 'e2') on opposing sides.
     """
     return _components.interdigital_capacitor(
         fingers=fingers,
@@ -379,9 +379,9 @@ def via3(
     get_extended_layer_stack() for the matching LayerStack entry.
 
     Args:
-        size: see :func:`gdsfactory.components.analog.transformers.via3` for details.
-        enclosure: see :func:`gdsfactory.components.analog.transformers.via3` for details.
-        pitch: see :func:`gdsfactory.components.analog.transformers.via3` for details.
+        size: (width, height) of the via square, in um.
+        enclosure: metal enclosure around the via, in um.
+        pitch: via array pitch, in um.
     """
     return _components.via3(
         size=size,
