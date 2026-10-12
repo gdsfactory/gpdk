@@ -129,59 +129,26 @@ def directional_coupler(
     if with_euler:
         raise NotImplementedError("Euler bend is not implemented yet")
 
-    coupler_length = length
-
-    def sbend_length(radius: float, offset: float) -> float:
-        return float(2 * radius * jnp.arccos(1 - offset / 2 / radius))
-
-    coupler_circuit, info = sax.circuit(
-        netlist={
-            "instances": {
-                "s1": "straight",
-                "s2": "straight",
-                "s3": "straight",
-                "s4": "straight",
-                "dc": "coupling_area",
-            },
-            "connections": {
-                "s1,o1": "dc,o1",
-                "s2,o1": "dc,o2",
-                "s3,o1": "dc,o3",
-                "s4,o1": "dc,o4",
-            },
-            "ports": {
-                "o1": "s1,o2",
-                "o2": "s2,o2",
-                "o3": "s3,o2",
-                "o4": "s4,o2",
-            },
-        },
-        models={
-            "straight": straight_strip,
-            "coupling_area": directional_coupler_no_phase,
-        },
-    )
-
-    s = coupler_circuit(
+    # Each port has an identical straight arm (half the coupling length plus an
+    # S-bend), so every path crosses one input and one output arm. The arms are
+    # pure two-port transmissions, so composing them is a product; no nested
+    # sax.circuit, which keeps the model JIT- and grad-friendly.
+    sbend_length = 2 * bend_radius * jnp.arccos(1 - offset / 2 / bend_radius)
+    arm = straight_strip(wl=wl, length=length / 2 + sbend_length)
+    arms = arm["o1", "o2"] ** 2
+    dc = directional_coupler_no_phase(
         wl=wl,
-        dc={
-            "coupler_length": coupler_length,
-            "gap": gap,
-            "bend_radius": bend_radius,
-            "cross_section": cross_section,
-        },
-        s1={"length": coupler_length / 2 + sbend_length(bend_radius, offset)},
-        s2={"length": coupler_length / 2 + sbend_length(bend_radius, offset)},
-        s3={"length": coupler_length / 2 + sbend_length(bend_radius, offset)},
-        s4={"length": coupler_length / 2 + sbend_length(bend_radius, offset)},
+        coupler_length=length,
+        gap=gap,
+        bend_radius=bend_radius,
+        cross_section=cross_section,
     )
-
     return sax.reciprocal(
         {
-            ("o1", "o4"): s["o1", "o4"],
-            ("o1", "o3"): s["o1", "o3"],
-            ("o2", "o4"): s["o2", "o4"],
-            ("o2", "o3"): s["o2", "o3"],
+            ("o1", "o4"): dc["o1", "o4"] * arms,
+            ("o1", "o3"): dc["o1", "o3"] * arms,
+            ("o2", "o4"): dc["o2", "o4"] * arms,
+            ("o2", "o3"): dc["o2", "o3"] * arms,
         }
     )
 
@@ -264,47 +231,22 @@ def coupler_ring(  # this is not the complete model!!!!
         wl0: center wavelength (um).
         cross_section: cross section of the waveguide.
     """
-    coupler_circuit, info = sax.circuit(
-        netlist={
-            "instances": {
-                "bl": "bend_euler",
-                "c": "coupler_ring",
-                "br": "bend_euler",
-            },
-            "connections": {
-                "bl,o2": "c,o2",
-                "c,o3": "br,o1",
-            },
-            "ports": {
-                "o1": "c,o1",
-                "o2": "bl,o1",
-                "o3": "br,o2",
-                "o4": "c,o4",
-            },
-        },
-        models={
-            "coupler_ring": coupler_ring_coupling_area,
-            "bend_euler": bend_euler,
-        },
-    )
-
-    s = coupler_circuit(
+    # Bends sit on ports o2 and o3 only; o1 and o4 are the bus. They are pure
+    # two-port transmissions, so composing them is a product; no nested
+    # sax.circuit, which keeps the model JIT- and grad-friendly.
+    bend = bend_euler(wl=wl, radius=radius)["o1", "o2"]
+    c = coupler_ring_coupling_area(
         wl=wl,
-        c={
-            "length_x": length_x,
-            "gap": gap,
-            "radius": radius,
-            "cross_section": cross_section,
-        },
-        bl={"radius": radius},
-        br={"radius": radius},
+        gap=gap,
+        radius=radius,
+        length_x=length_x,
+        cross_section=cross_section,
     )
-
     return sax.reciprocal(
         {
-            ("o1", "o4"): s["o1", "o4"],
-            ("o1", "o3"): s["o1", "o3"],
-            ("o2", "o4"): s["o2", "o4"],
-            ("o2", "o3"): s["o2", "o3"],
+            ("o1", "o4"): c["o1", "o4"],
+            ("o1", "o3"): c["o1", "o3"] * bend,
+            ("o2", "o4"): bend * c["o2", "o4"],
+            ("o2", "o3"): bend * c["o2", "o3"] * bend,
         }
     )
