@@ -100,6 +100,37 @@ def directional_coupler_no_phase(
     )
 
 
+# Built once: a KLU-backed sax.circuit analyzes its topology on concrete
+# arrays, so constructing it inside a model breaks under JAX tracing.
+_DIRECTIONAL_COUPLER_CIRCUIT, _ = sax.circuit(
+    netlist={
+        "instances": {
+            "s1": "straight",
+            "s2": "straight",
+            "s3": "straight",
+            "s4": "straight",
+            "dc": "coupling_area",
+        },
+        "connections": {
+            "s1,o1": "dc,o1",
+            "s2,o1": "dc,o2",
+            "s3,o1": "dc,o3",
+            "s4,o1": "dc,o4",
+        },
+        "ports": {
+            "o1": "s1,o2",
+            "o2": "s2,o2",
+            "o3": "s3,o2",
+            "o4": "s4,o2",
+        },
+    },
+    models={
+        "straight": straight_strip,
+        "coupling_area": directional_coupler_no_phase,
+    },
+)
+
+
 def directional_coupler(
     *,
     wl: float = 1.3,
@@ -131,38 +162,10 @@ def directional_coupler(
 
     coupler_length = length
 
-    def sbend_length(radius: float, offset: float) -> float:
-        return float(2 * radius * jnp.arccos(1 - offset / 2 / radius))
+    def sbend_length(radius: float, offset: float) -> ArrayLike:
+        return 2 * radius * jnp.arccos(1 - offset / 2 / radius)
 
-    coupler_circuit, info = sax.circuit(
-        netlist={
-            "instances": {
-                "s1": "straight",
-                "s2": "straight",
-                "s3": "straight",
-                "s4": "straight",
-                "dc": "coupling_area",
-            },
-            "connections": {
-                "s1,o1": "dc,o1",
-                "s2,o1": "dc,o2",
-                "s3,o1": "dc,o3",
-                "s4,o1": "dc,o4",
-            },
-            "ports": {
-                "o1": "s1,o2",
-                "o2": "s2,o2",
-                "o3": "s3,o2",
-                "o4": "s4,o2",
-            },
-        },
-        models={
-            "straight": straight_strip,
-            "coupling_area": directional_coupler_no_phase,
-        },
-    )
-
-    s = coupler_circuit(
+    s = _DIRECTIONAL_COUPLER_CIRCUIT(
         wl=wl,
         dc={
             "coupler_length": coupler_length,
@@ -238,6 +241,32 @@ def coupler_ring_coupling_area(
     )
 
 
+# Built once for the same reason as _DIRECTIONAL_COUPLER_CIRCUIT.
+_COUPLER_RING_CIRCUIT, _ = sax.circuit(
+    netlist={
+        "instances": {
+            "bl": "bend_euler",
+            "c": "coupler_ring",
+            "br": "bend_euler",
+        },
+        "connections": {
+            "bl,o2": "c,o2",
+            "c,o3": "br,o1",
+        },
+        "ports": {
+            "o1": "c,o1",
+            "o2": "bl,o1",
+            "o3": "br,o2",
+            "o4": "c,o4",
+        },
+    },
+    models={
+        "coupler_ring": coupler_ring_coupling_area,
+        "bend_euler": bend_euler,
+    },
+)
+
+
 def coupler_ring(  # this is not the complete model!!!!
     *,
     wl: float = 1.3,
@@ -264,31 +293,7 @@ def coupler_ring(  # this is not the complete model!!!!
         wl0: center wavelength (um).
         cross_section: cross section of the waveguide.
     """
-    coupler_circuit, info = sax.circuit(
-        netlist={
-            "instances": {
-                "bl": "bend_euler",
-                "c": "coupler_ring",
-                "br": "bend_euler",
-            },
-            "connections": {
-                "bl,o2": "c,o2",
-                "c,o3": "br,o1",
-            },
-            "ports": {
-                "o1": "c,o1",
-                "o2": "bl,o1",
-                "o3": "br,o2",
-                "o4": "c,o4",
-            },
-        },
-        models={
-            "coupler_ring": coupler_ring_coupling_area,
-            "bend_euler": bend_euler,
-        },
-    )
-
-    s = coupler_circuit(
+    s = _COUPLER_RING_CIRCUIT(
         wl=wl,
         c={
             "length_x": length_x,
