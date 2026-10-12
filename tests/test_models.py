@@ -29,11 +29,11 @@ def test_straight_model_returns_an_sdict():
 
 @pytest.mark.parametrize("name", ["coupler", "coupler_ring"])
 def test_composite_models_evaluate_under_jax_tracing(name):
-    """Composite models build their sub-circuit once, so they trace under jit.
+    """Composite models trace under jit.
 
     Circuit simulators that wrap SAX models (e.g. Circulax) evaluate them on
-    traced arrays; building a KLU-backed ``sax.circuit`` per call needs
-    concrete values and fails there.
+    traced arrays; a nested KLU-backed ``sax.circuit`` needs concrete values
+    and fails there with older klujax.
     """
     model = gpdk.models.get_models()[name]
     eager = model(wl=1.55)
@@ -41,3 +41,17 @@ def test_composite_models_evaluate_under_jax_tracing(name):
     assert set(traced) == set(eager)
     for key, value in eager.items():
         np.testing.assert_allclose(traced[key], value, rtol=1e-6, atol=1e-12)
+
+
+@pytest.mark.parametrize("name", ["coupler", "coupler_ring"])
+def test_composite_models_differentiate_in_gap(name):
+    """Coupled power has a finite, non-zero gradient with respect to the gap."""
+    model = gpdk.models.get_models()[name]
+    gap = 0.2 if name == "coupler_ring" else 0.3
+
+    def coupled_power(gap):
+        return jax.numpy.abs(model(wl=1.55, gap=gap)["o1", "o3"]) ** 2
+
+    gradient = jax.grad(coupled_power)(gap)
+    assert np.isfinite(gradient)
+    assert gradient != 0
