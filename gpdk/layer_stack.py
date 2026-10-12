@@ -36,6 +36,22 @@ class LayerStackParameters:
     substrate_thickness: float = 10.0
     box_thickness: float = 3.0
     undercut_thickness: float = 5.0
+    thickness_poly: float = 180 * nm
+    thickness_mim: float = 100 * nm
+    gap_metal2_to_mim: float = 50 * nm
+
+
+# Doped silicon regions: (level name, layer, ion, peak concentration in 1/cm^3).
+# ponytail: ballpark uniform concentrations, swap for gplugins implant profiles if needed.
+DOPING = (
+    ("n", LAYER.N, "P", 5e17),
+    ("p", LAYER.P, "B", 5e17),
+    ("np", LAYER.NP, "P", 3e18),
+    ("pp", LAYER.PP, "B", 3e18),
+    ("npp", LAYER.NPP, "As", 1e20),
+    ("ppp", LAYER.PPP, "B", 1e20),
+    ("nwell", LAYER.NWELL, "P", 1e17),
+)
 
 
 def get_layer_stack(
@@ -57,6 +73,9 @@ def get_layer_stack(
     substrate_thickness: float = LayerStackParameters.substrate_thickness,
     box_thickness: float = LayerStackParameters.box_thickness,
     undercut_thickness: float = LayerStackParameters.undercut_thickness,
+    thickness_poly: float = LayerStackParameters.thickness_poly,
+    thickness_mim: float = LayerStackParameters.thickness_mim,
+    gap_metal2_to_mim: float = LayerStackParameters.gap_metal2_to_mim,
     layer_wafer: LogicalLayer = LogicalLayer(layer=LAYER.WAFER),
     layer_core: LogicalLayer = LogicalLayer(layer=LAYER.WG),
     layer_shallow_etch: LogicalLayer = LogicalLayer(layer=LAYER.SHALLOW_ETCH),
@@ -73,6 +92,9 @@ def get_layer_stack(
     layer_viac: LogicalLayer = LogicalLayer(layer=LAYER.VIAC),
     layer_via1: LogicalLayer = LogicalLayer(layer=LAYER.VIA1),
     layer_via2: LogicalLayer = LogicalLayer(layer=LAYER.VIA2),
+    layer_active: LogicalLayer = LogicalLayer(layer=LAYER.ACTIVE),
+    layer_poly: LogicalLayer = LogicalLayer(layer=LAYER.POLY),
+    layer_mim: LogicalLayer = LogicalLayer(layer=LAYER.MIM),
 ) -> LayerStack:
     """Returns generic LayerStack.
 
@@ -97,6 +119,9 @@ def get_layer_stack(
         substrate_thickness: substrate thickness in um.
         box_thickness: bottom oxide thickness in um.
         undercut_thickness: thickness of the silicon undercut.
+        thickness_poly: CMOS gate polysilicon thickness.
+        thickness_mim: MIM capacitor top plate thickness.
+        gap_metal2_to_mim: MIM dielectric thickness above metal2.
         layer_wafer: wafer layer.
         layer_core: waveguide layer.
         layer_shallow_etch: shallow etch layer.
@@ -113,6 +138,9 @@ def get_layer_stack(
         layer_viac: viac layer.
         layer_via1: via1 layer.
         layer_via2: via2 layer.
+        layer_active: CMOS active silicon layer.
+        layer_poly: CMOS gate polysilicon layer.
+        layer_mim: MIM capacitor top plate layer.
 
     """
     thickness_deep_etch = thickness_wg - thickness_slab_deep_etch
@@ -255,7 +283,40 @@ def get_layer_stack(
             material="Aluminum",
             mesh_order=2,
         ),
+        active=LayerLevel(
+            layer=layer_active,
+            thickness=thickness_wg,
+            zmin=0.0,
+            material="si",
+            mesh_order=2,
+        ),
+        poly=LayerLevel(
+            layer=layer_poly,
+            thickness=thickness_poly,
+            zmin=thickness_wg,
+            material="si",
+            mesh_order=2,
+        ),
+        mim=LayerLevel(
+            layer=layer_mim,
+            thickness=thickness_mim,
+            zmin=zmin_metal2 + thickness_metal2 + gap_metal2_to_mim,
+            material="TiN",
+            mesh_order=1,
+        ),
     )
+    # Implants only exist where there is silicon (photonic core or CMOS active).
+    silicon = layer_core | layer_active
+    for name, layer, ion, concentration in DOPING:
+        layers[name] = LayerLevel(
+            layer=LogicalLayer(layer=layer) & silicon,
+            derived_layer=LogicalLayer(layer=layer),
+            thickness=thickness_slab_deep_etch,
+            zmin=0.0,
+            material="si",
+            mesh_order=1,
+            info={"ion": ion, "concentration": concentration},
+        )
 
     return LayerStack(layers=layers)
 

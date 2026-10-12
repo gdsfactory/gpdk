@@ -1,0 +1,12 @@
+info:
+  junction_offset: 0.1
+  length: 2000
+  n_periods: 200
+  period: 10
+name: straight_pn_ribbed_L2000_W5p4_NW3p2_P10_TL9
+settings:
+  length: 2000
+  neck_width: 3.2
+  period: 10
+  tooth_length: 9
+  width: 5.4

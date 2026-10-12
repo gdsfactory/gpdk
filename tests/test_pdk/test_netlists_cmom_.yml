@@ -1,0 +1,136 @@
+instances:
+  rectangle:
+    array:
+      column_pitch: 0.36
+      columns: 2
+      row_pitch: 0
+      rows: 1
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: VIA1
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 0.26
+      - 0.26
+  rectangle2:
+    array:
+      column_pitch: 0.36
+      columns: 2
+      row_pitch: 0
+      rows: 1
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: VIA1
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 0.26
+      - 0.26
+  rectangle3:
+    array:
+      column_pitch: 0.36
+      columns: 2
+      row_pitch: 0
+      rows: 1
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: VIA2
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 0.26
+      - 0.26
+  rectangle4:
+    array:
+      column_pitch: 0.36
+      columns: 2
+      row_pitch: 0
+      rows: 1
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: VIA2
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 0.26
+      - 0.26
+nets:
+- p1: rectangle2<0.0>,e1
+  p2: rectangle4<0.0>,e1
+- p1: rectangle2<0.0>,e2
+  p2: rectangle4<0.0>,e2
+- p1: rectangle2<0.0>,e3
+  p2: rectangle4<0.0>,e3
+- p1: rectangle2<0.0>,e4
+  p2: rectangle4<0.0>,e4
+- p1: rectangle2<1.0>,e1
+  p2: rectangle4<1.0>,e1
+- p1: rectangle2<1.0>,e2
+  p2: rectangle4<1.0>,e2
+- p1: rectangle2<1.0>,e3
+  p2: rectangle4<1.0>,e3
+- p1: rectangle2<1.0>,e4
+  p2: rectangle4<1.0>,e4
+- p1: rectangle3<0.0>,e1
+  p2: rectangle<0.0>,e1
+- p1: rectangle3<0.0>,e2
+  p2: rectangle<0.0>,e2
+- p1: rectangle3<0.0>,e3
+  p2: rectangle<0.0>,e3
+- p1: rectangle3<0.0>,e4
+  p2: rectangle<0.0>,e4
+- p1: rectangle3<1.0>,e1
+  p2: rectangle<1.0>,e1
+- p1: rectangle3<1.0>,e2
+  p2: rectangle<1.0>,e2
+- p1: rectangle3<1.0>,e3
+  p2: rectangle<1.0>,e3
+- p1: rectangle3<1.0>,e4
+  p2: rectangle<1.0>,e4
+placements:
+  rectangle:
+    mirror: false
+    rotation: 0
+    x: 0.16
+    y: -0.34
+  rectangle2:
+    mirror: false
+    rotation: 0
+    x: 0.16
+    y: 4.34
+  rectangle3:
+    mirror: false
+    rotation: 0
+    x: 0.16
+    y: -0.34
+  rectangle4:
+    mirror: false
+    rotation: 0
+    x: 0.16
+    y: 4.34
+ports: {}

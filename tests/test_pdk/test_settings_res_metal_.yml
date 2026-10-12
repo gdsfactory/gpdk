@@ -1,0 +1,10 @@
+info:
+  l_res: 0.2
+  model: rm1
+  resistance_ohm: 0.09
+  w_res: 0.2
+name: res_metal_LR0p2_WR0p2_MM1
+settings:
+  l_res: 0.2
+  metal: M1
+  w_res: 0.2

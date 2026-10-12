@@ -1,0 +1,21 @@
+instances:
+  _unit_cell:
+    array:
+      column_pitch: 10
+      columns: 200
+      row_pitch: 0
+      rows: 1
+    component: _unit_cell
+    info: {}
+    settings:
+      period: 10
+      tooth_length: 9
+      width: 5.4
+nets: []
+placements:
+  _unit_cell:
+    mirror: false
+    rotation: 0
+    x: 0
+    y: 0
+ports: {}

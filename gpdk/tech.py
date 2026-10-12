@@ -39,6 +39,9 @@ LAYER_CONNECTIVITY = [
     ("PPP", "VIAC", "M1"),
     ("M1", "VIA1", "M2"),
     ("M2", "VIA2", "M3"),
+    ("ACTIVE", "VIAC", "M1"),
+    ("POLY", "VIAC", "M1"),
+    ("MIM", "VIA2", "M3"),
 ]
 
 

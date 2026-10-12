@@ -1,0 +1,54 @@
+instances:
+  rectangle:
+    array:
+      column_pitch: 0.76
+      columns: 6
+      row_pitch: 0.76
+      rows: 6
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: VIA2
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 0.26
+      - 0.26
+  rectangle2:
+    array:
+      column_pitch: 0.52
+      columns: 3
+      row_pitch: 0.52
+      rows: 10
+    component: rectangle
+    info: {}
+    settings:
+      centered: false
+      layer: VIA2
+      port_orientations:
+      - 180
+      - 90
+      - 0
+      - -90
+      port_type: electrical
+      size:
+      - 0.26
+      - 0.26
+nets: []
+placements:
+  rectangle:
+    mirror: false
+    rotation: 0
+    x: -3.275
+    y: -2.03
+  rectangle2:
+    mirror: false
+    rotation: 0
+    x: 2.485
+    y: -2.47
+ports: {}

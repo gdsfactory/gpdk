@@ -1,0 +1,13 @@
+info:
+  capacitance_fF: 1.944
+  length: 4
+  model: cmom
+  nfingers: 1
+  spacing: 0.26
+name: cmom_N1_L4_S0p26_BM1_TM3
+settings:
+  botmetal: M1
+  length: 4
+  nfingers: 1
+  spacing: 0.26
+  topmetal: M3

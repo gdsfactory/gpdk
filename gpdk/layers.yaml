@@ -107,6 +107,62 @@ LayerViews:
         hatch_pattern: plus
         width: 1
         color: "#cc00cc"
+  Electrical:
+    group_members:
+      ACTIVE:
+        layer: [10, 0]
+        layer_in_name: true
+        hatch_pattern: dotted
+        width: 1
+        color: "#00cc66"
+      POLY:
+        layer: [11, 0]
+        layer_in_name: true
+        hatch_pattern: left-hatched
+        width: 1
+        color: "#ff0000"
+      NWELL:
+        layer: [12, 0]
+        layer_in_name: true
+        hatch_pattern: hollow
+        width: 1
+        color: "#c08040"
+      SAB:
+        layer: [13, 0]
+        layer_in_name: true
+        hatch_pattern: coarsely dotted
+        width: 1
+        color: "#8000ff"
+      RES_MK:
+        layer: [14, 0]
+        layer_in_name: true
+        hatch_pattern: hollow
+        width: 1
+        color: "#ff80ff"
+      CAP_MK:
+        layer: [15, 0]
+        layer_in_name: true
+        hatch_pattern: hollow
+        width: 1
+        color: "#80ffff"
+      M1_RES:
+        layer: [41, 11]
+        layer_in_name: true
+        hatch_pattern: hollow
+        width: 1
+        color: "#008050"
+      M2_RES:
+        layer: [45, 11]
+        layer_in_name: true
+        hatch_pattern: hollow
+        width: 1
+        color: "#0000ff"
+      M3_RES:
+        layer: [49, 11]
+        layer_in_name: true
+        hatch_pattern: hollow
+        width: 1
+        color: "#800057"
   WGN_Nitride:
     layer: [34, 0]
     layer_in_name: true
@@ -177,7 +233,7 @@ LayerViews:
     hatch_pattern: solid
     width: 1
     color: "#805000"
-  CAPACITOR:
+  MIM:
     layer: [42, 0]
     layer_in_name: true
     hatch_pattern: dotted

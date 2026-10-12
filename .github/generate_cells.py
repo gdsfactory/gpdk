@@ -3,8 +3,11 @@
 This script is the only writer of ``gpdk/cells/``. Run it with ``--check`` to verify the
 committed library still matches the pinned gdsfactory, or ``--write`` to regenerate.
 
-There is no manual override. A cell that cannot be expressed as a pure re-emission of a
-gdsfactory function must be fixed in gdsfactory core and pulled in via a pin bump.
+A cell that cannot be expressed as a pure re-emission of a gdsfactory function must be
+fixed in gdsfactory core and pulled in via a pin bump. The only exception are the
+hand-written electrical / electro-optic modules in ``HAND_WRITTEN``: they are re-exported
+from ``cells/__init__.py`` but otherwise never written nor checked by this script (see
+docs/adr/0001-hand-written-electrical-cells.md).
 """
 
 from __future__ import annotations
@@ -29,6 +32,7 @@ REPO = pathlib.Path(__file__).resolve().parent.parent
 CELLS_DIR = REPO / "gpdk" / "cells"
 FUNCTIONS_CATEGORY = "functions"
 SCHEMATIC_MODULE = "gdsfactory.components._schematic"
+HAND_WRITTEN = ("capacitor", "modulator", "mos", "resistor")
 
 HEADER = '''"""{summary}
 
@@ -787,7 +791,7 @@ def render_init(categories: list[str]) -> str:
     ``ImportFrom``. ``_schematic`` is included too, since it is a real file under
     ``gpdk/cells/`` that the same hook requires every module to be re-exported from.
     """
-    modules = sorted([*categories, "_schematic"])
+    modules = sorted([*categories, "_schematic", *HAND_WRITTEN])
     imports = "\n".join(f"from .{m} import *  # noqa: F403" for m in modules)
     return (
         '"""Generated cell library.\n\n'
@@ -862,7 +866,11 @@ def main() -> int:
 
     with tempfile.TemporaryDirectory() as tmp:
         expected = write_all(pathlib.Path(tmp))
-        actual = {p.name: p.read_text() for p in sorted(CELLS_DIR.glob("*.py"))}
+        actual = {
+            p.name: p.read_text()
+            for p in sorted(CELLS_DIR.glob("*.py"))
+            if p.stem not in HAND_WRITTEN
+        }
         expected_by_name = {p.name: text for p, text in expected.items()}
 
     failed = False

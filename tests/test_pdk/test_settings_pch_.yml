@@ -1,0 +1,23 @@
+info:
+  l_gate: 0.28
+  model: pch
+  nf: 1
+  w_gate: 0.22
+name: pch_LG0p28_WG0p22_SCC1_ISL0p24_N1_G0p22_BNone_CBF1_GCPa_a712d8ff
+settings:
+  bulk: None
+  con_bet_fin: 1
+  g_label: []
+  gate_con_pos: alternating
+  grw: 0.22
+  inter_sd_l: 0.24
+  interdig: 0
+  l_gate: 0.28
+  label: false
+  nf: 1
+  patt: ''
+  patt_label: false
+  sd_con_col: 1
+  sd_label: []
+  sub_label: ''
+  w_gate: 0.22

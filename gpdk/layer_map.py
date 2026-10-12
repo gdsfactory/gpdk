@@ -51,6 +51,18 @@ class LAYER(gf.LayerEnum):
     VIA2: Layer = (43, 0)
     PADOPEN: Layer = (46, 0)
 
+    # Electrical (CMOS front end + passives), shared with the photonic BEOL.
+    ACTIVE: Layer = (10, 0)
+    POLY: Layer = (11, 0)
+    NWELL: Layer = (12, 0)
+    SAB: Layer = (13, 0)
+    RES_MK: Layer = (14, 0)
+    CAP_MK: Layer = (15, 0)
+    MIM: Layer = (42, 0)
+    M1_RES: Layer = (41, 11)
+    M2_RES: Layer = (45, 11)
+    M3_RES: Layer = (49, 11)
+
     DICING: Layer = (100, 0)
     NO_TILE_SI: Layer = (71, 0)
     PADDING: Layer = (67, 0)

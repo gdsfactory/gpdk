@@ -132,6 +132,22 @@
 
 ::: gpdk.cells.bend_euler_s
 
+## bend_modified_hermite
+
+::: gpdk.cells.bend_modified_hermite
+
+## bend_modified_hermite180
+
+::: gpdk.cells.bend_modified_hermite180
+
+## bend_modified_hermite_all_angle
+
+::: gpdk.cells.bend_modified_hermite_all_angle
+
+## bend_modified_hermite_s
+
+::: gpdk.cells.bend_modified_hermite_s
+
 ## bend_s
 
 ::: gpdk.cells.bend_s
@@ -211,6 +227,14 @@
 ## circle_wave
 
 ::: gpdk.cells.circle_wave
+
+## cmim
+
+::: gpdk.cells.cmim
+
+## cmom
+
+::: gpdk.cells.cmom
 
 ## comb_drive
 
@@ -724,6 +748,10 @@
 
 ::: gpdk.cells.mzm
 
+## nch
+
+::: gpdk.cells.nch
+
 ## nxn
 
 ::: gpdk.cells.nxn
@@ -804,6 +832,10 @@
 
 ::: gpdk.cells.pads_shorted
 
+## pch
+
+::: gpdk.cells.pch
+
 ## pie_arc
 
 ::: gpdk.cells.pie_arc
@@ -851,6 +883,14 @@
 ## regular_polygon
 
 ::: gpdk.cells.regular_polygon
+
+## res_metal
+
+::: gpdk.cells.res_metal
+
+## res_poly
+
+::: gpdk.cells.res_poly
 
 ## resistance_meander
 
@@ -1091,6 +1131,10 @@
 ## straight_pn
 
 ::: gpdk.cells.straight_pn
+
+## straight_pn_ribbed
+
+::: gpdk.cells.straight_pn_ribbed
 
 ## straight_pn_slot
 

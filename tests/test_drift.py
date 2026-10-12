@@ -4,9 +4,12 @@ Tier A guards gpdk against gdsfactory's component set and survives the later sta
 core drops its own generic PDK. Tier B compares gpdk's copied technology against
 ``gdsfactory.gpdk`` and is deliberately temporary: when core removes that module these
 tests skip themselves. The migration at that point is to DELETE tier B, not to fix it.
+
+gpdk is a superset of core: it adds hand-written electrical / electro-optic cells,
+layers and stack levels (docs/adr/0001-hand-written-electrical-cells.md). Every guard
+therefore checks that core is contained in gpdk, unchanged, not that they are equal.
 """
 
-import filecmp
 import functools
 import pathlib
 
@@ -24,7 +27,7 @@ def gf_gpdk():
     ``allow_module_level=True``, which skips collection of the *entire file* -- that
     would silently take the tier-A tests down with it the day core drops
     ``gdsfactory.gpdk``, at exactly the moment tier A is supposed to fail loudly if
-    gpdk's coverage guard breaks. Requesting this fixture (only the four tier-B tests
+    gpdk's coverage guard breaks. Requesting this fixture (only the tier-B tests
     below do) confines the skip to those tests.
     """
     return pytest.importorskip(
@@ -38,21 +41,15 @@ def gf_root(gf_gpdk):
     return pathlib.Path(gf_gpdk.__file__).parent
 
 
-@pytest.fixture
-def gf_klayout(gf_root):
-    """Tier B only: directory containing core's generic-tech KLayout assets."""
-    return gf_root.parent / "generic_tech" / "klayout"
-
-
 def test_layer_map_matches_core(gf_gpdk):
-    """Tier B: every layer name and (layer, datatype) pair matches core."""
+    """Tier B: every core layer name and (layer, datatype) pair is in gpdk unchanged."""
     ours = {layer.name: (layer.layer, layer.datatype) for layer in gpdk.tech.LAYER}
     theirs = {layer.name: (layer.layer, layer.datatype) for layer in gf_gpdk.LAYER}
-    assert ours == theirs
+    assert theirs.items() <= ours.items()
 
 
 def test_layer_stack_matches_core(gf_gpdk):
-    """Tier B: layer stack level names and thicknesses match core."""
+    """Tier B: every core layer stack level is in gpdk with the same thickness/zmin."""
     ours = {
         name: (level.thickness, level.zmin)
         for name, level in gpdk.tech.LAYER_STACK.layers.items()
@@ -61,21 +58,29 @@ def test_layer_stack_matches_core(gf_gpdk):
         name: (level.thickness, level.zmin)
         for name, level in gf_gpdk.LAYER_STACK.layers.items()
     }
-    assert ours == theirs
+    assert theirs.items() <= ours.items()
 
 
-def test_layer_views_yaml_is_byte_identical_to_core(gf_root):
-    """Tier B: layers.yaml is an unmodified copy of core's layer_views.yaml."""
-    assert filecmp.cmp(gpdk.PATH.lyp_yaml, gf_root / "layer_views.yaml", shallow=False)
+def test_layer_views_cover_core(gf_root):
+    """Tier B: every layer core's layer_views.yaml draws is also drawn by layers.yaml.
 
+    Compared by GDS layer rather than view name: gpdk renames core's CAPACITOR view to
+    MIM. layers.lyp is generated from layers.yaml, so it is not compared separately.
+    """
+    from gdsfactory.technology import LayerViews
 
-def test_layers_lyp_is_byte_identical_to_core(gf_klayout):
-    """Tier B: layers.lyp is an unmodified copy of core's."""
-    assert filecmp.cmp(gpdk.PATH.lyp, gf_klayout / "layers.lyp", shallow=False)
+    def drawn(path):
+        return {
+            tuple(view.layer)
+            for view in LayerViews(filepath=path).get_layer_views().values()
+            if view.layer is not None
+        }
+
+    assert drawn(gf_root / "layer_views.yaml") <= drawn(gpdk.PATH.lyp_yaml)
 
 
 def test_tier_a_cell_coverage_matches_gdsfactory():
-    """Tier A: gpdk wraps exactly the cells gdsfactory registers.
+    """Tier A: gpdk wraps every cell gdsfactory registers (plus its own extras).
 
     This guard survives the later stage where core drops @cell from gf.components:
     the plain functions remain in gf.components, and they are what gpdk decorates.
@@ -85,7 +90,7 @@ def test_tier_a_cell_coverage_matches_gdsfactory():
 
     core = set(get_cells([gf.components])) | set(get_cells([gf.containers]))
     ours = set(gpdk.PDK.cells)
-    assert ours == core
+    assert core <= ours
 
 
 def _is_literal_comparable(value: object) -> bool:

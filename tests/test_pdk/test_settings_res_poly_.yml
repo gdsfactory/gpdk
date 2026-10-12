@@ -1,0 +1,13 @@
+info:
+  l_res: 1
+  model: ppolyf_u
+  resistance_ohm: 437.5
+  w_res: 0.8
+name: res_poly_LR1_WR0p8_RTppolyf_u_LFalse_RL_RL
+settings:
+  l_res: 1
+  label: false
+  r0_label: ''
+  r1_label: ''
+  res_type: ppolyf_u
+  w_res: 0.8

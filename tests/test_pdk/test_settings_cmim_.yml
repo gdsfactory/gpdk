@@ -1,0 +1,12 @@
+info:
+  capacitance_fF: 50
+  lc: 5
+  model: cmim
+  wc: 5
+name: cmim_L5_W5_LFalse_TL_BL
+settings:
+  bot_label: ''
+  label: false
+  lc: 5
+  top_label: ''
+  wc: 5
