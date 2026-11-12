@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=../../build/schemas/playdough_obstacle_routing.json
+instances:
+  mmi_in:
+    component: mmi1x2
+    settings: {}
+  mmi_out:
+    component: mmi1x2
+    settings: {}
+  obstacle:
+    component: rectangle
+    settings:
+      size:
+      - 20
+      - 15
+      layer: WG
+connections: {}
+routes:
+  bundle1:
+    links:
+      mmi_in,o3: mmi_out,o2
+      mmi_in,o2: mmi_out,o3
+    routing_strategy: route_bundle_playdough
+    settings:
+      cross_section: strip
+      collision_check_layers:
+        - WG
+      internal_pivots: 4
+nets: []
+ports:
+  o1: mmi_in,o1
+  o2: mmi_out,o1
+placements:
+  mmi_in:
+    x: 0
+    y: 0
+  mmi_out:
+    x: 120
+    y: 0
+  obstacle:
+    x: 50
+    y: -5

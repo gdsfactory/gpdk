@@ -14,6 +14,7 @@ from gpdk import (
 )
 from gpdk.config import PATH
 from gpdk.models import get_models
+from gpdk.routing_strategies import routing_strategies
 from gpdk.simulation_settings import materials_index
 from gpdk.tech import (
     LAYER,
@@ -23,7 +24,6 @@ from gpdk.tech import (
     GenericConstants,
     cross_sections,
     layer_transitions,
-    routing_strategies,
 )
 
 __version__ = "0.0.1"
