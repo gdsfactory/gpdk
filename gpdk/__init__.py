@@ -8,6 +8,7 @@ from gdsfactory.pdk import Pdk
 from gpdk import cells, config, models, tech
 from gpdk.config import PATH
 from gpdk.models import get_models
+from gpdk.simulation_settings import materials_index
 from gpdk.tech import (
     LAYER,
     LAYER_CONNECTIVITY,
@@ -22,6 +23,8 @@ from gpdk.tech import (
 __version__ = "0.0.1"
 
 _cells = get_cells([cells])
+_containers = get_cells([cells.containers])
+_cells = {name: cell for name, cell in _cells.items() if name not in _containers}
 
 
 @lru_cache
@@ -31,11 +34,13 @@ def get_pdk() -> Pdk:
         name="gpdk",
         version=__version__,
         cells=_cells,
+        containers=_containers,
         cross_sections=cross_sections,
         layers=LAYER,
         layer_stack=LAYER_STACK,
         layer_views=LAYER_VIEWS,
         layer_transitions=layer_transitions,
+        materials_index=materials_index,
         constants=GenericConstants(),
         connectivity=LAYER_CONNECTIVITY,
         routing_strategies=routing_strategies,

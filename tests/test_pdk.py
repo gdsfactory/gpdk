@@ -33,7 +33,8 @@ skip_test: set[str] = {
     "trim",  # missing: component, domain
 }
 
-cell_names = sorted(name for name in PDK.cells if not name.startswith("_"))
+all_cells = {**PDK.cells, **PDK.containers}
+cell_names = sorted(name for name in all_cells if not name.startswith("_"))
 cell_names = [name for name in cell_names if name not in skip_test]
 
 # Per-artifact skips: these cells instantiate fine (and are covered by
