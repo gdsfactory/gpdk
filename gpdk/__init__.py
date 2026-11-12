@@ -5,7 +5,13 @@ from functools import lru_cache
 from gdsfactory.get_factories import get_cells
 from gdsfactory.pdk import Pdk
 
-from gpdk import cells, config, models, tech
+from gpdk import (
+    _schematic,  # noqa: F401  # registers cell metadata annotations
+    cells,
+    config,
+    models,
+    tech,
+)
 from gpdk.config import PATH
 from gpdk.models import get_models
 from gpdk.simulation_settings import materials_index
