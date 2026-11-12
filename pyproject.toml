@@ -73,7 +73,8 @@ num = 1000
 python_version = "3.12"
 
 [tool.pytest.ini_options]
-addopts = '--tb=short'
+# gpdk/pex needs the optional gf_pex package and holds no tests
+addopts = '--tb=short --ignore=gpdk/pex'
 python_files = ["gpdk/*.py", "tests/*.py"]
 testpaths = ["gpdk/", "tests"]
 
