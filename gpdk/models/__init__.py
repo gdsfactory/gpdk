@@ -11,6 +11,13 @@ from numpy.typing import NDArray
 from .couplers import *
 from .waveguides import *
 
+try:
+    import circulax  # noqa: F401
+except ImportError:
+    pass
+else:
+    from .active import *
+
 sax.set_port_naming_strategy("optical")
 
 nm = 1e-3
