@@ -18,13 +18,12 @@ obstacle, and watch the routes update.
 
 from __future__ import annotations
 
-from typing import Any
-
 import gdsfactory as gf
 import jax
 import playdough as pld
 
 import gpdk
+from gpdk.routing_strategies import route_bundle_playdough
 
 _CONFIGURED = False
 
@@ -37,57 +36,6 @@ def _ensure_configured() -> None:
     jax.config.update("jax_enable_x64", False)
     pld.config.BACKEND = "hlo"
     _CONFIGURED = True
-
-
-def route_bundle_playdough(
-    component: gf.Component,
-    ports1: list[gf.Port],
-    ports2: list[gf.Port],
-    **kwargs: Any,
-) -> list:
-    """Routing strategy adapter for playdough.
-
-    Matches the ``(component, ports1, ports2, **settings)`` contract
-    that gdsfactory's YAML ``routing_strategy`` expects, and forwards
-    to ``pld.add_route_bundle``.
-
-    Finetune-specific keys (``lr``, ``max_steps``, ``non_manhattan``,
-    etc.) are extracted from ``kwargs`` and passed to ``router.finetune()``.
-    If none are present, only manhattan initialization runs.
-    """
-    _ensure_configured()
-
-    finetune_keys = {
-        "lr",
-        "max_steps",
-        "non_manhattan",
-        "length_matching",
-        "min_radius_violation",
-        "route_collision",
-        "obstacle_collision",
-        "bending",
-        "lengthening",
-        "radius_mismatch",
-        "port_straightening",
-    }
-    finetune_kwargs = {k: kwargs.pop(k) for k in finetune_keys & set(kwargs)}
-    length_matching_groups = kwargs.pop("length_matching_groups", None)
-
-    router = pld.add_route_bundle(
-        component,
-        start_ports=ports1,
-        end_ports=ports2,
-        **kwargs,
-    )
-
-    if length_matching_groups:
-        router.length_matching_groups = length_matching_groups
-
-    if finetune_kwargs:
-        router.finetune(**finetune_kwargs, manhattan_constrained=False)
-        router.build_gds()
-
-    return []
 
 
 @gf.cell(tags=["routing"])
