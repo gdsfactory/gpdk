@@ -183,11 +183,9 @@ def test_full_pdk_switch_export_keeps_routes_out_from_under_pads(monkeypatch, tm
             ).transformed(ref.cplx_trans * piece.cplx_trans)
             box_dbu = m2_piece.bbox()
             width_dbu = round(widths[0] / layout.dbu)
-            if (
-                piece.cell.name.startswith("dr_seg")
-                and box_dbu.width() == width_dbu
-                and box_dbu.height() > width_dbu
-            ):
+            # Router versions use different cell names; identify the straight
+            # by its metal dimensions so short-jog coverage cannot be skipped.
+            if box_dbu.width() == width_dbu and box_dbu.height() > width_dbu:
                 # Measure merged metal, so offset repair patches cannot hide
                 # behind the correct width of the original vertical segment.
                 section_bottom = box_dbu.bottom + width_dbu // 2

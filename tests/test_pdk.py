@@ -3,11 +3,18 @@
 from __future__ import annotations
 
 import pathlib
+import platform
+import sys
 
 import gdsfactory as gf
 import pytest
-from conftest import difftest
-from pytest_regressions.data_regression import DataRegressionFixture
+import yaml
+from conftest import assert_yaml_equal, difftest
+from pytest_regressions.data_regression import (
+    DataRegressionFixture,
+    RegressionYamlDumper,
+)
+from pytest_regressions.file_regression import FileRegressionFixture
 
 from gpdk import PDK
 
@@ -111,7 +118,21 @@ def test_cell_in_pdk(name: str) -> None:
 def test_gds(name: str) -> None:
     """The generated GDS matches the committed reference."""
     component = gf.get_component(name)
-    difftest(component, test_name=name, dirpath=dirpath)
+    reference_dir = dirpath
+    if name == "ring_double_pn" and (sys.platform, platform.machine()) == (
+        "darwin",
+        "arm64",
+    ):
+        # Preserve the original macOS/arm64 reference from e7c63a1. Commit
+        # 7c874c4 replaced it with Linux/x86-64 output; the all-angle SLAB90
+        # polygon differs across platforms. Both references remain strict XORs.
+        reference_dir = dirpath / "macos-arm64"
+    difftest(
+        component,
+        test_name=name,
+        dirpath=reference_dir,
+        dirpath_run=dirpath.parent / "gds_run",
+    )
 
 
 @pytest.mark.parametrize("name", [n for n in cell_names if n not in skip_settings])
@@ -122,7 +143,8 @@ def test_settings(name: str, data_regression: DataRegressionFixture) -> None:
 
 
 @pytest.mark.parametrize("name", [n for n in cell_names if n not in skip_netlist])
-def test_netlists(name: str, data_regression: DataRegressionFixture) -> None:
-    """Cell netlists match the committed reference."""
+def test_netlists(name: str, file_regression: FileRegressionFixture) -> None:
+    """Cell netlists match the committed values, independent of YAML float spelling."""
     component = gf.get_component(name)
-    data_regression.check(component.get_netlist())
+    contents = yaml.dump(component.get_netlist(), Dumper=RegressionYamlDumper)
+    file_regression.check(contents, extension=".yml", check_fn=assert_yaml_equal)
