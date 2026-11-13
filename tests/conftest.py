@@ -5,12 +5,33 @@ import pathlib
 import shutil
 
 import gdsfactory as gf
+import yaml
 from gdsfactory.name import clean_name, get_name_short
 
 PROJECT_ROOT = pathlib.Path(__file__).parent.parent
 DIFF_DIR = PROJECT_ROOT / "test_diffs"
 
 _config = {"update_gds_refs": False}
+
+
+def assert_yaml_equal(obtained: pathlib.Path, reference: pathlib.Path) -> None:
+    """Compare netlist values exactly, ignoring YAML numeric spelling and key order."""
+
+    def compare(actual, expected):
+        if isinstance(actual, dict) and isinstance(expected, dict):
+            assert actual.keys() == expected.keys()
+            for key in actual:
+                compare(actual[key], expected[key])
+        elif isinstance(actual, list) and isinstance(expected, list):
+            assert len(actual) == len(expected)
+            for item, reference_item in zip(actual, expected):
+                compare(item, reference_item)
+        else:
+            numeric = type(actual) in (int, float) and type(expected) in (int, float)
+            assert numeric or type(actual) is type(expected)
+            assert actual == expected
+
+    compare(yaml.safe_load(obtained.read_text()), yaml.safe_load(reference.read_text()))
 
 
 def pytest_addoption(parser):

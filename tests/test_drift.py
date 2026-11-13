@@ -89,7 +89,7 @@ def test_tier_a_cell_coverage_matches_gdsfactory():
     from gdsfactory.get_factories import get_cells
 
     core = set(get_cells([gf.components])) | set(get_cells([gf.containers]))
-    ours = set(gpdk.PDK.cells)
+    ours = set(gpdk.PDK.cells) | set(gpdk.PDK.containers)
     assert core <= ours
 
 
@@ -180,12 +180,11 @@ def test_tier_a_signatures_match_gdsfactory():
     from gdsfactory.get_factories import get_cells
 
     core = {**get_cells([gf.components]), **get_cells([gf.containers])}
+    all_cells = {**gpdk.PDK.cells, **gpdk.PDK.containers}
     mismatched = []
     for name, func in core.items():
         core_params = list(inspect.signature(func).parameters.values())
-        wrapper_params = list(
-            inspect.signature(gpdk.PDK.cells[name]).parameters.values()
-        )
+        wrapper_params = list(inspect.signature(all_cells[name]).parameters.values())
         if len(core_params) != len(wrapper_params):
             mismatched.append(name)
             continue

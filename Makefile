@@ -10,6 +10,22 @@ dev: install
 test:
 	uv run pytest -s tests
 
+test-notebooks:
+	@fail=0; \
+	for notebook in $$(find notebooks -name "*.ipynb" | sort); do \
+		case "$$notebook" in \
+			*hfss_*|*hfss-*|*matlab_*|*matlab-*|*_meep*|*meep_*) \
+				echo "Skipping $$notebook (needs tools unavailable in CI)"; continue;; \
+			*30_mzi*) \
+				echo "Skipping $$notebook (needs tidy3d, which pins filelock<4 against the repo security floor)"; continue;; \
+			esac; \
+		echo "Executing $$notebook"; \
+		uv run jupyter nbconvert --to notebook --execute "$$notebook" \
+			--output-dir "$${TMPDIR:-/tmp}/gpdk-notebooks" \
+			--ExecutePreprocessor.timeout=600 || fail=1; \
+	done; \
+	test "$$fail" -eq 0
+
 test-force:
 	uv run pytest -s tests --update-gds-refs --force-regen
 
@@ -32,4 +48,4 @@ build:
 update-pre:
 	pre-commit autoupdate
 
-.PHONY: install dev test test-force cells-check cells-regen docs build update-pre
+.PHONY: install dev test test-force test-notebooks cells-check cells-regen docs build update-pre

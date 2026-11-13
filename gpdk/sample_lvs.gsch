@@ -1,0 +1,637 @@
+{
+  "sample_lvs:X1": {
+    "type": "ckt",
+    "model": "gpdk.components.vias.via_stack.via_stack",
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "x": 9,
+    "y": 4,
+    "name": "X1",
+    "props": {
+      "size": [
+        11,
+        11
+      ],
+      "layers": [
+        "M1",
+        "M2",
+        "MTOP"
+      ],
+      "vias": [
+        "via1",
+        "via2",
+        null
+      ],
+      "correct_size": false,
+      "slot_horizontal": false,
+      "slot_vertical": false,
+      "port_orientations": [
+        180,
+        90,
+        0,
+        -90
+      ]
+    },
+    "nets": {
+      "e1": "W1",
+      "e2": "net13",
+      "e4": "net14",
+      "e3": "net15"
+    },
+    "irl_x": 450,
+    "irl_y": 177.81784817653278,
+    "bbox_width": 11,
+    "bbox_height": 11,
+    "bbox_xmin": -5.5,
+    "bbox_ymin": -5.5,
+    "ports": [
+      {
+        "name": "e1",
+        "irl_rx": -5.5,
+        "irl_ry": 0,
+        "orientation": 180,
+        "bendRadii": [
+          5
+        ],
+        "port_type": "electrical",
+        "width": 11,
+        "layer": [
+          49,
+          0
+        ],
+        "layer_name": "M3"
+      },
+      {
+        "name": "e2",
+        "irl_rx": 0,
+        "irl_ry": -5.5,
+        "orientation": 90,
+        "bendRadii": [
+          5
+        ],
+        "port_type": "electrical",
+        "width": 11,
+        "layer": [
+          49,
+          0
+        ],
+        "layer_name": "M3"
+      },
+      {
+        "name": "e3",
+        "irl_rx": 5.5,
+        "irl_ry": 0,
+        "orientation": 0,
+        "bendRadii": [
+          5
+        ],
+        "port_type": "electrical",
+        "width": 11,
+        "layer": [
+          49,
+          0
+        ],
+        "layer_name": "M3"
+      },
+      {
+        "name": "e4",
+        "irl_rx": 0,
+        "irl_ry": 5.5,
+        "orientation": 270,
+        "bendRadii": [
+          5
+        ],
+        "port_type": "electrical",
+        "width": 11,
+        "layer": [
+          49,
+          0
+        ],
+        "layer_name": "M3"
+      }
+    ],
+    "texture_key": "gpdk.components.vias.via_stack.via_stack_497b1586"
+  },
+  "sample_lvs:X2": {
+    "type": "ckt",
+    "model": "gpdk.components.vias.via_stack.via_stack",
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "x": 5,
+    "y": 2,
+    "name": "X2",
+    "props": {
+      "size": [
+        11,
+        11
+      ],
+      "layers": [
+        "M1",
+        "M2",
+        "MTOP"
+      ],
+      "vias": [
+        "via1",
+        "via2",
+        null
+      ],
+      "correct_size": false,
+      "slot_horizontal": false,
+      "slot_vertical": false,
+      "port_orientations": [
+        180,
+        90,
+        0,
+        -90
+      ]
+    },
+    "nets": {
+      "e1": "net6",
+      "e2": "net8",
+      "e4": "W2",
+      "e3": "net11"
+    },
+    "irl_x": -2.3291242732558146,
+    "irl_y": 100,
+    "bbox_width": 11,
+    "bbox_height": 11,
+    "bbox_xmin": -5.5,
+    "bbox_ymin": -5.5,
+    "ports": [
+      {
+        "name": "e1",
+        "irl_rx": -5.5,
+        "irl_ry": 0,
+        "orientation": 180,
+        "bendRadii": [
+          5
+        ],
+        "port_type": "electrical",
+        "width": 11,
+        "layer": [
+          49,
+          0
+        ],
+        "layer_name": "M3"
+      },
+      {
+        "name": "e2",
+        "irl_rx": 0,
+        "irl_ry": -5.5,
+        "orientation": 90,
+        "bendRadii": [
+          5
+        ],
+        "port_type": "electrical",
+        "width": 11,
+        "layer": [
+          49,
+          0
+        ],
+        "layer_name": "M3"
+      },
+      {
+        "name": "e3",
+        "irl_rx": 5.5,
+        "irl_ry": 0,
+        "orientation": 0,
+        "bendRadii": [
+          5
+        ],
+        "port_type": "electrical",
+        "width": 11,
+        "layer": [
+          49,
+          0
+        ],
+        "layer_name": "M3"
+      },
+      {
+        "name": "e4",
+        "irl_rx": 0,
+        "irl_ry": 5.5,
+        "orientation": 270,
+        "bendRadii": [
+          5
+        ],
+        "port_type": "electrical",
+        "width": 11,
+        "layer": [
+          49,
+          0
+        ],
+        "layer_name": "M3"
+      }
+    ],
+    "texture_key": "gpdk.components.vias.via_stack.via_stack_497b1586"
+  },
+  "sample_lvs:X3": {
+    "type": "ckt",
+    "model": "gpdk.components.vias.via_stack.via_stack",
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "x": 2,
+    "y": 4,
+    "name": "X3",
+    "props": {
+      "size": [
+        11,
+        11
+      ],
+      "layers": [
+        "M1",
+        "M2",
+        "MTOP"
+      ],
+      "vias": [
+        "via1",
+        "via2",
+        null
+      ],
+      "correct_size": false,
+      "slot_horizontal": false,
+      "slot_vertical": false,
+      "port_orientations": [
+        180,
+        90,
+        0,
+        -90
+      ]
+    },
+    "nets": {
+      "e1": "net1",
+      "e2": "net3",
+      "e4": "net4",
+      "e3": "W1"
+    },
+    "irl_x": 97.93556421775898,
+    "irl_y": 100,
+    "bbox_width": 11,
+    "bbox_height": 11,
+    "bbox_xmin": -5.5,
+    "bbox_ymin": -5.5,
+    "ports": [
+      {
+        "name": "e1",
+        "irl_rx": -5.5,
+        "irl_ry": 0,
+        "orientation": 180,
+        "bendRadii": [
+          5
+        ],
+        "port_type": "electrical",
+        "width": 11,
+        "layer": [
+          49,
+          0
+        ],
+        "layer_name": "M3"
+      },
+      {
+        "name": "e2",
+        "irl_rx": 0,
+        "irl_ry": -5.5,
+        "orientation": 90,
+        "bendRadii": [
+          5
+        ],
+        "port_type": "electrical",
+        "width": 11,
+        "layer": [
+          49,
+          0
+        ],
+        "layer_name": "M3"
+      },
+      {
+        "name": "e3",
+        "irl_rx": 5.5,
+        "irl_ry": 0,
+        "orientation": 0,
+        "bendRadii": [
+          5
+        ],
+        "port_type": "electrical",
+        "width": 11,
+        "layer": [
+          49,
+          0
+        ],
+        "layer_name": "M3"
+      },
+      {
+        "name": "e4",
+        "irl_rx": 0,
+        "irl_ry": 5.5,
+        "orientation": 270,
+        "bendRadii": [
+          5
+        ],
+        "port_type": "electrical",
+        "width": 11,
+        "layer": [
+          49,
+          0
+        ],
+        "layer_name": "M3"
+      }
+    ],
+    "texture_key": "gpdk.components.vias.via_stack.via_stack_497b1586"
+  },
+  "sample_lvs:X4": {
+    "type": "ckt",
+    "model": "gpdk.components.vias.via_stack.via_stack",
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "x": 5,
+    "y": 6,
+    "name": "X4",
+    "props": {
+      "size": [
+        11,
+        11
+      ],
+      "layers": [
+        "M1",
+        "M2",
+        "MTOP"
+      ],
+      "vias": [
+        "via1",
+        "via2",
+        null
+      ],
+      "correct_size": false,
+      "slot_horizontal": false,
+      "slot_vertical": false,
+      "port_orientations": [
+        180,
+        90,
+        0,
+        -90
+      ]
+    },
+    "nets": {
+      "e1": "net7",
+      "e2": "W2",
+      "e4": "net10",
+      "e3": "net12"
+    },
+    "irl_x": 59.46551764006341,
+    "irl_y": 292.4825647463002,
+    "bbox_width": 11,
+    "bbox_height": 11,
+    "bbox_xmin": -5.5,
+    "bbox_ymin": -5.5,
+    "ports": [
+      {
+        "name": "e1",
+        "irl_rx": -5.5,
+        "irl_ry": 0,
+        "orientation": 180,
+        "bendRadii": [
+          5
+        ],
+        "port_type": "electrical",
+        "width": 11,
+        "layer": [
+          49,
+          0
+        ],
+        "layer_name": "M3"
+      },
+      {
+        "name": "e2",
+        "irl_rx": 0,
+        "irl_ry": -5.5,
+        "orientation": 90,
+        "bendRadii": [
+          5
+        ],
+        "port_type": "electrical",
+        "width": 11,
+        "layer": [
+          49,
+          0
+        ],
+        "layer_name": "M3"
+      },
+      {
+        "name": "e3",
+        "irl_rx": 5.5,
+        "irl_ry": 0,
+        "orientation": 0,
+        "bendRadii": [
+          5
+        ],
+        "port_type": "electrical",
+        "width": 11,
+        "layer": [
+          49,
+          0
+        ],
+        "layer_name": "M3"
+      },
+      {
+        "name": "e4",
+        "irl_rx": 0,
+        "irl_ry": 5.5,
+        "orientation": 270,
+        "bendRadii": [
+          5
+        ],
+        "port_type": "electrical",
+        "width": 11,
+        "layer": [
+          49,
+          0
+        ],
+        "layer_name": "M3"
+      }
+    ],
+    "texture_key": "gpdk.components.vias.via_stack.via_stack_497b1586"
+  },
+  "sample_lvs:W1": {
+    "type": "wire",
+    "x": 4,
+    "y": 5,
+    "rx": 5,
+    "ry": 0,
+    "variant": "d",
+    "name": "W1",
+    "net": "W1"
+  },
+  "sample_lvs:W2": {
+    "type": "wire",
+    "x": 6,
+    "y": 4,
+    "rx": 0,
+    "ry": 2,
+    "variant": "d",
+    "name": "W2",
+    "net": "W2"
+  },
+  "sample_lvs:X5": {
+    "type": "straight",
+    "model": "gpdk.components.waveguides.straight.straight",
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "x": 1,
+    "y": 2,
+    "name": "X5",
+    "props": {
+      "length": 100,
+      "npoints": 2,
+      "cross_section": "metal1"
+    },
+    "nets": {
+      "o1": "net0",
+      "o2": "net2"
+    },
+    "irl_x": 50,
+    "irl_y": 100,
+    "bbox_width": 100,
+    "bbox_height": 10,
+    "bbox_xmin": 0,
+    "bbox_ymin": -5,
+    "ports": [
+      {
+        "name": "e1",
+        "irl_rx": -50,
+        "irl_ry": 0,
+        "orientation": 180,
+        "bendRadii": [
+          10
+        ],
+        "port_type": "electrical",
+        "width": 10,
+        "cross_section": "metal1",
+        "layer": [
+          41,
+          0
+        ],
+        "layer_name": "M1"
+      },
+      {
+        "name": "e2",
+        "irl_rx": 50,
+        "irl_ry": 0,
+        "orientation": 0,
+        "bendRadii": [
+          10
+        ],
+        "port_type": "electrical",
+        "width": 10,
+        "cross_section": "metal1",
+        "layer": [
+          41,
+          0
+        ],
+        "layer_name": "M1"
+      }
+    ],
+    "texture_key": "gpdk.components.waveguides.straight.straight_949af225"
+  },
+  "poly_1": {
+    "name": "poly_1",
+    "type": "polyline",
+    "terminals": {
+      "start": {
+        "component_id": "sample_lvs:X1",
+        "port_name": "e1"
+      },
+      "finish": {
+        "component_id": "sample_lvs:X3",
+        "port_name": "e3"
+      }
+    },
+    "vertices": [
+      [
+        444.5,
+        177.81784057617188
+      ],
+      [
+        262.58123779296875,
+        177.81784057617188
+      ],
+      [
+        262.58123779296875,
+        100
+      ],
+      [
+        103.43599700927734,
+        100
+      ]
+    ],
+    "cross_section": null,
+    "layer": "M3",
+    "width": 11,
+    "radius": 0
+  },
+  "poly_2": {
+    "name": "poly_2",
+    "type": "polyline",
+    "terminals": {
+      "start": {
+        "component_id": "sample_lvs:X2",
+        "port_name": "e4"
+      },
+      "finish": {
+        "component_id": "sample_lvs:X4",
+        "port_name": "e2"
+      }
+    },
+    "vertices": [
+      [
+        -2.3289999961853027,
+        105.5
+      ],
+      [
+        -2.3289999961853027,
+        203.02000427246094
+      ],
+      [
+        59.465518951416016,
+        203.02000427246094
+      ],
+      [
+        59.465518951416016,
+        286.9825744628906
+      ]
+    ],
+    "cross_section": null,
+    "layer": "M3",
+    "width": 11,
+    "radius": 0
+  }
+}
