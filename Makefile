@@ -16,6 +16,8 @@ test-notebooks:
 		case "$$notebook" in \
 			*hfss_*|*hfss-*|*matlab_*|*matlab-*|*_meep*|*meep_*) \
 				echo "Skipping $$notebook (needs tools unavailable in CI)"; continue;; \
+			*30_mzi*) \
+				echo "Skipping $$notebook (needs tidy3d, which pins filelock<4 against the repo security floor)"; continue;; \
 			esac; \
 		echo "Executing $$notebook"; \
 		uv run jupyter nbconvert --to notebook --execute "$$notebook" \

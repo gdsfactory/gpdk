@@ -59,8 +59,10 @@ docs = [
   "zensical>=0.0.40,<0.1.0"
 ]
 # Renders and executes the notebooks under notebooks/ (the femwell stack).
+# tidy3d is intentionally excluded: it pins filelock<4, which reverts the
+# security floor the repo keeps on filelock (see the Code Security scan).
 femwell = [
-  "gplugins[femwell,tidy3d]~=2.1.0",
+  "gplugins[femwell]~=2.1.0",
   "ipykernel",
   "ipywidgets",
   "jupyter",
