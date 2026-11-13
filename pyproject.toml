@@ -58,6 +58,17 @@ docs = [
   "mkdocstrings[python]>=0.27.0",
   "zensical>=0.0.40,<0.1.0"
 ]
+# Renders and executes the notebooks under notebooks/ (the femwell stack).
+femwell = [
+  "gplugins[femwell,tidy3d]~=2.1.0",
+  "ipykernel",
+  "ipywidgets",
+  "jupyter",
+  "matplotlib",
+  "nbconvert",
+  "pandas",
+  "tqdm"
+]
 
 [tool.codespell]
 ignore-words-list = "te, te/tm, ba, fpr, fpr_spacing, ro, nd, donot, schem, distrubuted, intered, thi, whe, Aline, Adrea"
