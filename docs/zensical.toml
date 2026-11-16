@@ -27,3 +27,13 @@ show_source = false
 [project.theme]
 logo = "logo.png"
 name = "material"
+
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "material/brightness-4"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "material/brightness-7"
+toggle.name = "Switch to dark mode"

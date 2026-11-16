@@ -53,6 +53,7 @@ docs = [
   "jupyter",
   "jupyter-book",
   "jupytext",
+  "matplotlib",
   "nbconvert",
   "soupsieve>=4.0",  # Security floor for nbconvert's Beautiful Soup dependency.
   "mkdocstrings[python]>=0.27.0",
