@@ -51,8 +51,17 @@ def main() -> None:
             lines.append("A layout preview requires explicit arguments.\n")
             continue
         print(f"Rendering {name}", flush=True)
-        write_cell_image(cell, image_dir / f"{name}.png")
-        lines.append(f"![Layout of {name}](cells_images/{name}.png)\n")
+        image_path = image_dir / f"{name}.png"
+        try:
+            write_cell_image(cell, image_path)
+        except Exception as error:
+            print(f"Could not render {name}: {error}", flush=True)
+            image_path.unlink(missing_ok=True)
+            lines.append("A layout preview is unavailable for this cell.\n")
+            continue
+        lines.append(
+            f"![Layout of {name}](cells_images/{name}.png){{ loading=lazy }}\n"
+        )
     OUT.parent.mkdir(exist_ok=True, parents=True)
     OUT.write_text("\n".join(lines))
     print(f"wrote {OUT} with {len(gpdk.PDK.cells)} cells")
