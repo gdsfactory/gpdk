@@ -1,5 +1,6 @@
 [project]
 docs_dir = "."
+extra_css = ["stylesheets/extra.css"]
 nav = [
   { "Home" = "index.md" },
   { "Reference" = [
