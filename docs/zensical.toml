@@ -4,6 +4,7 @@ nav = [
   { "Home" = "index.md" },
   { "Reference" = [
     { "Cells" = "cells.md" },
+    { "PEX rules" = "gfpex-pex.md" },
     { "Changelog" = "changelog.md" }
   ] }
 ]

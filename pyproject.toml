@@ -99,7 +99,7 @@ num = 1000
 python_version = "3.12"
 
 [tool.pytest.ini_options]
-addopts = '--tb=short'
+addopts = '--tb=short --ignore=gpdk/pex'
 python_files = ["gpdk/*.py", "tests/*.py"]
 testpaths = ["gpdk/", "tests"]
 
