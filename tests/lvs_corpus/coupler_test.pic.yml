@@ -1,0 +1,50 @@
+instances:
+  coupler:
+    component: coupler
+    settings:
+      gap: 0.2
+      length: 10
+  input_bottom:
+    component: straight
+    settings:
+      length: 5
+  input_top:
+    component: straight
+    settings:
+      length: 5
+  output_bottom:
+    component: straight
+    settings:
+      length: 5
+  output_top:
+    component: straight
+    settings:
+      length: 5
+connections:
+  coupler,o3: output_top,o1
+  coupler,o4: output_bottom,o1
+  input_bottom,o2: coupler,o1
+  input_top,o2: coupler,o2
+routes: {}
+nets: []
+ports:
+  in1: input_top,o1
+  in2: input_bottom,o1
+  out1: output_top,o2
+  out2: output_bottom,o2
+placements:
+  coupler:
+    x: 0
+    y: 0
+  input_bottom:
+    x: -15
+    y: -1.65
+  input_top:
+    x: -15
+    y: 2.35
+  output_bottom:
+    x: 20
+    y: -1.65
+  output_top:
+    x: 20
+    y: 2.35

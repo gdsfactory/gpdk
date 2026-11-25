@@ -1,0 +1,1 @@
+Add gflvs LVS rules (`gpdk.lvs.rules.DEFAULT_LVS_CONFIG`) recognising electrical `pad` and PCell-fit `coupler` and `mmi1x2`, with `straight`, `bend_euler`, `taper`, `wire_corner` and `rectangle` as passthrough cells. gflvs is an optional dependency: the tests skip without it.

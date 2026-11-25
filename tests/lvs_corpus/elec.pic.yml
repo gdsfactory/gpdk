@@ -1,0 +1,61 @@
+instances:
+  pad1:
+    component: pad
+    settings: {}
+  pad2:
+    component: pad
+    settings: {}
+  pad3:
+    component: pad
+    settings: {}
+  pad4:
+    component: pad
+    settings: {}
+connections: {}
+routes:
+  electrical:
+    links:
+      pad1,e3: pad2,e1
+    routing_strategy: route_bundle_electrical
+    settings:
+      allow_layer_mismatch: false
+      allow_type_mismatch: false
+      allow_width_mismatch: false
+  electrical2:
+    links:
+      pad3,e3: pad4,e3
+    routing_strategy: route_bundle_electrical
+    settings:
+      allow_layer_mismatch: false
+      allow_type_mismatch: false
+      allow_width_mismatch: false
+      radius: 10
+nets: []
+ports: {}
+placements:
+  pad1:
+    x: 0
+    y: 0
+    dx: -98.125
+    dy: -19.273
+  pad2:
+    x: 0
+    y: 0
+    dx: 349.71
+    dy: -394.94
+    rotation: 0
+    mirror: false
+  pad3:
+    x: -98.125
+    y: -19.273
+    dx: -97.005
+    dy: -423.277
+    rotation: 0
+    mirror: false
+  pad4:
+    x: 0
+    y: 0
+    dx: 137.75
+    dy: -124.39
+    rotation: 0
+    mirror: false

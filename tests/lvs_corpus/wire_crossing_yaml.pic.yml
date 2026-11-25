@@ -1,0 +1,34 @@
+instances:
+  mpd:
+    component: rectangle
+    settings:
+      size:
+        - 100
+        - 20
+      layer: M3
+  pad_array_inst:
+    component: pad_array
+    settings:
+      port_orientation: 90
+connections: {}
+routes:
+  route1:
+    links:
+      pad_array_inst,e13: mpd,e3
+    routing_strategy: route_bundle_electrical
+    settings: {}
+  route2:
+    links:
+      pad_array_inst,e15: mpd,e1
+    routing_strategy: route_bundle_electrical
+    settings:
+      end_straight_length: 100
+      start_straight_length: 100
+nets: []
+ports: {}
+placements:
+  mpd:
+    x: -500
+    y: 500
+    rotation: 90
+name: wire_crossing_yaml

@@ -1,0 +1,55 @@
+instances:
+  instance1:
+    component: pad
+    settings: {}
+  mpd:
+    component: rectangle
+    settings:
+      size:
+        - 100
+        - 20
+      layer: M3
+  pad_array_inst:
+    component: pad_array
+    settings:
+      port_orientation: 90
+connections: {}
+routes:
+  bundle1:
+    links:
+      instance1,e4: pad_array_inst,e15
+    routing_strategy: route_bundle_electrical
+    settings:
+      allow_layer_mismatch: false
+      allow_type_mismatch: false
+      allow_width_mismatch: false
+  route1:
+    links:
+      pad_array_inst,e13: mpd,e3
+    routing_strategy: route_bundle_electrical
+    settings: {}
+  route2:
+    links:
+      pad_array_inst,e15: mpd,e1
+    routing_strategy: route_bundle_electrical
+    settings:
+      end_straight_length: 100
+      start_straight_length: 100
+nets: []
+ports: {}
+placements:
+  instance1:
+    x: 399.1
+    y: 644.44
+    dx: 348.61
+    dy: 2.16
+    rotation: 0
+    mirror: false
+  mpd:
+    x: -400
+    y: 500
+    rotation: 180
+    dx: 899.1
+    dy: 144.44
+    mirror: false
+name: wire_crossing_yaml
